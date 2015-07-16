@@ -211,7 +211,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="6649bi9D3RQ">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.integer" />
     <property role="TrG5h" value="IntegerLiteral" />
     <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
     <node concept="1TJgyi" id="6649bi9D3RR" role="1TKVEl">
@@ -220,7 +220,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="6649bi9D674">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.integer" />
     <property role="TrG5h" value="IntegerType" />
     <property role="34LRSv" value="integer" />
     <property role="R4oN_" value="Número entero" />

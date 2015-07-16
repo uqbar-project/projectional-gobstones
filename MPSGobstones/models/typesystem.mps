@@ -484,7 +484,7 @@
   </node>
   <node concept="1YbPZF" id="6649bi9D63e">
     <property role="TrG5h" value="typeof_IntegerLiteral" />
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.integer" />
     <property role="18ip37" value="true" />
     <node concept="3clFbS" id="6649bi9D63f" role="18ibNy">
       <node concept="1Z5TYs" id="6649bi9D66G" role="3cqZAp">

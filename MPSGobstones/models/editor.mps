@@ -975,7 +975,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6649bi9D3RZ">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.integer" />
     <ref role="1XX52x" to="xwsw:6649bi9D3RQ" resolve="IntegerLiteral" />
     <node concept="3F0A7n" id="6649bi9D3S1" role="2wV5jI">
       <ref role="1NtTu8" to="xwsw:6649bi9D3RR" resolve="value" />
