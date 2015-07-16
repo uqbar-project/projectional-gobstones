@@ -2,8 +2,8 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/../Project3/languages/MPSGobstones/MPSGobstones.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/../Project3/languages/MPSGobstones/sandbox/MPSGobstones.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/MPSGobstones/MPSGobstones.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/MPSGobstones/sandbox/MPSGobstones.sandbox.msd" folder="" />
     </projectModules>
   </component>
 </project>
