@@ -376,5 +376,12 @@
     <property role="R4oN_" value="Dirección" />
     <ref role="1TJDcQ" node="2EKRJuPokQD" resolve="Direction" />
   </node>
+  <node concept="1TIwiD" id="2EKRJuPoswH">
+    <property role="3GE5qa" value="expressions.integer" />
+    <property role="TrG5h" value="ModOperation" />
+    <property role="34LRSv" value="%" />
+    <property role="R4oN_" value="Módulo" />
+    <ref role="1TJDcQ" node="4_PTB0_fUFe" resolve="IntegerOperation" />
+  </node>
 </model>
 
