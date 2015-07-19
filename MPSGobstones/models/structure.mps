@@ -202,6 +202,7 @@
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="ParenthesisExpression" />
     <property role="34LRSv" value="()" />
+    <property role="R4oN_" value="Paréntesis" />
     <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
     <node concept="1TJgyj" id="6649bi9D0Iy" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -232,18 +233,21 @@
     <property role="3GE5qa" value="expressions.integer" />
     <property role="TrG5h" value="PlusOperation" />
     <property role="34LRSv" value="+" />
+    <property role="R4oN_" value="Adición" />
     <ref role="1TJDcQ" node="4_PTB0_fUFe" resolve="IntegerOperation" />
   </node>
   <node concept="1TIwiD" id="4_PTB0_fUFc">
     <property role="3GE5qa" value="expressions.integer" />
     <property role="TrG5h" value="DivOperation" />
     <property role="34LRSv" value="/" />
+    <property role="R4oN_" value="División entera" />
     <ref role="1TJDcQ" node="4_PTB0_fUFe" resolve="IntegerOperation" />
   </node>
   <node concept="1TIwiD" id="4_PTB0_fUFd">
     <property role="3GE5qa" value="expressions.integer" />
     <property role="TrG5h" value="MulOperation" />
     <property role="34LRSv" value="*" />
+    <property role="R4oN_" value="Multiplicación" />
     <ref role="1TJDcQ" node="4_PTB0_fUFe" resolve="IntegerOperation" />
   </node>
   <node concept="1TIwiD" id="4_PTB0_fUFe">
@@ -289,6 +293,88 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2EKRJuPogD2">
+    <property role="TrG5h" value="Color" />
+    <property role="3GE5qa" value="native.color" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="2EKRJuPogD5">
+    <property role="3GE5qa" value="native.color" />
+    <property role="TrG5h" value="Rojo" />
+    <property role="34LRSv" value="Rojo" />
+    <property role="R4oN_" value="Bolita de color rojo" />
+    <ref role="1TJDcQ" node="2EKRJuPogD2" resolve="Color" />
+  </node>
+  <node concept="1TIwiD" id="2EKRJuPogD6">
+    <property role="3GE5qa" value="native.color" />
+    <property role="TrG5h" value="Azul" />
+    <property role="34LRSv" value="Azul" />
+    <property role="R4oN_" value="Bolita de color azul" />
+    <ref role="1TJDcQ" node="2EKRJuPogD2" resolve="Color" />
+  </node>
+  <node concept="1TIwiD" id="2EKRJuPogD7">
+    <property role="3GE5qa" value="native.color" />
+    <property role="TrG5h" value="Verde" />
+    <property role="34LRSv" value="Verde" />
+    <property role="R4oN_" value="Bolita de color verde" />
+    <ref role="1TJDcQ" node="2EKRJuPogD2" resolve="Color" />
+  </node>
+  <node concept="1TIwiD" id="2EKRJuPogD8">
+    <property role="3GE5qa" value="native.color" />
+    <property role="TrG5h" value="Negro" />
+    <property role="34LRSv" value="Negro" />
+    <property role="R4oN_" value="Bolita de color negro" />
+    <ref role="1TJDcQ" node="2EKRJuPogD2" resolve="Color" />
+  </node>
+  <node concept="1TIwiD" id="2EKRJuPojny">
+    <property role="3GE5qa" value="native.color" />
+    <property role="TrG5h" value="ColorType" />
+    <property role="34LRSv" value="color" />
+    <property role="R4oN_" value="Color type" />
+    <ref role="1TJDcQ" node="6649bi9CEJl" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="2EKRJuPokQD">
+    <property role="3GE5qa" value="native.direction" />
+    <property role="TrG5h" value="Direction" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="2EKRJuPokQE">
+    <property role="3GE5qa" value="native.direction" />
+    <property role="TrG5h" value="DirectionType" />
+    <property role="34LRSv" value="direction" />
+    <property role="R4oN_" value="Direction type" />
+    <ref role="1TJDcQ" node="6649bi9CEJl" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="2EKRJuPokX0">
+    <property role="3GE5qa" value="native.direction" />
+    <property role="TrG5h" value="Norte" />
+    <property role="34LRSv" value="Norte" />
+    <property role="R4oN_" value="Dirección" />
+    <ref role="1TJDcQ" node="2EKRJuPokQD" resolve="Direction" />
+  </node>
+  <node concept="1TIwiD" id="2EKRJuPokX1">
+    <property role="3GE5qa" value="native.direction" />
+    <property role="TrG5h" value="Sur" />
+    <property role="34LRSv" value="Sur" />
+    <property role="R4oN_" value="Dirección" />
+    <ref role="1TJDcQ" node="2EKRJuPokQD" resolve="Direction" />
+  </node>
+  <node concept="1TIwiD" id="2EKRJuPokX2">
+    <property role="3GE5qa" value="native.direction" />
+    <property role="TrG5h" value="Este" />
+    <property role="34LRSv" value="Este" />
+    <property role="R4oN_" value="Dirección" />
+    <ref role="1TJDcQ" node="2EKRJuPokQD" resolve="Direction" />
+  </node>
+  <node concept="1TIwiD" id="2EKRJuPokX3">
+    <property role="3GE5qa" value="native.direction" />
+    <property role="TrG5h" value="Oeste" />
+    <property role="34LRSv" value="Oeste" />
+    <property role="R4oN_" value="Dirección" />
+    <ref role="1TJDcQ" node="2EKRJuPokQD" resolve="Direction" />
   </node>
 </model>
 

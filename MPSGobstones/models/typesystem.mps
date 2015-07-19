@@ -683,5 +683,61 @@
       <ref role="1YaFvo" to="xwsw:3uklb1au6j4" resolve="RepeatStatement" />
     </node>
   </node>
+  <node concept="1YbPZF" id="2EKRJuPojnV">
+    <property role="TrG5h" value="typeof_Color" />
+    <property role="3GE5qa" value="native.color" />
+    <node concept="3clFbS" id="2EKRJuPojnW" role="18ibNy">
+      <node concept="1Z5TYs" id="2EKRJuPojrz" role="3cqZAp">
+        <node concept="mw_s8" id="2EKRJuPojrR" role="1ZfhKB">
+          <node concept="2ShNRf" id="2EKRJuPojrN" role="mwGJk">
+            <node concept="3zrR0B" id="2EKRJuPojxW" role="2ShVmc">
+              <node concept="3Tqbb2" id="2EKRJuPojxY" role="3zrR0E">
+                <ref role="ehGHo" to="xwsw:2EKRJuPojny" resolve="ColorType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2EKRJuPojrA" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2EKRJuPojou" role="mwGJk">
+            <node concept="1YBJjd" id="2EKRJuPojoU" role="1Z2MuG">
+              <ref role="1YBMHb" node="2EKRJuPojnY" resolve="color" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2EKRJuPojnY" role="1YuTPh">
+      <property role="TrG5h" value="color" />
+      <ref role="1YaFvo" to="xwsw:2EKRJuPogD2" resolve="Color" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2EKRJuPokXs">
+    <property role="TrG5h" value="typeof_Direction" />
+    <property role="3GE5qa" value="native.direction" />
+    <node concept="3clFbS" id="2EKRJuPokXt" role="18ibNy">
+      <node concept="1Z5TYs" id="2EKRJuPol0C" role="3cqZAp">
+        <node concept="mw_s8" id="2EKRJuPol0W" role="1ZfhKB">
+          <node concept="2ShNRf" id="2EKRJuPol0S" role="mwGJk">
+            <node concept="3zrR0B" id="2EKRJuPol71" role="2ShVmc">
+              <node concept="3Tqbb2" id="2EKRJuPol73" role="3zrR0E">
+                <ref role="ehGHo" to="xwsw:2EKRJuPokQE" resolve="DirectionType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2EKRJuPol0F" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2EKRJuPokXz" role="mwGJk">
+            <node concept="1YBJjd" id="2EKRJuPokXZ" role="1Z2MuG">
+              <ref role="1YBMHb" node="2EKRJuPokXv" resolve="direction" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2EKRJuPokXv" role="1YuTPh">
+      <property role="TrG5h" value="direction" />
+      <ref role="1YaFvo" to="xwsw:2EKRJuPokQD" resolve="Direction" />
+    </node>
+  </node>
 </model>
 

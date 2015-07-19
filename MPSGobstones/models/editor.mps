@@ -1102,5 +1102,12 @@
       <node concept="l2Vlx" id="2EKRJuPo56e" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="2EKRJuPogDe">
+    <property role="3GE5qa" value="native.color" />
+    <ref role="1XX52x" to="xwsw:2EKRJuPogD2" resolve="Color" />
+    <node concept="PMmxH" id="2EKRJuPogDg" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
 </model>
 
