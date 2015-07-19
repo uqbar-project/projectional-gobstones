@@ -511,5 +511,82 @@
       <ref role="1YaFvo" to="xwsw:6649bi9D3RQ" resolve="IntegerLiteral" />
     </node>
   </node>
+  <node concept="1YbPZF" id="4_PTB0_fUFD">
+    <property role="TrG5h" value="typeof_IntegerOperation" />
+    <property role="18ip37" value="true" />
+    <node concept="3clFbS" id="4_PTB0_fUFE" role="18ibNy">
+      <node concept="3cpWs8" id="4_PTB0_fUOb" role="3cqZAp">
+        <node concept="3cpWsn" id="4_PTB0_fUOe" role="3cpWs9">
+          <property role="TrG5h" value="integer" />
+          <node concept="3Tqbb2" id="4_PTB0_fUOa" role="1tU5fm">
+            <ref role="ehGHo" to="xwsw:6649bi9D674" resolve="IntegerType" />
+          </node>
+          <node concept="2ShNRf" id="4_PTB0_fUOB" role="33vP2m">
+            <node concept="3zrR0B" id="4_PTB0_fW0C" role="2ShVmc">
+              <node concept="3Tqbb2" id="4_PTB0_fW0E" role="3zrR0E">
+                <ref role="ehGHo" to="xwsw:6649bi9D674" resolve="IntegerType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="4_PTB0_fW19" role="3cqZAp">
+        <node concept="mw_s8" id="4_PTB0_g2Va" role="1ZfhKB">
+          <node concept="37vLTw" id="4_PTB0_g2V8" role="mwGJk">
+            <ref role="3cqZAo" node="4_PTB0_fUOe" resolve="integer" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="4_PTB0_fW1r" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4_PTB0_fW1n" role="mwGJk">
+            <node concept="2OqwBi" id="4_PTB0_fW3O" role="1Z2MuG">
+              <node concept="1YBJjd" id="4_PTB0_fW1G" role="2Oq$k0">
+                <ref role="1YBMHb" node="4_PTB0_fUFG" resolve="integerOperation" />
+              </node>
+              <node concept="3TrEf2" id="4_PTB0_g2U1" role="2OqNvi">
+                <ref role="3Tt5mk" to="xwsw:CgvT_3E20u" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="4_PTB0_g2Vz" role="3cqZAp">
+        <node concept="mw_s8" id="4_PTB0_g2V$" role="1ZfhKB">
+          <node concept="37vLTw" id="4_PTB0_g2V_" role="mwGJk">
+            <ref role="3cqZAo" node="4_PTB0_fUOe" resolve="integer" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="4_PTB0_g2VA" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4_PTB0_g2VB" role="mwGJk">
+            <node concept="2OqwBi" id="4_PTB0_g2VC" role="1Z2MuG">
+              <node concept="1YBJjd" id="4_PTB0_g2VD" role="2Oq$k0">
+                <ref role="1YBMHb" node="4_PTB0_fUFG" resolve="integerOperation" />
+              </node>
+              <node concept="3TrEf2" id="4_PTB0_g3eT" role="2OqNvi">
+                <ref role="3Tt5mk" to="xwsw:CgvT_3E20x" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="4_PTB0_g3l0" role="3cqZAp">
+        <node concept="mw_s8" id="4_PTB0_g3lE" role="1ZfhKB">
+          <node concept="37vLTw" id="4_PTB0_g3lC" role="mwGJk">
+            <ref role="3cqZAo" node="4_PTB0_fUOe" resolve="integer" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="4_PTB0_g3l3" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4_PTB0_g3gl" role="mwGJk">
+            <node concept="1YBJjd" id="4_PTB0_g3hb" role="1Z2MuG">
+              <ref role="1YBMHb" node="4_PTB0_fUFG" resolve="integerOperation" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4_PTB0_fUFG" role="1YuTPh">
+      <property role="TrG5h" value="integerOperation" />
+      <ref role="1YaFvo" to="xwsw:4_PTB0_fUFe" resolve="IntegerOperation" />
+    </node>
+  </node>
 </model>
 

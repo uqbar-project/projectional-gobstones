@@ -23,6 +23,9 @@
       <concept id="725219836248461697" name="MPSGobstones.structure.False" flags="ng" index="19I6So" />
       <concept id="725219836248461698" name="MPSGobstones.structure.True" flags="ng" index="19I6Sr" />
       <concept id="725219836248512229" name="MPSGobstones.structure.AndExpression" flags="ng" index="19Ia_W" />
+      <concept id="7026781676426771958" name="MPSGobstones.structure.IntegerLiteral" flags="ng" index="3C81_2">
+        <property id="7026781676426771959" name="value" index="3C81_3" />
+      </concept>
       <concept id="7026781676426759073" name="MPSGobstones.structure.ParenthesisExpression" flags="ng" index="3C82Wl">
         <child id="7026781676426759074" name="contained" index="3C82Wm" />
       </concept>
@@ -48,6 +51,12 @@
               <node concept="19I6Sr" id="6649bi9D7CJ" role="3C82Wm" />
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="19HTZB" id="4_PTB0_g4o1" role="19HMXq">
+        <property role="TrG5h" value="algo" />
+        <node concept="3C81_2" id="4_PTB0_g4o_" role="19HTWN">
+          <property role="3C81_3" value="30" />
         </node>
       </node>
     </node>

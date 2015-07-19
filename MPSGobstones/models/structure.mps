@@ -213,6 +213,8 @@
   <node concept="1TIwiD" id="6649bi9D3RQ">
     <property role="3GE5qa" value="expressions.integer" />
     <property role="TrG5h" value="IntegerLiteral" />
+    <property role="34LRSv" value="int" />
+    <property role="R4oN_" value="Número Entero" />
     <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
     <node concept="1TJgyi" id="6649bi9D3RR" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -225,6 +227,30 @@
     <property role="34LRSv" value="integer" />
     <property role="R4oN_" value="Número entero" />
     <ref role="1TJDcQ" node="6649bi9CEJl" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="4_PTB0_fUFb">
+    <property role="3GE5qa" value="expressions.integer" />
+    <property role="TrG5h" value="PlusOperation" />
+    <property role="34LRSv" value="+" />
+    <ref role="1TJDcQ" node="4_PTB0_fUFe" resolve="IntegerOperation" />
+  </node>
+  <node concept="1TIwiD" id="4_PTB0_fUFc">
+    <property role="3GE5qa" value="expressions.integer" />
+    <property role="TrG5h" value="DivOperation" />
+    <property role="34LRSv" value="/" />
+    <ref role="1TJDcQ" node="4_PTB0_fUFe" resolve="IntegerOperation" />
+  </node>
+  <node concept="1TIwiD" id="4_PTB0_fUFd">
+    <property role="3GE5qa" value="expressions.integer" />
+    <property role="TrG5h" value="MulOperation" />
+    <property role="34LRSv" value="*" />
+    <ref role="1TJDcQ" node="4_PTB0_fUFe" resolve="IntegerOperation" />
+  </node>
+  <node concept="1TIwiD" id="4_PTB0_fUFe">
+    <property role="3GE5qa" value="expressions.integer" />
+    <property role="TrG5h" value="IntegerOperation" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="CgvT_3E20t" resolve="BinaryOperation" />
   </node>
 </model>
 
