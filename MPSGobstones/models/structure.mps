@@ -252,5 +252,43 @@
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="CgvT_3E20t" resolve="BinaryOperation" />
   </node>
+  <node concept="1TIwiD" id="4_PTB0_geCZ">
+    <property role="TrG5h" value="LoopStatement" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="statements" />
+    <ref role="1TJDcQ" node="CgvT_3DP31" resolve="Statement" />
+    <node concept="1TJgyj" id="3uklb1au3t_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="CgvT_3DP32" resolve="StatementList" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3uklb1au6j4">
+    <property role="3GE5qa" value="statements" />
+    <property role="TrG5h" value="RepeatStatement" />
+    <property role="34LRSv" value="repeat" />
+    <property role="R4oN_" value="Bucle repeat" />
+    <ref role="1TJDcQ" node="4_PTB0_geCZ" resolve="LoopStatement" />
+    <node concept="1TJgyj" id="2EKRJuPo56C" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="times" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3uklb1au862">
+    <property role="3GE5qa" value="statements" />
+    <property role="TrG5h" value="WhileStatement" />
+    <property role="34LRSv" value="while" />
+    <property role="R4oN_" value="Bucle while" />
+    <ref role="1TJDcQ" node="4_PTB0_geCZ" resolve="LoopStatement" />
+    <node concept="1TJgyj" id="3uklb1au6kb" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

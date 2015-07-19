@@ -68,6 +68,9 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
+      <concept id="1212056081426" name="jetbrains.mps.lang.typesystem.structure.AbstractInequationStatement" flags="ng" index="Ob1k8">
+        <property id="4778346850551686273" name="label" index="2iVnQ_" />
+      </concept>
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
       </concept>
@@ -99,8 +102,10 @@
       </concept>
       <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
       <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
+        <child id="1180447237840" name="errorString" index="3o8Qv2" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
+        <child id="1174662598553" name="nodeToCheck" index="1ZmcU8" />
       </concept>
       <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
     </language>
@@ -586,6 +591,96 @@
     <node concept="1YaCAy" id="4_PTB0_fUFG" role="1YuTPh">
       <property role="TrG5h" value="integerOperation" />
       <ref role="1YaFvo" to="xwsw:4_PTB0_fUFe" resolve="IntegerOperation" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3uklb1au86N">
+    <property role="TrG5h" value="typeof_WhileStatement" />
+    <property role="3GE5qa" value="statements" />
+    <node concept="3clFbS" id="3uklb1au86O" role="18ibNy">
+      <node concept="1ZobV4" id="2EKRJuPnUm3" role="3cqZAp">
+        <property role="2iVnQ_" value="While condition" />
+        <node concept="mw_s8" id="2EKRJuPnUmd" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2EKRJuPnUm9" role="mwGJk">
+            <node concept="2OqwBi" id="2EKRJuPnUoA" role="1Z2MuG">
+              <node concept="1YBJjd" id="2EKRJuPnUmu" role="2Oq$k0">
+                <ref role="1YBMHb" node="3uklb1au86Q" resolve="whileStatement" />
+              </node>
+              <node concept="3TrEf2" id="2EKRJuPnUE_" role="2OqNvi">
+                <ref role="3Tt5mk" to="xwsw:3uklb1au6kb" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2EKRJuPo9XZ" role="1ZfhKB">
+          <node concept="2ShNRf" id="2EKRJuPo9XV" role="mwGJk">
+            <node concept="3zrR0B" id="2EKRJuPoa44" role="2ShVmc">
+              <node concept="3Tqbb2" id="2EKRJuPoa46" role="3zrR0E">
+                <ref role="ehGHo" to="xwsw:6649bi9CEJk" resolve="BooleanType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="2EKRJuPobfv" role="3o8Qv2">
+          <property role="Xl_RC" value="La condición del bucle while debe ser una expresión lógica" />
+        </node>
+        <node concept="2OqwBi" id="2EKRJuPobhJ" role="1ZmcU8">
+          <node concept="1YBJjd" id="2EKRJuPobfZ" role="2Oq$k0">
+            <ref role="1YBMHb" node="3uklb1au86Q" resolve="whileStatement" />
+          </node>
+          <node concept="3TrEf2" id="2EKRJuPob$y" role="2OqNvi">
+            <ref role="3Tt5mk" to="xwsw:3uklb1au6kb" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3uklb1au86Q" role="1YuTPh">
+      <property role="TrG5h" value="whileStatement" />
+      <ref role="1YaFvo" to="xwsw:3uklb1au862" resolve="WhileStatement" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2EKRJuPocmL">
+    <property role="TrG5h" value="typeof_RepeatStatement" />
+    <property role="3GE5qa" value="statements" />
+    <node concept="3clFbS" id="2EKRJuPocmM" role="18ibNy">
+      <node concept="1ZobV4" id="2EKRJuPocmS" role="3cqZAp">
+        <property role="2iVnQ_" value="Repeat times" />
+        <node concept="mw_s8" id="2EKRJuPoczP" role="1ZfhKB">
+          <node concept="2ShNRf" id="2EKRJuPoczL" role="mwGJk">
+            <node concept="3zrR0B" id="2EKRJuPocDU" role="2ShVmc">
+              <node concept="3Tqbb2" id="2EKRJuPocDW" role="3zrR0E">
+                <ref role="ehGHo" to="xwsw:6649bi9D674" resolve="IntegerType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2EKRJuPocn2" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2EKRJuPocmY" role="mwGJk">
+            <node concept="2OqwBi" id="2EKRJuPocpr" role="1Z2MuG">
+              <node concept="1YBJjd" id="2EKRJuPocnj" role="2Oq$k0">
+                <ref role="1YBMHb" node="2EKRJuPocmO" resolve="repeatStatement" />
+              </node>
+              <node concept="3TrEf2" id="2EKRJuPocyE" role="2OqNvi">
+                <ref role="3Tt5mk" to="xwsw:2EKRJuPo56C" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="2EKRJuPodxH" role="1ZmcU8">
+          <node concept="1YBJjd" id="2EKRJuPoduj" role="2Oq$k0">
+            <ref role="1YBMHb" node="2EKRJuPocmO" resolve="repeatStatement" />
+          </node>
+          <node concept="3TrEf2" id="2EKRJuPodFK" role="2OqNvi">
+            <ref role="3Tt5mk" to="xwsw:2EKRJuPo56C" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="2EKRJuPodGw" role="3o8Qv2">
+          <property role="Xl_RC" value="El argumento del bucle repeat debe ser de tipo entero" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2EKRJuPocmO" role="1YuTPh">
+      <property role="TrG5h" value="repeatStatement" />
+      <ref role="1YaFvo" to="xwsw:3uklb1au6j4" resolve="RepeatStatement" />
     </node>
   </node>
 </model>
