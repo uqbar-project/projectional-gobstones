@@ -388,7 +388,7 @@
     <property role="TrG5h" value="IfElseStatement" />
     <property role="34LRSv" value="if" />
     <property role="R4oN_" value="Condicional" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="CgvT_3DP31" resolve="Statement" />
     <node concept="1TJgyj" id="6GQ9CZWkfHz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="condition" />

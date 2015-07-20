@@ -7,6 +7,11 @@
   <imports />
   <registry>
     <language id="0cb8c78e-7916-43a8-8d8e-a292ead7a894" name="MPSGobstones">
+      <concept id="7725404610655926569" name="MPSGobstones.structure.IfElseStatement" flags="ng" index="2nupYA">
+        <child id="7725404610656009064" name="ifFalseBlock" index="2npHRB" />
+        <child id="7725404610656009061" name="ifTrueBlock" index="2npHRE" />
+        <child id="7725404610656009059" name="condition" index="2npHRG" />
+      </concept>
       <concept id="725219836248296989" name="MPSGobstones.structure.Program" flags="ng" index="19Hv64">
         <child id="725219836248411837" name="body" index="19HN4$" />
       </concept>
@@ -75,7 +80,13 @@
             </node>
           </node>
           <node concept="1XVdkM" id="6GQ9CZWkX_T" role="19HMXq">
-            <node concept="19HMXr" id="6GQ9CZWkX_V" role="1XV6fl" />
+            <node concept="19HMXr" id="6GQ9CZWkX_V" role="1XV6fl">
+              <node concept="2nupYA" id="6GQ9CZWlogt" role="19HMXq">
+                <node concept="19HMXr" id="6GQ9CZWlogu" role="2npHRB" />
+                <node concept="19I6Sr" id="6GQ9CZWluUZ" role="2npHRG" />
+                <node concept="19HMXr" id="6GQ9CZWlogw" role="2npHRE" />
+              </node>
+            </node>
             <node concept="19I6Sr" id="6GQ9CZWkXAc" role="1XV36V" />
           </node>
         </node>
