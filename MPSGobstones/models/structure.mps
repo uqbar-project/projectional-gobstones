@@ -383,5 +383,30 @@
     <property role="R4oN_" value="Módulo" />
     <ref role="1TJDcQ" node="4_PTB0_fUFe" resolve="IntegerOperation" />
   </node>
+  <node concept="1TIwiD" id="6GQ9CZWjV$D">
+    <property role="3GE5qa" value="statements" />
+    <property role="TrG5h" value="IfElseStatement" />
+    <property role="34LRSv" value="if" />
+    <property role="R4oN_" value="Condicional" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6GQ9CZWkfHz" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6GQ9CZWkfH_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ifTrueBlock" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="CgvT_3DP32" resolve="StatementList" />
+    </node>
+    <node concept="1TJgyj" id="6GQ9CZWkfHC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ifFalseBlock" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="CgvT_3DP32" resolve="StatementList" />
+    </node>
+  </node>
 </model>
 
