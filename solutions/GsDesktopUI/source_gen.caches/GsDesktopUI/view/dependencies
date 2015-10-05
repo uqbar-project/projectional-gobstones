@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="GsDesktopUI.view.PreviewFactory" file="PreviewFactory.java">
+  <dependency className="GsDesktopUI.view.BoardRenderer" file="BoardRenderer.java">
+    <classNode dependClassName="GsDesktopUI.view.CellView" />
+    <classNode dependClassName="JavaGobstones.models.Board" />
+    <classNode dependClassName="JavaGobstones.models.Cell" />
+    <classNode dependClassName="JavaGobstones.models.Color" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.GridLayout" />
+    <classNode dependClassName="javax.swing.JComponent" />
+    <classNode dependClassName="javax.swing.JPanel" />
+  </dependency>
+  <dependency className="GsDesktopUI.view.CellView" file="CellView.java">
+    <classNode dependClassName="JavaGobstones.models.Cell" />
+    <classNode dependClassName="JavaGobstones.models.Color" />
+    <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.awt.Dimension" />
     <classNode dependClassName="java.awt.Graphics" />
-    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.Runnable" />
-    <classNode dependClassName="java.lang.Void" />
-    <classNode dependClassName="javax.swing.JPanel" />
-    <classNode dependClassName="javax.swing.border.Border" />
-    <classNode dependClassName="javax.swing.border.TitledBorder" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="javax.swing.BorderFactory" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.MapSequence" />
+    <classNode extendsClassName="javax.swing.JComponent" />
+  </dependency>
+  <dependency className="GsDesktopUI.view.PreviewFactory" file="PreviewFactory.java">
+    <classNode dependClassName="GsDesktopUI.view.BoardRenderer" />
+    <classNode dependClassName="JavaGobstones.models.Board" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="javax.swing.JComponent" />
     <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>

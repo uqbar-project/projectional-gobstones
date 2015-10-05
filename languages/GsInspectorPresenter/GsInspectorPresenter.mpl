@@ -43,6 +43,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">1a6a2004-2683-4d2c-90af-8774f52056c6(GsDesktopUI)</dependency>
+    <dependency reexport="false">25789342-c07d-43d3-8d6f-1e46b281ded0(JavaGobstones)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>

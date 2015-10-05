@@ -7,16 +7,21 @@ import java.util.Map;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import gnu.trove.decorator.TObjectIntHashMapDecorator;
 import gnu.trove.TObjectIntHashMap;
+import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.IMapping;
 
 public class Cell implements Comparable {
   public final Tuples._2<Integer, Integer> pos;
 
-  public final Map<Color, Integer> stones = MapSequence.<Color>fromMapAndKeysArray(new TObjectIntHashMapDecorator(new TObjectIntHashMap<Color>()), Color.blue, Color.black, Color.red, Color.green).withValues(0, 0, 0, 0);
+  public final Map<Color, Integer> stones = MapSequence.fromMap(new TObjectIntHashMapDecorator(new TObjectIntHashMap<Color>()));
 
-  public Cell(Tuples._2<Integer, Integer> pos) {
-    this.pos = pos;
+  public Cell(int x, int y) {
+    this.pos = MultiTuple.<Integer,Integer>from(x, y);
+    MapSequence.fromMap(stones).put(Color.blue, 0);
+    MapSequence.fromMap(stones).put(Color.black, 0);
+    MapSequence.fromMap(stones).put(Color.red, 0);
+    MapSequence.fromMap(stones).put(Color.green, 0);
   }
 
   public void addStones(Color color, int quantity) {

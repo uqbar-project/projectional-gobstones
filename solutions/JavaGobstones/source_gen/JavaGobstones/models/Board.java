@@ -42,7 +42,7 @@ public class Board {
   private Cell getOrCreateCell() {
     Cell currentCell = currentCell();
     if (currentCell == null) {
-      currentCell = new Cell(MultiTuple.<Integer,Integer>from((int) claw._0(), (int) claw._1()));
+      currentCell = new Cell((int) claw._0(), (int) claw._1());
       SortedSetSequence.fromSet(cells).addElement(currentCell);
     }
     return currentCell;
@@ -54,5 +54,12 @@ public class Board {
         return MultiTuple.eq(it.pos, claw);
       }
     });
+  }
+
+  public int rowCount() {
+    return (int) size._1();
+  }
+  public int columnCount() {
+    return (int) size._0();
   }
 }
