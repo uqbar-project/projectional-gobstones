@@ -7,14 +7,52 @@ import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import java.util.SortedSet;
 import jetbrains.mps.internal.collections.runtime.SortedSetSequence;
 import java.util.TreeSet;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 
 public class Board {
+  private Tuples._2<Integer, Integer> size = MultiTuple.<Integer,Integer>from(10, 10);
   private boolean exploded = false;
   private Tuples._2<Integer, Integer> claw = MultiTuple.<Integer,Integer>from(0, 0);
   private SortedSet<Cell> cells = SortedSetSequence.fromSet(new TreeSet<Cell>());
+
   public boolean isExploded() {
     return exploded;
   }
+
   public void moveClaw(Direction direction) {
+    setClawPosition(direction.move(claw));
+  }
+
+  public void setClawPosition(Tuples._2<Integer, Integer> position) {
+    if (isValidPosition(position)) {
+      claw = position;
+    } else {
+      exploded = true;
+    }
+  }
+
+  public boolean isValidPosition(Tuples._2<Integer, Integer> position) {
+    return (int) position._0() >= 0 && (int) position._1() >= 0 && (int) position._0() < (int) size._0() && (int) position._1() < (int) size._1();
+  }
+
+  public void addStones(Color color, int quantity) {
+    getOrCreateCell().addStones(color, quantity);
+  }
+
+  private Cell getOrCreateCell() {
+    Cell currentCell = currentCell();
+    if (currentCell == null) {
+      currentCell = new Cell(MultiTuple.<Integer,Integer>from((int) claw._0(), (int) claw._1()));
+      SortedSetSequence.fromSet(cells).addElement(currentCell);
+    }
+    return currentCell;
+  }
+
+  private Cell currentCell() {
+    return SortedSetSequence.fromSet(cells).findFirst(new IWhereFilter<Cell>() {
+      public boolean accept(Cell it) {
+        return MultiTuple.eq(it.pos, claw);
+      }
+    });
   }
 }

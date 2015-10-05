@@ -2,12 +2,14 @@
 <dependenciesRoot>
   <dependency className="JavaGobstones.models.Board" file="Board.java">
     <classNode dependClassName="JavaGobstones.models.Cell" />
+    <classNode dependClassName="JavaGobstones.models.Color" />
     <classNode dependClassName="JavaGobstones.models.Direction" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.util.SortedSet" />
     <classNode dependClassName="java.util.TreeSet" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.SortedSetSequence" />
   </dependency>
   <dependency className="JavaGobstones.models.Cell" file="Cell.java">
@@ -15,11 +17,13 @@
     <classNode dependClassName="gnu.trove.TObjectIntHashMap" />
     <classNode dependClassName="gnu.trove.decorator.TObjectIntHashMapDecorator" />
     <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.util.Map" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IMapping" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.MapSequence" />
+    <classNode extendsClassName="java.lang.Comparable" />
   </dependency>
   <dependency className="JavaGobstones.models.Color" file="Color.java">
     <classNode extendsClassName="JavaGobstones.models.Order" />

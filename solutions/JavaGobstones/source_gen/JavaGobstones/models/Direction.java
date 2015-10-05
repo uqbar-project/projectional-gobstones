@@ -7,10 +7,10 @@ import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 
 public enum Direction implements Order<Direction> {
   west(MultiTuple.<Integer,Integer>from(-1, 0)) {
-    public Direction prev() {
+    public Direction next() {
       return Direction.south;
     }
-    public Direction next() {
+    public Direction prev() {
       return Direction.north;
     }
 
@@ -44,5 +44,13 @@ public enum Direction implements Order<Direction> {
   };
 
   Direction(Tuples._2<Integer, Integer> vector) {
+    this.vector = vector;
   }
+
+  private final Tuples._2<Integer, Integer> vector;
+
+  public Tuples._2<Integer, Integer> move(Tuples._2<Integer, Integer> position) {
+    return MultiTuple.<Integer,Integer>from((int) vector._0() + (int) position._0(), (int) vector._1() + (int) position._1());
+  }
+
 }

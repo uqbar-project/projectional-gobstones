@@ -10,19 +10,54 @@ import gnu.trove.TObjectIntHashMap;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.IMapping;
 
-public class Cell {
+public class Cell implements Comparable {
   public final Tuples._2<Integer, Integer> pos;
 
   public final Map<Color, Integer> stones = MapSequence.<Color>fromMapAndKeysArray(new TObjectIntHashMapDecorator(new TObjectIntHashMap<Color>()), Color.blue, Color.black, Color.red, Color.green).withValues(0, 0, 0, 0);
 
-  public boolean isEmpty() {
-    return MapSequence.fromMap(stones).all(new IWhereFilter<IMapping<Color, Integer>>() {
-      public boolean accept(IMapping<Color, Integer> color) {
-        return color.value() <= 0;
-      }
-    });
-  }
   public Cell(Tuples._2<Integer, Integer> pos) {
     this.pos = pos;
   }
+
+  public void addStones(Color color, int quantity) {
+    MapSequence.fromMap(stones).putValue(color, MapSequence.fromMap(stones).get(color) + (quantity));
+  }
+
+  public int quantityOf(Color color) {
+    return MapSequence.fromMap(stones).get(color);
+  }
+
+  public boolean isEmpty() {
+    return MapSequence.fromMap(stones).all(new IWhereFilter<IMapping<Color, Integer>>() {
+      public boolean accept(IMapping<Color, Integer> color) {
+        return color.value() == 0;
+      }
+    });
+  }
+
+  public boolean isValid() {
+    return MapSequence.fromMap(stones).all(new IWhereFilter<IMapping<Color, Integer>>() {
+      public boolean accept(IMapping<Color, Integer> it) {
+        return it.value() >= 0;
+      }
+    });
+  }
+
+  public int compareTo(Object object) {
+    Tuples._2<Integer, Integer> other = ((Cell) object).pos;
+    if ((int) pos._1() < (int) other._1()) {
+      return -1;
+    }
+    if ((int) pos._1() > (int) other._1()) {
+      return 1;
+    }
+    if ((int) pos._0() < (int) other._0()) {
+      return -1;
+    }
+    if ((int) pos._0() > (int) other._0()) {
+      return 1;
+    }
+    return 0;
+  }
+
 }
