@@ -12,7 +12,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
-  /*package*/ final ConceptDescriptor myConceptMainProgram = new ConceptDescriptorBuilder("GsInspectorPresenter.structure.MainProgram", MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x5b1857b73e39d0d3L)).super_("MPSGobstones.structure.Program").super_(MetaIdFactory.conceptId(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0xa107f9943a58e1dL)).parents("MPSGobstones.structure.Program").parentIds(MetaIdFactory.conceptId(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0xa107f9943a58e1dL)).create();
+  /*package*/ final ConceptDescriptor myConceptMainProgram = new ConceptDescriptorBuilder("GsInspectorPresenter.structure.MainProgram", MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x5b1857b73e39d0d3L)).super_("MPSGobstones.structure.Program").super_(MetaIdFactory.conceptId(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0xa107f9943a58e1dL)).parents("MPSGobstones.structure.Program").parentIds(MetaIdFactory.conceptId(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0xa107f9943a58e1dL)).alias("program", "").create();
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
