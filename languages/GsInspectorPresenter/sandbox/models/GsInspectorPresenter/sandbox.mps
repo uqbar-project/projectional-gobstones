@@ -8,8 +8,8 @@
   <registry>
     <language id="0cb8c78e-7916-43a8-8d8e-a292ead7a894" name="MPSGobstones">
       <concept id="3076203700975390530" name="MPSGobstones.structure.Este" flags="ng" index="2vOp6P" />
-      <concept id="3076203700975372870" name="MPSGobstones.structure.Azul" flags="ng" index="2vOtiL" />
       <concept id="3076203700975372869" name="MPSGobstones.structure.Rojo" flags="ng" index="2vOtiM" />
+      <concept id="3076203700975372872" name="MPSGobstones.structure.Negro" flags="ng" index="2vOtiZ" />
       <concept id="6044724656164066896" name="MPSGobstones.structure.PutColor" flags="ng" index="OlRHs">
         <child id="6044724656164066967" name="expression" index="OlRIr" />
       </concept>
@@ -48,16 +48,13 @@
         </node>
       </node>
       <node concept="OlRHs" id="5fzbgLBH$Ze" role="19HMXq">
-        <node concept="2vOtiM" id="5fzbgLBH$Zp" role="OlRIr" />
+        <node concept="2vOtiZ" id="5fzbgLBHICn" role="OlRIr" />
       </node>
-      <node concept="OlZw7" id="5fzbgLBH$Z_" role="19HMXq">
-        <node concept="2vOp6P" id="5fzbgLBH$ZM" role="OlZwF" />
+      <node concept="OlZw7" id="5fzbgLBHICz" role="19HMXq">
+        <node concept="2vOp6P" id="5fzbgLBHICK" role="OlZwF" />
       </node>
-      <node concept="OlZw7" id="5fzbgLBHDz3" role="19HMXq">
-        <node concept="2vOp6P" id="5fzbgLBHDzi" role="OlZwF" />
-      </node>
-      <node concept="OlRHs" id="5fzbgLBHDzy" role="19HMXq">
-        <node concept="2vOtiL" id="5fzbgLBHDzN" role="OlRIr" />
+      <node concept="OlRHs" id="5fzbgLBHICY" role="19HMXq">
+        <node concept="2vOtiM" id="5fzbgLBHIDd" role="OlRIr" />
       </node>
     </node>
   </node>
