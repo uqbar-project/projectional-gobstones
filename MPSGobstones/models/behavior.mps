@@ -63,6 +63,9 @@
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
@@ -411,7 +414,7 @@
                         <node concept="1pGfFk" id="3u6SZi0SXuI" role="2ShVmc">
                           <ref role="37wK5l" to="f0dr:~TitledBorder.&lt;init&gt;(java.lang.String)" resolve="TitledBorder" />
                           <node concept="Xl_RD" id="3u6SZi0SXuJ" role="37wK5m">
-                            <property role="Xl_RC" value="Instant Preview3" />
+                            <property role="Xl_RC" value="Tablero Final" />
                           </node>
                         </node>
                       </node>
@@ -442,6 +445,20 @@
       <property role="TrG5h" value="renderTable" />
       <node concept="3Tm1VV" id="5GolVsYeax9" role="1B3o_S" />
       <node concept="3clFbS" id="5GolVsYeaxa" role="3clF47">
+        <node concept="3clFbF" id="5GolVsYerzE" role="3cqZAp">
+          <node concept="2OqwBi" id="5GolVsYer$H" role="3clFbG">
+            <node concept="37vLTw" id="5GolVsYerzC" role="2Oq$k0">
+              <ref role="3cqZAo" node="5GolVsYeaBm" resolve="graphics" />
+            </node>
+            <node concept="liA8E" id="5GolVsYerFB" role="2OqNvi">
+              <ref role="37wK5l" to="1t7x:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+              <node concept="10M0yZ" id="5GolVsYerFQ" role="37wK5m">
+                <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                <ref role="3cqZAo" to="1t7x:~Color.RED" resolve="RED" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="5GolVsYeaBx" role="3cqZAp">
           <node concept="2OqwBi" id="W6XMzE_u3U" role="3clFbG">
             <node concept="37vLTw" id="W6XMzE_u0c" role="2Oq$k0">
@@ -450,16 +467,16 @@
             <node concept="liA8E" id="W6XMzE_ucy" role="2OqNvi">
               <ref role="37wK5l" to="1t7x:~Graphics.fillOval(int,int,int,int):void" resolve="fillOval" />
               <node concept="3cmrfG" id="5GolVsYeaEp" role="37wK5m">
-                <property role="3cmrfH" value="5" />
-              </node>
-              <node concept="3cmrfG" id="5GolVsYeaGp" role="37wK5m">
-                <property role="3cmrfH" value="5" />
-              </node>
-              <node concept="3cmrfG" id="5GolVsYeaIc" role="37wK5m">
-                <property role="3cmrfH" value="5" />
+                <property role="3cmrfH" value="20" />
               </node>
               <node concept="3cmrfG" id="5GolVsYeaJW" role="37wK5m">
-                <property role="3cmrfH" value="5" />
+                <property role="3cmrfH" value="20" />
+              </node>
+              <node concept="3cmrfG" id="5GolVsYer8P" role="37wK5m">
+                <property role="3cmrfH" value="60" />
+              </node>
+              <node concept="3cmrfG" id="5GolVsYer9W" role="37wK5m">
+                <property role="3cmrfH" value="60" />
               </node>
             </node>
           </node>
