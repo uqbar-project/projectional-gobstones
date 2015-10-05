@@ -31,9 +31,6 @@
       <concept id="7026781676426771958" name="MPSGobstones.structure.IntegerLiteral" flags="ng" index="3C81_2">
         <property id="7026781676426771959" name="value" index="3C81_3" />
       </concept>
-      <concept id="7026781676426759073" name="MPSGobstones.structure.ParenthesisExpression" flags="ng" index="3C82Wl">
-        <child id="7026781676426759074" name="contained" index="3C82Wm" />
-      </concept>
       <concept id="7026781676426743199" name="MPSGobstones.structure.UnaryNot" flags="ng" index="3C9Y$F">
         <child id="7026781676426743200" name="expression" index="3C9Y$k" />
       </concept>
@@ -61,8 +58,8 @@
         <node concept="19Ia_W" id="6649bi9CWPz" role="19HTWN">
           <node concept="19I6So" id="6649bi9CWPW" role="19I5Y7" />
           <node concept="3C9Y$F" id="6649bi9D03h" role="19I5YS">
-            <node concept="3C82Wl" id="6649bi9D3Qk" role="3C9Y$k">
-              <node concept="19I6Sr" id="6649bi9D7CJ" role="3C82Wm" />
+            <node concept="3C9Y$F" id="1fe2b8NgKg8" role="3C9Y$k">
+              <node concept="19I6Sr" id="1fe2b8NgKg_" role="3C9Y$k" />
             </node>
           </node>
         </node>

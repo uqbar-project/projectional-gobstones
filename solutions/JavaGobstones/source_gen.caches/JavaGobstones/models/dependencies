@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="JavaGobstones.models.Color" file="Color.java">
+    <classNode extendsClassName="JavaGobstones.models.Order" />
+  </dependency>
+  <dependency className="JavaGobstones.models.Direction" file="Direction.java">
+    <classNode extendsClassName="JavaGobstones.models.Order" />
+  </dependency>
+  <dependency className="JavaGobstones.models.Order" file="Order.java" />
+</dependenciesRoot>
+

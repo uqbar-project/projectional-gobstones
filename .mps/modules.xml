@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/MPSGobstones/MPSGobstones.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/MPSGobstones/sandbox/MPSGobstones.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/JavaGobstones/JavaGobstones.msd" folder="" />
     </projectModules>
   </component>
 </project>
