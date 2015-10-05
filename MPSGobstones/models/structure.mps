@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="506h" ref="r:be8689c9-d9cc-49a8-a7cb-7c50e1c1e018(JavaGobstones.models)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -406,6 +407,30 @@
       <property role="20kJfa" value="ifFalseBlock" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="CgvT_3DP32" resolve="StatementList" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5fzbgLBH5pg">
+    <property role="3GE5qa" value="native" />
+    <property role="TrG5h" value="PutColor" />
+    <property role="34LRSv" value="Poner" />
+    <ref role="1TJDcQ" node="CgvT_3DP31" resolve="Statement" />
+    <node concept="1TJgyj" id="5fzbgLBH5qn" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2EKRJuPogD2" resolve="Color" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5fzbgLBHdkb">
+    <property role="3GE5qa" value="native" />
+    <property role="TrG5h" value="MoveClaw" />
+    <property role="34LRSv" value="Mover" />
+    <ref role="1TJDcQ" node="CgvT_3DP31" resolve="Statement" />
+    <node concept="1TJgyj" id="5fzbgLBHdkB" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2EKRJuPokQD" resolve="Direction" />
     </node>
   </node>
 </model>

@@ -18,27 +18,27 @@ public class CellView extends JComponent {
   protected void paintComponent(Graphics graphics) {
     super.paintComponent(graphics);
     if (cell != null) {
-      if (MapSequence.fromMap(cell.stones).get(Color.red) >= 0) {
+      if (MapSequence.fromMap(cell.stones).get(Color.red) > 0) {
         graphics.setColor(java.awt.Color.red);
-        graphics.fillOval(2, 2, 16, 16);
+        graphics.fillOval(4, 4, 18, 18);
       }
-      if (MapSequence.fromMap(cell.stones).get(Color.black) >= 0) {
+      if (MapSequence.fromMap(cell.stones).get(Color.black) > 0) {
         graphics.setColor(java.awt.Color.black);
-        graphics.fillOval(20, 2, 16, 16);
+        graphics.fillOval(24, 4, 18, 18);
       }
-      if (MapSequence.fromMap(cell.stones).get(Color.blue) >= 0) {
+      if (MapSequence.fromMap(cell.stones).get(Color.blue) > 0) {
         graphics.setColor(java.awt.Color.blue);
-        graphics.fillOval(2, 20, 16, 16);
+        graphics.fillOval(4, 24, 18, 18);
       }
-      if (MapSequence.fromMap(cell.stones).get(Color.green) >= 0) {
+      if (MapSequence.fromMap(cell.stones).get(Color.green) > 0) {
         graphics.setColor(java.awt.Color.green);
-        graphics.fillOval(20, 20, 16, 16);
+        graphics.fillOval(24, 24, 18, 18);
       }
     }
   }
   @Override
   public Dimension getPreferredSize() {
-    return new Dimension(40, 40);
+    return new Dimension(48, 48);
   }
 
   public CellView() {

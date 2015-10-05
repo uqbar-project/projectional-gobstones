@@ -4,7 +4,6 @@
     <classNode dependClassName="GsDesktopUI.view.CellView" />
     <classNode dependClassName="JavaGobstones.models.Board" />
     <classNode dependClassName="JavaGobstones.models.Cell" />
-    <classNode dependClassName="JavaGobstones.models.Color" />
     <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.awt.GridLayout" />
     <classNode dependClassName="javax.swing.JComponent" />
@@ -23,7 +22,7 @@
   </dependency>
   <dependency className="GsDesktopUI.view.PreviewFactory" file="PreviewFactory.java">
     <classNode dependClassName="GsDesktopUI.view.BoardRenderer" />
-    <classNode dependClassName="JavaGobstones.models.Board" />
+    <classNode dependClassName="MPSGobstones.behavior.InterpreterState" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="javax.swing.JComponent" />
     <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />

@@ -5,11 +5,11 @@ package GsDesktopUI.view;
 import javax.swing.JComponent;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
-import JavaGobstones.models.Board;
+import MPSGobstones.behavior.InterpreterState;
 
 public final class PreviewFactory {
 
   public static JComponent createPanel(final SNode root) {
-    return BoardRenderer.render(BehaviorReflection.invokeNonVirtual(Board.class, root, "GsInspectorPresenter.structure.MainProgram", "call_interpret_6564092901427030088", new Object[]{}));
+    return BoardRenderer.render(BehaviorReflection.invokeNonVirtual(InterpreterState.class, root, "MPSGobstones.structure.Program", "call_interpret_6044724656164062582", new Object[]{new InterpreterState()}).board);
   }
 }

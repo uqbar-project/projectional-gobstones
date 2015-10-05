@@ -7,6 +7,15 @@
   <imports />
   <registry>
     <language id="0cb8c78e-7916-43a8-8d8e-a292ead7a894" name="MPSGobstones">
+      <concept id="3076203700975390530" name="MPSGobstones.structure.Este" flags="ng" index="2vOp6P" />
+      <concept id="3076203700975372870" name="MPSGobstones.structure.Azul" flags="ng" index="2vOtiL" />
+      <concept id="3076203700975372869" name="MPSGobstones.structure.Rojo" flags="ng" index="2vOtiM" />
+      <concept id="6044724656164066896" name="MPSGobstones.structure.PutColor" flags="ng" index="OlRHs">
+        <child id="6044724656164066967" name="expression" index="OlRIr" />
+      </concept>
+      <concept id="6044724656164099339" name="MPSGobstones.structure.MoveClaw" flags="ng" index="OlZw7">
+        <child id="6044724656164099367" name="expression" index="OlZwF" />
+      </concept>
       <concept id="725219836248296989" name="MPSGobstones.structure.Program" flags="ng" index="19Hv64">
         <child id="725219836248411837" name="body" index="19HN4$" />
       </concept>
@@ -37,6 +46,18 @@
         <node concept="3C81_2" id="5fzbgLBFrl4" role="19HTWN">
           <property role="3C81_3" value="3" />
         </node>
+      </node>
+      <node concept="OlRHs" id="5fzbgLBH$Ze" role="19HMXq">
+        <node concept="2vOtiM" id="5fzbgLBH$Zp" role="OlRIr" />
+      </node>
+      <node concept="OlZw7" id="5fzbgLBH$Z_" role="19HMXq">
+        <node concept="2vOp6P" id="5fzbgLBH$ZM" role="OlZwF" />
+      </node>
+      <node concept="OlZw7" id="5fzbgLBHDz3" role="19HMXq">
+        <node concept="2vOp6P" id="5fzbgLBHDzi" role="OlZwF" />
+      </node>
+      <node concept="OlRHs" id="5fzbgLBHDzy" role="19HMXq">
+        <node concept="2vOtiL" id="5fzbgLBHDzN" role="OlRIr" />
       </node>
     </node>
   </node>

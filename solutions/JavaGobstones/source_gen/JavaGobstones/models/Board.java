@@ -48,6 +48,14 @@ public class Board {
     return currentCell;
   }
 
+  public Cell cellAt(final int x, final int y) {
+    return SortedSetSequence.fromSet(cells).findFirst(new IWhereFilter<Cell>() {
+      public boolean accept(Cell it) {
+        return (int) it.pos._0() == x && (int) it.pos._1() == y;
+      }
+    });
+  }
+
   private Cell currentCell() {
     return SortedSetSequence.fromSet(cells).findFirst(new IWhereFilter<Cell>() {
       public boolean accept(Cell it) {

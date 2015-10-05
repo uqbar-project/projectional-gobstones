@@ -13,22 +13,22 @@ public class BoardRenderer {
   public static JComponent render(Board board) {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new GridLayout(board.columnCount(), board.rowCount()));
-    jPanel.setBackground(new Color(255, 245, 155));
+    if (!(board.isExploded())) {
+      jPanel.setBackground(new Color(255, 245, 155));
+    } else {
+      jPanel.setBackground(Color.RED);
+    }
+
     for (int row = 0; row < board.rowCount(); row++) {
       for (int column = 0; column < board.columnCount(); column++) {
-        renderCell(jPanel);
+        renderCell(jPanel, board.cellAt(column, row));
       }
     }
 
     return jPanel;
   }
 
-  public static void renderCell(JPanel container) {
-    Cell cell = new Cell(0, 0);
-    cell.addStones(JavaGobstones.models.Color.blue, 1);
-    cell.addStones(JavaGobstones.models.Color.red, 1);
-    cell.addStones(JavaGobstones.models.Color.black, 1);
-    cell.addStones(JavaGobstones.models.Color.green, 1);
+  public static void renderCell(JPanel container, Cell cell) {
     CellView cellView = new CellView(cell);
     container.add(cellView);
   }

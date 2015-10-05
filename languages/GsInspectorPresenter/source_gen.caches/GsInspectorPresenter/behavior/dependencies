@@ -9,7 +9,6 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
   </dependency>
   <dependency className="GsInspectorPresenter.behavior.MainProgram_Behavior" file="MainProgram_Behavior.java">
-    <classNode dependClassName="JavaGobstones.models.Board" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="GsInspectorPresenter.behavior.MainProgram_BehaviorDescriptor" file="MainProgram_BehaviorDescriptor.java">

@@ -1101,5 +1101,31 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="5fzbgLBH5pL">
+    <property role="3GE5qa" value="native" />
+    <ref role="1XX52x" to="xwsw:5fzbgLBH5pg" resolve="PutColor" />
+    <node concept="3EZMnI" id="5fzbgLBH5qe" role="2wV5jI">
+      <node concept="PMmxH" id="5fzbgLBH5ql" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="2iRfu4" id="5fzbgLBH5qh" role="2iSdaV" />
+      <node concept="3F1sOY" id="5fzbgLBH5qs" role="3EZMnx">
+        <ref role="1NtTu8" to="xwsw:5fzbgLBH5qn" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5fzbgLBHdkI">
+    <property role="3GE5qa" value="native" />
+    <ref role="1XX52x" to="xwsw:5fzbgLBHdkb" resolve="MoveClaw" />
+    <node concept="3EZMnI" id="5fzbgLBHdlb" role="2wV5jI">
+      <node concept="PMmxH" id="5fzbgLBHdli" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="2iRfu4" id="5fzbgLBHdle" role="2iSdaV" />
+      <node concept="3F1sOY" id="5fzbgLBHdlr" role="3EZMnx">
+        <ref role="1NtTu8" to="xwsw:5fzbgLBHdkB" />
+      </node>
+    </node>
+  </node>
 </model>
 
