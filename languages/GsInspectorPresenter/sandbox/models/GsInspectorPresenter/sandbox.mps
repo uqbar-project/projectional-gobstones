@@ -12,11 +12,17 @@
       </concept>
       <concept id="725219836248412354" name="MPSGobstones.structure.StatementList" flags="ng" index="19HMXr" />
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
     <language id="329ed8d6-630b-448d-b0ad-d0e71fe3ca82" name="GsInspectorPresenter">
       <concept id="6564092901427106003" name="GsInspectorPresenter.structure.MainProgram" flags="ng" index="1_8ot$" />
     </language>
   </registry>
   <node concept="1_8ot$" id="5GolVsYeBf2">
+    <property role="TrG5h" value="Sandbox" />
     <node concept="19HMXr" id="5GolVsYeCyd" role="19HN4$" />
   </node>
 </model>

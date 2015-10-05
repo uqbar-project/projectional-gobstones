@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="JavaGobstones.models.Board" file="Board.java" />
+  <dependency className="JavaGobstones.models.Cell" file="Cell.java">
+    <classNode dependClassName="JavaGobstones.models.Color" />
+    <classNode dependClassName="gnu.trove.TObjectIntHashMap" />
+    <classNode dependClassName="gnu.trove.decorator.TObjectIntHashMapDecorator" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IMapping" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.MapSequence" />
+  </dependency>
   <dependency className="JavaGobstones.models.Color" file="Color.java">
     <classNode extendsClassName="JavaGobstones.models.Order" />
   </dependency>
