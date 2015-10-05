@@ -4,6 +4,9 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/MPSGobstones/MPSGobstones.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/MPSGobstones/sandbox/MPSGobstones.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/GsInspectorPresenter/GsInspectorPresenter.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/GsInspectorPresenter/sandbox/GsInspectorPresenter.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/GsDesktopUI/GsDesktopUI.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/JavaGobstones/JavaGobstones.msd" folder="" />
     </projectModules>
   </component>
