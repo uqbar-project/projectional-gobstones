@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="JavaGobstones.models.Board" file="Board.java" />
+  <dependency className="JavaGobstones.models.Board" file="Board.java">
+    <classNode dependClassName="JavaGobstones.models.Cell" />
+    <classNode dependClassName="JavaGobstones.models.Direction" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.util.SortedSet" />
+    <classNode dependClassName="java.util.TreeSet" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.SortedSetSequence" />
+  </dependency>
   <dependency className="JavaGobstones.models.Cell" file="Cell.java">
     <classNode dependClassName="JavaGobstones.models.Color" />
     <classNode dependClassName="gnu.trove.TObjectIntHashMap" />
     <classNode dependClassName="gnu.trove.decorator.TObjectIntHashMapDecorator" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IMapping" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.MapSequence" />
@@ -15,6 +25,9 @@
     <classNode extendsClassName="JavaGobstones.models.Order" />
   </dependency>
   <dependency className="JavaGobstones.models.Direction" file="Direction.java">
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
     <classNode extendsClassName="JavaGobstones.models.Order" />
   </dependency>
   <dependency className="JavaGobstones.models.Order" file="Order.java" />
