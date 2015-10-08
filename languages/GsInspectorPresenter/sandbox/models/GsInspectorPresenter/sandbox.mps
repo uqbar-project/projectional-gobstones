@@ -11,6 +11,7 @@
         <child id="7435799069549182534" name="expression" index="mAvQt" />
       </concept>
       <concept id="3076203700975390530" name="MPSGobstones.structure.Este" flags="ng" index="2vOp6P" />
+      <concept id="3076203700975372870" name="MPSGobstones.structure.Azul" flags="ng" index="2vOtiL" />
       <concept id="3076203700975372869" name="MPSGobstones.structure.Rojo" flags="ng" index="2vOtiM" />
       <concept id="6044724656164066896" name="MPSGobstones.structure.PutColor" flags="ng" index="OlRHs" />
       <concept id="6044724656164099339" name="MPSGobstones.structure.MoveClaw" flags="ng" index="OlZw7" />
@@ -25,9 +26,6 @@
         <child id="3687177273263234594" name="body" index="3Z_e8j" />
       </concept>
       <concept id="3687177273263234625" name="MPSGobstones.structure.ProcedureDeclaration" flags="ng" index="3Z_e9K" />
-      <concept id="3687177273263400920" name="MPSGobstones.structure.ProcedureInvocation" flags="ng" index="3ZUlJD">
-        <reference id="3687177273263400946" name="declaration" index="3ZUlJ3" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -46,9 +44,6 @@
         <node concept="OlRHs" id="6sLgXHLE$JR" role="19HMXq">
           <node concept="2vOtiM" id="6sLgXHLE$K4" role="mAvQt" />
         </node>
-        <node concept="OlZw7" id="6sLgXHLEBSC" role="19HMXq">
-          <node concept="2vOp6P" id="6sLgXHLEBSO" role="mAvQt" />
-        </node>
       </node>
     </node>
     <node concept="3Z_e9K" id="6sLgXHLEBS9" role="3Z_dnC">
@@ -56,23 +51,11 @@
       <node concept="19HMXr" id="6sLgXHLEBSc" role="3Z_e8j" />
     </node>
     <node concept="19HMXr" id="3cFv37cLJ$j" role="19HN4$">
-      <node concept="3ZUlJD" id="6sLgXHLDMrB" role="19HMXq">
-        <ref role="3ZUlJ3" node="3cFv37cMF7C" resolve="PonerYMover" />
-      </node>
-      <node concept="3ZUlJD" id="6sLgXHLDMrD" role="19HMXq">
-        <ref role="3ZUlJ3" node="3cFv37cMF7C" resolve="PonerYMover" />
+      <node concept="OlRHs" id="5m4imHTurnN" role="19HMXq">
+        <node concept="2vOtiL" id="5m4imHTuro6" role="mAvQt" />
       </node>
       <node concept="OlZw7" id="6sLgXHLEueI" role="19HMXq">
         <node concept="2vOp6P" id="6sLgXHLEuf0" role="mAvQt" />
-      </node>
-      <node concept="3ZUlJD" id="6sLgXHLDMrG" role="19HMXq">
-        <ref role="3ZUlJ3" node="3cFv37cMF7C" resolve="PonerYMover" />
-      </node>
-      <node concept="3ZUlJD" id="6sLgXHLDMrK" role="19HMXq">
-        <ref role="3ZUlJ3" node="3cFv37cMF7C" resolve="PonerYMover" />
-      </node>
-      <node concept="3ZUlJD" id="6sLgXHLDMrP" role="19HMXq">
-        <ref role="3ZUlJ3" node="3cFv37cMF7C" resolve="PonerYMover" />
       </node>
     </node>
   </node>

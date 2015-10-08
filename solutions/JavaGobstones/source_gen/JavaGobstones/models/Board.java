@@ -11,32 +11,48 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 
 public class Board {
   private Tuples._2<Integer, Integer> size = MultiTuple.<Integer,Integer>from(10, 10);
-  private boolean exploded = false;
+  private Explosion explosion = null;
   private Tuples._2<Integer, Integer> claw = MultiTuple.<Integer,Integer>from(0, 0);
   private SortedSet<Cell> cells = SortedSetSequence.fromSet(new TreeSet<Cell>());
 
   public boolean isExploded() {
-    return exploded;
+    return explosion != null;
   }
 
   public void moveClaw(Direction direction) {
     setClawPosition(direction.move(claw));
   }
 
-  public void setClawPosition(Tuples._2<Integer, Integer> position) {
+  public void setClawPosition(final Tuples._2<Integer, Integer> position) {
+    whenValidPosition(position, new Runnable() {
+      public void run() {
+        claw = position;
+      }
+    });
+  }
+
+  public void whenValidPosition(Tuples._2<Integer, Integer> position, Runnable action) {
     if (isValidPosition(position)) {
-      claw = position;
+      action.run();
     } else {
-      exploded = true;
+      doExplode("El cabezal intent\u00f3 moverse fuera del tablero");
     }
   }
 
+  public void doExplode(String cause) {
+    // The domain can produce only one explosion for a given runtime 
+    if (explosion == null) {
+      explosion = new Explosion(cause);
+    }
+  }
   public boolean isValidPosition(Tuples._2<Integer, Integer> position) {
     return (int) position._0() >= 0 && (int) position._1() >= 0 && (int) position._0() < (int) size._0() && (int) position._1() < (int) size._1();
   }
 
   public void addStones(Color color, int quantity) {
-    getOrCreateCell().addStones(color, quantity);
+    Cell cell = getOrCreateCell();
+    cell.addStones(color, quantity);
+    validateCell(cell);
   }
 
   private Cell getOrCreateCell() {
@@ -54,7 +70,10 @@ public class Board {
         return (int) it.pos._0() == x && (int) it.pos._1() == y;
       }
     });
-    if (cell != null && MultiTuple.eq(cell.pos, claw)) {
+    if ((int) claw._0() == x && (int) claw._1() == y) {
+      if (cell == null) {
+        cell = new Cell(x, y);
+      }
       cell.setSelected(true);
     }
     return cell;
@@ -68,6 +87,13 @@ public class Board {
     });
   }
 
+  private void validateCell(Cell cell) {
+    if (!(cell.isValid())) {
+      doExplode("Se intent\u00f3 realizar una operaci\u00f3n inv\u00e1lida sobre una celda");
+    } else if (cell.isEmpty()) {
+      SortedSetSequence.fromSet(cells).removeElement(cell);
+    }
+  }
   public int rowCount() {
     return (int) size._1();
   }
