@@ -12,6 +12,7 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.IMapping;
 
 public class Cell implements Comparable {
+  private boolean selected = false;
   public final Tuples._2<Integer, Integer> pos;
 
   public final Map<Color, Integer> stones = MapSequence.fromMap(new TObjectIntHashMapDecorator(new TObjectIntHashMap<Color>()));
@@ -65,4 +66,10 @@ public class Cell implements Comparable {
     return 0;
   }
 
+  public boolean isSelected() {
+    return selected;
+  }
+  public void setSelected(boolean selected1) {
+    selected = selected1;
+  }
 }

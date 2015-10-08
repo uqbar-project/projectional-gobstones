@@ -47,6 +47,6 @@ public class CellView extends JComponent {
 
   public CellView(Cell cell1) {
     cell = cell1;
-    this.setBorder(BorderFactory.createLineBorder(java.awt.Color.WHITE));
+    this.setBorder(BorderFactory.createLineBorder(((cell != null && cell.isSelected()) ? java.awt.Color.BLACK : java.awt.Color.WHITE)));
   }
 }

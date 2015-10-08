@@ -49,11 +49,15 @@ public class Board {
   }
 
   public Cell cellAt(final int x, final int y) {
-    return SortedSetSequence.fromSet(cells).findFirst(new IWhereFilter<Cell>() {
+    Cell cell = SortedSetSequence.fromSet(cells).findFirst(new IWhereFilter<Cell>() {
       public boolean accept(Cell it) {
         return (int) it.pos._0() == x && (int) it.pos._1() == y;
       }
     });
+    if (cell != null && MultiTuple.eq(cell.pos, claw)) {
+      cell.setSelected(true);
+    }
+    return cell;
   }
 
   private Cell currentCell() {

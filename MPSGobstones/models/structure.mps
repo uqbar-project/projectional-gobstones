@@ -13,6 +13,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -59,6 +60,12 @@
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="CgvT_3DP32" resolve="StatementList" />
+    </node>
+    <node concept="1TJgyj" id="3cFv37cJUBp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="routines" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3cFv37cJTSx" resolve="RoutineDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="CgvT_3Dpme">
@@ -413,24 +420,83 @@
     <property role="3GE5qa" value="native" />
     <property role="TrG5h" value="PutColor" />
     <property role="34LRSv" value="Poner" />
-    <ref role="1TJDcQ" node="CgvT_3DP31" resolve="Statement" />
-    <node concept="1TJgyj" id="5fzbgLBH5qn" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expression" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2EKRJuPogD2" resolve="Color" />
-    </node>
+    <ref role="1TJDcQ" node="6sLgXHLEbT5" resolve="NativeProcedure" />
   </node>
   <node concept="1TIwiD" id="5fzbgLBHdkb">
     <property role="3GE5qa" value="native" />
     <property role="TrG5h" value="MoveClaw" />
     <property role="34LRSv" value="Mover" />
+    <ref role="1TJDcQ" node="6sLgXHLEbT5" resolve="NativeProcedure" />
+  </node>
+  <node concept="1TIwiD" id="3cFv37cJTSx">
+    <property role="TrG5h" value="RoutineDeclaration" />
+    <property role="3GE5qa" value="routines" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3cFv37cJTSW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arguments" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3cFv37cJTSH" resolve="Argument" />
+    </node>
+    <node concept="1TJgyj" id="3cFv37cJTSy" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="CgvT_3DP32" resolve="StatementList" />
+    </node>
+    <node concept="PrWs8" id="3cFv37cJWwQ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3cFv37cJTSG">
+    <property role="3GE5qa" value="routines" />
+    <property role="TrG5h" value="ArgumentList" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3cFv37cJTSH">
+    <property role="3GE5qa" value="routines" />
+    <property role="TrG5h" value="Argument" />
+    <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
+    <node concept="PrWs8" id="3cFv37cJTSI" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3cFv37cJTT1">
+    <property role="3GE5qa" value="routines" />
+    <property role="TrG5h" value="ProcedureDeclaration" />
+    <property role="34LRSv" value="procedure" />
+    <ref role="1TJDcQ" node="3cFv37cJTSx" resolve="RoutineDeclaration" />
+  </node>
+  <node concept="1TIwiD" id="3cFv37cKyvo">
+    <property role="3GE5qa" value="routines" />
+    <property role="TrG5h" value="ProcedureInvocation" />
     <ref role="1TJDcQ" node="CgvT_3DP31" resolve="Statement" />
-    <node concept="1TJgyj" id="5fzbgLBHdkB" role="1TKVEi">
+    <node concept="1TJgyj" id="3cFv37cKyvM" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="declaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3cFv37cJTT1" resolve="ProcedureDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="3cFv37cKyvu" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parameters" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6sLgXHLEbT5">
+    <property role="3GE5qa" value="native" />
+    <property role="TrG5h" value="NativeProcedure" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="CgvT_3DP31" resolve="Statement" />
+    <node concept="1TJgyj" id="6sLgXHLEbT6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expression" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2EKRJuPokQD" resolve="Direction" />
+      <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
     </node>
   </node>
 </model>

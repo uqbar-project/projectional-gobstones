@@ -15,7 +15,7 @@ public enum Direction implements Order<Direction> {
     }
 
   },
-  north(MultiTuple.<Integer,Integer>from(0, 1)) {
+  north(MultiTuple.<Integer,Integer>from(0, -1)) {
     public Direction prev() {
       return Direction.west;
     }
@@ -33,7 +33,7 @@ public enum Direction implements Order<Direction> {
     }
 
   },
-  south(MultiTuple.<Integer,Integer>from(0, -1)) {
+  south(MultiTuple.<Integer,Integer>from(0, 1)) {
     public Direction prev() {
       return Direction.east;
     }

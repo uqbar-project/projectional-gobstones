@@ -125,6 +125,9 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
@@ -162,10 +165,16 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1178893518978" name="jetbrains.mps.baseLanguage.structure.ThisConstructorInvocation" flags="nn" index="1VxSAg" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -346,25 +355,36 @@
           <node concept="3clFbS" id="5fzbgLBG2bF" role="2LFqv$">
             <node concept="1Dw8fO" id="5fzbgLBG44q" role="3cqZAp">
               <node concept="3clFbS" id="5fzbgLBG44s" role="2LFqv$">
+                <node concept="3cpWs8" id="3cFv37cKTfx" role="3cqZAp">
+                  <node concept="3cpWsn" id="3cFv37cKTfy" role="3cpWs9">
+                    <property role="TrG5h" value="cell" />
+                    <node concept="3uibUv" id="3cFv37cKTft" role="1tU5fm">
+                      <ref role="3uigEE" to="506h:5GolVsYeCLg" resolve="Cell" />
+                    </node>
+                    <node concept="2OqwBi" id="3cFv37cKTfz" role="33vP2m">
+                      <node concept="37vLTw" id="3cFv37cKTf$" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5fzbgLBEVMa" resolve="board" />
+                      </node>
+                      <node concept="liA8E" id="3cFv37cKTf_" role="2OqNvi">
+                        <ref role="37wK5l" to="506h:5fzbgLBHgWC" resolve="cellAt" />
+                        <node concept="37vLTw" id="3cFv37cKTfA" role="37wK5m">
+                          <ref role="3cqZAo" node="5fzbgLBG44t" resolve="column" />
+                        </node>
+                        <node concept="37vLTw" id="3cFv37cKTfB" role="37wK5m">
+                          <ref role="3cqZAo" node="5fzbgLBG2bG" resolve="row" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="5fzbgLBG5ge" role="3cqZAp">
                   <node concept="1rXfSq" id="5fzbgLBG6SB" role="3clFbG">
                     <ref role="37wK5l" node="5fzbgLBFSiB" resolve="renderCell" />
                     <node concept="37vLTw" id="5fzbgLBG6Ti" role="37wK5m">
                       <ref role="3cqZAo" node="5fzbgLBEKai" resolve="jPanel" />
                     </node>
-                    <node concept="2OqwBi" id="5fzbgLBHoda" role="37wK5m">
-                      <node concept="37vLTw" id="5fzbgLBHocc" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5fzbgLBEVMa" resolve="board" />
-                      </node>
-                      <node concept="liA8E" id="5fzbgLBHonn" role="2OqNvi">
-                        <ref role="37wK5l" to="506h:5fzbgLBHgWC" resolve="cellAt" />
-                        <node concept="37vLTw" id="5fzbgLBHooJ" role="37wK5m">
-                          <ref role="3cqZAo" node="5fzbgLBG44t" resolve="column" />
-                        </node>
-                        <node concept="37vLTw" id="5fzbgLBHorq" role="37wK5m">
-                          <ref role="3cqZAo" node="5fzbgLBG2bG" resolve="row" />
-                        </node>
-                      </node>
+                    <node concept="37vLTw" id="3cFv37cKTfC" role="37wK5m">
+                      <ref role="3cqZAo" node="3cFv37cKTfy" resolve="cell" />
                     </node>
                   </node>
                 </node>
@@ -847,9 +867,33 @@
               <node concept="2YIFZM" id="5fzbgLBFVOT" role="37wK5m">
                 <ref role="37wK5l" to="dbrf:~BorderFactory.createLineBorder(java.awt.Color):javax.swing.border.Border" resolve="createLineBorder" />
                 <ref role="1Pybhc" to="dbrf:~BorderFactory" resolve="BorderFactory" />
-                <node concept="10M0yZ" id="5fzbgLBFVWm" role="37wK5m">
-                  <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                  <ref role="3cqZAo" to="1t7x:~Color.WHITE" resolve="WHITE" />
+                <node concept="3K4zz7" id="3cFv37cL5kN" role="37wK5m">
+                  <node concept="1eOMI4" id="3cFv37cMkT4" role="3K4Cdx">
+                    <node concept="1Wc70l" id="3cFv37cMlrm" role="1eOMHV">
+                      <node concept="3y3z36" id="3cFv37cMldr" role="3uHU7B">
+                        <node concept="37vLTw" id="3cFv37cMl38" role="3uHU7B">
+                          <ref role="3cqZAo" node="5fzbgLBFXtK" resolve="cell" />
+                        </node>
+                        <node concept="10Nm6u" id="3cFv37cMlkh" role="3uHU7w" />
+                      </node>
+                      <node concept="2OqwBi" id="3cFv37cL5Uk" role="3uHU7w">
+                        <node concept="liA8E" id="3cFv37cLe_G" role="2OqNvi">
+                          <ref role="37wK5l" to="506h:3cFv37cLPcU" resolve="isSelected" />
+                        </node>
+                        <node concept="37vLTw" id="3cFv37cMlyx" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5fzbgLBFXtK" resolve="cell" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="10M0yZ" id="3cFv37cL6yj" role="3K4E3e">
+                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="1t7x:~Color.BLACK" resolve="BLACK" />
+                  </node>
+                  <node concept="10M0yZ" id="3cFv37cL6CH" role="3K4GZi">
+                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="1t7x:~Color.WHITE" resolve="WHITE" />
+                  </node>
                 </node>
               </node>
             </node>

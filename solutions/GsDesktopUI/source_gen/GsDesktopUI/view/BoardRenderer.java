@@ -21,7 +21,8 @@ public class BoardRenderer {
 
     for (int row = 0; row < board.rowCount(); row++) {
       for (int column = 0; column < board.columnCount(); column++) {
-        renderCell(jPanel, board.cellAt(column, row));
+        Cell cell = board.cellAt(column, row);
+        renderCell(jPanel, cell);
       }
     }
 
