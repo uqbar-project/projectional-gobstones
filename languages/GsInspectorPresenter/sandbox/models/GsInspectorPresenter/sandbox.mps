@@ -11,6 +11,7 @@
         <child id="7435799069549182534" name="expression" index="mAvQt" />
       </concept>
       <concept id="3076203700975390530" name="MPSGobstones.structure.Este" flags="ng" index="2vOp6P" />
+      <concept id="3076203700975390529" name="MPSGobstones.structure.Sur" flags="ng" index="2vOp6Q" />
       <concept id="3076203700975372871" name="MPSGobstones.structure.Verde" flags="ng" index="2vOtiK" />
       <concept id="3076203700975372870" name="MPSGobstones.structure.Azul" flags="ng" index="2vOtiL" />
       <concept id="3076203700975372869" name="MPSGobstones.structure.Rojo" flags="ng" index="2vOtiM" />
@@ -19,6 +20,7 @@
         <child id="6162130916098300501" name="parameters" index="GYpcY" />
       </concept>
       <concept id="6044724656164066896" name="MPSGobstones.structure.PutColor" flags="ng" index="OlRHs" />
+      <concept id="6044724656164099339" name="MPSGobstones.structure.MoveClaw" flags="ng" index="OlZw7" />
       <concept id="725219836248296989" name="MPSGobstones.structure.Program" flags="ng" index="19Hv64">
         <child id="725219836248411837" name="body" index="19HN4$" />
         <child id="3687177273263237593" name="routines" index="3Z_dnC" />
@@ -67,9 +69,19 @@
       <node concept="OlRHs" id="5m4imHTurnN" role="19HMXq">
         <node concept="2vOtiL" id="5m4imHTuro6" role="mAvQt" />
       </node>
+      <node concept="OlZw7" id="5m4imHTwSsn" role="19HMXq">
+        <node concept="2vOp6Q" id="5m4imHTwSsB" role="mAvQt" />
+      </node>
+      <node concept="OlZw7" id="5m4imHTx1YM" role="19HMXq">
+        <node concept="2vOp6Q" id="5m4imHTx1Z3" role="mAvQt" />
+      </node>
+      <node concept="3ZUlJD" id="5m4imHTwVjn" role="19HMXq">
+        <ref role="GYpcP" node="3cFv37cMF7C" resolve="PonerYMover" />
+      </node>
       <node concept="3ZUlJD" id="5m4imHTvFMD" role="19HMXq">
         <ref role="GYpcP" node="6sLgXHLEBS9" resolve="Sarlonga" />
         <node concept="2vOtiL" id="5m4imHTvFMK" role="GYpcY" />
+        <node concept="2vOtiM" id="5m4imHTwRSK" role="GYpcY" />
         <node concept="2vOtiK" id="5m4imHTvIKF" role="GYpcY" />
         <node concept="2vOtiM" id="5m4imHTvIKy" role="GYpcY" />
         <node concept="2vOp6P" id="5m4imHTvFS2" role="GYpcY" />

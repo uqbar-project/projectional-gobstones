@@ -96,6 +96,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -2022,9 +2023,7 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="cause" />
       <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="5m4imHTuIVS" role="1tU5fm">
-        <ref role="3uigEE" to="e2lb:~String" resolve="String" />
-      </node>
+      <node concept="17QB3L" id="5m4imHTx3TI" role="1tU5fm" />
       <node concept="3Tm1VV" id="5m4imHTuIWd" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="5m4imHTuIWO" role="jymVt" />
@@ -2046,9 +2045,7 @@
       </node>
       <node concept="37vLTG" id="5m4imHTuIX9" role="3clF46">
         <property role="TrG5h" value="cause1" />
-        <node concept="3uibUv" id="5m4imHTuIX8" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
-        </node>
+        <node concept="17QB3L" id="5m4imHTx3UC" role="1tU5fm" />
       </node>
     </node>
   </node>

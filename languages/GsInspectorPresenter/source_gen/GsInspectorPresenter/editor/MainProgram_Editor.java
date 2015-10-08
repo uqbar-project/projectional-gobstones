@@ -38,7 +38,9 @@ public class MainProgram_Editor extends DefaultNodeEditor {
     editorCell.setAction(CellActionType.COMMENT, new CellAction_Comment(node));
     editorCell.addEditorCell(this.createCollection_5qy9kg_a0(editorContext, node));
     editorCell.addEditorCell(this.createIndentCell_5qy9kg_b0(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_5qy9kg_c0(editorContext, node));
+    if (renderingCondition_5qy9kg_a2a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_5qy9kg_c0(editorContext, node));
+    }
     return editorCell;
   }
   private EditorCell createCollection_5qy9kg_a0(EditorContext editorContext, SNode node) {
@@ -140,12 +142,15 @@ public class MainProgram_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createJComponent_5qy9kg_a2a(editorContext, node));
     return editorCell;
   }
+  private static boolean renderingCondition_5qy9kg_a2a(SNode node, EditorContext editorContext) {
+    return !(editorContext.getSelectedCell().isErrorState());
+  }
   private EditorCell createJComponent_5qy9kg_a2a(EditorContext editorContext, SNode node) {
     EditorCell editorCell = EditorCell_Component.createComponentCell(editorContext, node, MainProgram_Editor._QueryFunction_JComponent_5qy9kg_a0c0(node, editorContext), "_5qy9kg_a2a");
     editorCell.setCellId("JComponent_5qy9kg_a2a");
     return editorCell;
   }
   private static JComponent _QueryFunction_JComponent_5qy9kg_a0c0(final SNode node, final EditorContext editorContext) {
-    return PreviewFactory.createPanel(node);
+    return PreviewFactory.createPanel(node, false);
   }
 }

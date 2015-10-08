@@ -10,9 +10,14 @@ import java.awt.Color;
 import JavaGobstones.models.Cell;
 
 public class BoardRenderer {
-  public static JComponent render(Board board) {
+  public static JComponent render(Board board, boolean editorInErrorState) {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new GridLayout(board.columnCount(), board.rowCount()));
+
+    if (editorInErrorState) {
+      return jPanel;
+    }
+
     if (!(board.isExploded())) {
       jPanel.setBackground(new Color(255, 245, 155));
     } else {
