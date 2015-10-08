@@ -11,10 +11,14 @@
         <child id="7435799069549182534" name="expression" index="mAvQt" />
       </concept>
       <concept id="3076203700975390530" name="MPSGobstones.structure.Este" flags="ng" index="2vOp6P" />
+      <concept id="3076203700975372871" name="MPSGobstones.structure.Verde" flags="ng" index="2vOtiK" />
       <concept id="3076203700975372870" name="MPSGobstones.structure.Azul" flags="ng" index="2vOtiL" />
       <concept id="3076203700975372869" name="MPSGobstones.structure.Rojo" flags="ng" index="2vOtiM" />
+      <concept id="6162130916098300500" name="MPSGobstones.structure.RoutineInvocation" flags="ng" index="GYpcZ">
+        <reference id="6162130916098300510" name="declaration" index="GYpcP" />
+        <child id="6162130916098300501" name="parameters" index="GYpcY" />
+      </concept>
       <concept id="6044724656164066896" name="MPSGobstones.structure.PutColor" flags="ng" index="OlRHs" />
-      <concept id="6044724656164099339" name="MPSGobstones.structure.MoveClaw" flags="ng" index="OlZw7" />
       <concept id="725219836248296989" name="MPSGobstones.structure.Program" flags="ng" index="19Hv64">
         <child id="725219836248411837" name="body" index="19HN4$" />
         <child id="3687177273263237593" name="routines" index="3Z_dnC" />
@@ -23,9 +27,12 @@
         <child id="725219836248412355" name="statement" index="19HMXq" />
       </concept>
       <concept id="3687177273263234593" name="MPSGobstones.structure.RoutineDeclaration" flags="ng" index="3Z_e8g">
+        <child id="3687177273263234620" name="arguments" index="3Z_e8d" />
         <child id="3687177273263234594" name="body" index="3Z_e8j" />
       </concept>
+      <concept id="3687177273263234605" name="MPSGobstones.structure.Argument" flags="ng" index="3Z_e8s" />
       <concept id="3687177273263234625" name="MPSGobstones.structure.ProcedureDeclaration" flags="ng" index="3Z_e9K" />
+      <concept id="3687177273263400920" name="MPSGobstones.structure.ProcedureInvocation" flags="ng" index="3ZUlJD" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -48,14 +55,24 @@
     </node>
     <node concept="3Z_e9K" id="6sLgXHLEBS9" role="3Z_dnC">
       <property role="TrG5h" value="Sarlonga" />
+      <node concept="3Z_e8s" id="5m4imHTvt3M" role="3Z_e8d">
+        <property role="TrG5h" value="a" />
+      </node>
+      <node concept="3Z_e8s" id="5m4imHTvt3O" role="3Z_e8d">
+        <property role="TrG5h" value="b" />
+      </node>
       <node concept="19HMXr" id="6sLgXHLEBSc" role="3Z_e8j" />
     </node>
     <node concept="19HMXr" id="3cFv37cLJ$j" role="19HN4$">
       <node concept="OlRHs" id="5m4imHTurnN" role="19HMXq">
         <node concept="2vOtiL" id="5m4imHTuro6" role="mAvQt" />
       </node>
-      <node concept="OlZw7" id="6sLgXHLEueI" role="19HMXq">
-        <node concept="2vOp6P" id="6sLgXHLEuf0" role="mAvQt" />
+      <node concept="3ZUlJD" id="5m4imHTvFMD" role="19HMXq">
+        <ref role="GYpcP" node="6sLgXHLEBS9" resolve="Sarlonga" />
+        <node concept="2vOtiL" id="5m4imHTvFMK" role="GYpcY" />
+        <node concept="2vOtiK" id="5m4imHTvIKF" role="GYpcY" />
+        <node concept="2vOtiM" id="5m4imHTvIKy" role="GYpcY" />
+        <node concept="2vOp6P" id="5m4imHTvFS2" role="GYpcY" />
       </node>
     </node>
   </node>
