@@ -15,9 +15,9 @@
       <concept id="3076203700975372871" name="MPSGobstones.structure.Verde" flags="ng" index="2vOtiK" />
       <concept id="3076203700975372870" name="MPSGobstones.structure.Azul" flags="ng" index="2vOtiL" />
       <concept id="3076203700975372869" name="MPSGobstones.structure.Rojo" flags="ng" index="2vOtiM" />
+      <concept id="3076203700975372872" name="MPSGobstones.structure.Negro" flags="ng" index="2vOtiZ" />
       <concept id="6162130916098300500" name="MPSGobstones.structure.RoutineInvocation" flags="ng" index="GYpcZ">
         <reference id="6162130916098300510" name="declaration" index="GYpcP" />
-        <child id="6162130916098300501" name="parameters" index="GYpcY" />
       </concept>
       <concept id="6044724656164066896" name="MPSGobstones.structure.PutColor" flags="ng" index="OlRHs" />
       <concept id="6044724656164099339" name="MPSGobstones.structure.MoveClaw" flags="ng" index="OlZw7" />
@@ -47,44 +47,67 @@
   </registry>
   <node concept="1_8ot$" id="3cFv37cLJ$i">
     <property role="TrG5h" value="Sandbox" />
-    <node concept="3Z_e9K" id="3cFv37cMF7C" role="3Z_dnC">
-      <property role="TrG5h" value="PonerYMover" />
-      <node concept="19HMXr" id="3cFv37cMF7F" role="3Z_e8j">
-        <node concept="OlRHs" id="6sLgXHLE$JR" role="19HMXq">
-          <node concept="2vOtiM" id="6sLgXHLE$K4" role="mAvQt" />
+    <node concept="19HMXr" id="3cFv37cLJ$j" role="19HN4$">
+      <node concept="OlZw7" id="5fXpdOn6Tcr" role="19HMXq">
+        <node concept="2vOp6P" id="5fXpdOn6Tcs" role="mAvQt" />
+      </node>
+      <node concept="3ZUlJD" id="5fXpdOn6Thb" role="19HMXq">
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
+      </node>
+      <node concept="3ZUlJD" id="5fXpdOn6Thg" role="19HMXq">
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
+      </node>
+      <node concept="3ZUlJD" id="5fXpdOn6Thl" role="19HMXq">
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
+      </node>
+      <node concept="3ZUlJD" id="5fXpdOn6Thr" role="19HMXq">
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
+      </node>
+      <node concept="3ZUlJD" id="5fXpdOn6Thy" role="19HMXq">
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
+      </node>
+      <node concept="3ZUlJD" id="5fXpdOn6ThE" role="19HMXq">
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
+      </node>
+      <node concept="3ZUlJD" id="5fXpdOn6ThN" role="19HMXq">
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
+      </node>
+      <node concept="3ZUlJD" id="5fXpdOn6ThX" role="19HMXq">
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
+      </node>
+      <node concept="3ZUlJD" id="5fXpdOn6Ti8" role="19HMXq">
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
+      </node>
+    </node>
+    <node concept="3Z_e9K" id="4eZQ$GKRaRH" role="3Z_dnC">
+      <property role="TrG5h" value="PonerMulticolor" />
+      <node concept="3Z_e8s" id="5fXpdOn6IsF" role="3Z_e8d">
+        <property role="TrG5h" value="direccion" />
+      </node>
+      <node concept="19HMXr" id="4eZQ$GKRaRI" role="3Z_e8j">
+        <node concept="OlRHs" id="4eZQ$GKRaRL" role="19HMXq">
+          <node concept="2vOtiM" id="5fXpdOn6ImR" role="mAvQt" />
+        </node>
+        <node concept="OlRHs" id="5fXpdOn6QJZ" role="19HMXq">
+          <node concept="2vOtiL" id="5fXpdOn6QK9" role="mAvQt" />
+        </node>
+        <node concept="OlRHs" id="5fXpdOn6Tfl" role="19HMXq">
+          <node concept="2vOtiK" id="5fXpdOn6TfH" role="mAvQt" />
+        </node>
+        <node concept="OlRHs" id="5fXpdOn6Tfw" role="19HMXq">
+          <node concept="2vOtiZ" id="5fXpdOn6TfN" role="mAvQt" />
         </node>
       </node>
     </node>
-    <node concept="3Z_e9K" id="6sLgXHLEBS9" role="3Z_dnC">
-      <property role="TrG5h" value="Sarlonga" />
-      <node concept="3Z_e8s" id="5m4imHTvt3M" role="3Z_e8d">
-        <property role="TrG5h" value="a" />
-      </node>
-      <node concept="3Z_e8s" id="5m4imHTvt3O" role="3Z_e8d">
-        <property role="TrG5h" value="b" />
-      </node>
-      <node concept="19HMXr" id="6sLgXHLEBSc" role="3Z_e8j" />
-    </node>
-    <node concept="19HMXr" id="3cFv37cLJ$j" role="19HN4$">
-      <node concept="OlRHs" id="5m4imHTurnN" role="19HMXq">
-        <node concept="2vOtiL" id="5m4imHTuro6" role="mAvQt" />
-      </node>
-      <node concept="OlZw7" id="5m4imHTwSsn" role="19HMXq">
-        <node concept="2vOp6Q" id="5m4imHTwSsB" role="mAvQt" />
-      </node>
-      <node concept="OlZw7" id="5m4imHTx1YM" role="19HMXq">
-        <node concept="2vOp6Q" id="5m4imHTx1Z3" role="mAvQt" />
-      </node>
-      <node concept="3ZUlJD" id="5m4imHTwVjn" role="19HMXq">
-        <ref role="GYpcP" node="3cFv37cMF7C" resolve="PonerYMover" />
-      </node>
-      <node concept="3ZUlJD" id="5m4imHTvFMD" role="19HMXq">
-        <ref role="GYpcP" node="6sLgXHLEBS9" resolve="Sarlonga" />
-        <node concept="2vOtiL" id="5m4imHTvFMK" role="GYpcY" />
-        <node concept="2vOtiM" id="5m4imHTwRSK" role="GYpcY" />
-        <node concept="2vOtiK" id="5m4imHTvIKF" role="GYpcY" />
-        <node concept="2vOtiM" id="5m4imHTvIKy" role="GYpcY" />
-        <node concept="2vOp6P" id="5m4imHTvFS2" role="GYpcY" />
+    <node concept="3Z_e9K" id="5fXpdOn6Tg$" role="3Z_dnC">
+      <property role="TrG5h" value="PonerMultiColorYMoverSur" />
+      <node concept="19HMXr" id="5fXpdOn6Tg_" role="3Z_e8j">
+        <node concept="3ZUlJD" id="5fXpdOn6TgN" role="19HMXq">
+          <ref role="GYpcP" node="4eZQ$GKRaRH" resolve="PonerMulticolor" />
+        </node>
+        <node concept="OlZw7" id="5fXpdOn6TgS" role="19HMXq">
+          <node concept="2vOp6Q" id="5fXpdOn6TgZ" role="mAvQt" />
+        </node>
       </node>
     </node>
   </node>

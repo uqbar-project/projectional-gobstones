@@ -66,7 +66,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="routines" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3cFv37cJTSx" resolve="RoutineDeclaration" />
+      <ref role="20lvS9" node="3cFv37cJTT1" resolve="ProcedureDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="CgvT_3Dpme">
@@ -94,21 +94,6 @@
     </node>
     <node concept="PrWs8" id="CgvT_3DP3h" role="PzmwI">
       <ref role="PrY4T" to="tpck:2UAn0GTuXmY" resolve="ScopeFacade" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="CgvT_3DY1Y">
-    <property role="TrG5h" value="VariableDeclaration" />
-    <property role="34LRSv" value=":=" />
-    <property role="R4oN_" value="Declaración de variable" />
-    <ref role="1TJDcQ" node="CgvT_3DP31" resolve="Statement" />
-    <node concept="PrWs8" id="CgvT_3DY1Z" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="CgvT_3DY2E" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="initializer" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="CgvT_3DZ60">
@@ -225,7 +210,7 @@
     <property role="TrG5h" value="IntegerLiteral" />
     <property role="34LRSv" value="int" />
     <property role="R4oN_" value="Número Entero" />
-    <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
+    <ref role="1TJDcQ" node="4eZQ$GKP1lu" resolve="Value" />
     <node concept="1TJgyi" id="6649bi9D3RR" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -307,7 +292,7 @@
     <property role="TrG5h" value="Color" />
     <property role="3GE5qa" value="native.color" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
+    <ref role="1TJDcQ" node="4eZQ$GKP1lu" resolve="Value" />
   </node>
   <node concept="1TIwiD" id="2EKRJuPogD5">
     <property role="3GE5qa" value="native.color" />
@@ -348,7 +333,7 @@
     <property role="3GE5qa" value="native.direction" />
     <property role="TrG5h" value="Direction" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
+    <ref role="1TJDcQ" node="4eZQ$GKP1lu" resolve="Value" />
   </node>
   <node concept="1TIwiD" id="2EKRJuPokQE">
     <property role="3GE5qa" value="native.direction" />
@@ -450,6 +435,9 @@
     <node concept="PrWs8" id="3cFv37cJWwQ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="4eZQ$GKP1ly" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3cFv37cJTSG">
     <property role="3GE5qa" value="routines" />
@@ -506,6 +494,36 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4eZQ$GKP1lt">
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="VariableReference" />
+    <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
+    <node concept="1TJgyj" id="4eZQ$GKQqBv" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="variable" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4eZQ$GKP1lA" resolve="VariableDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4eZQ$GKP1lu">
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="Value" />
+    <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="4eZQ$GKP1lA">
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="VariableDeclaration" />
+    <ref role="1TJDcQ" node="CgvT_3DP31" resolve="Statement" />
+    <node concept="PrWs8" id="4eZQ$GKPKEr" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4eZQ$GKQHtB">
+    <property role="3GE5qa" value="native" />
+    <property role="TrG5h" value="RemoveColor" />
+    <property role="34LRSv" value="Sacar" />
+    <ref role="1TJDcQ" node="6sLgXHLEbT5" resolve="NativeProcedure" />
   </node>
 </model>
 
