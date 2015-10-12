@@ -2,16 +2,16 @@
 <model ref="r:be8689c9-d9cc-49a8-a7cb-7c50e1c1e018(JavaGobstones.models)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="73736c50-f124-433b-b789-2828a15a0adc" name="jetbrains.mps.baseLanguage.collections.trove" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
   </languages>
   <imports>
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="y4jj" ref="r:9e8bdb89-2777-4a48-887c-0edd1d0b1863(jetbrains.mps.baseLanguage.collections.trove.containers)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -534,7 +534,7 @@
     <node concept="3Tm1VV" id="5oliFlAneJ$" role="1B3o_S" />
     <node concept="QsSxf" id="5oliFlAneJP" role="Qtgdg">
       <property role="TrG5h" value="blue" />
-      <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       <node concept="3clFb_" id="5oliFlAnfQw" role="2HKRsH">
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="prev" />
@@ -576,7 +576,7 @@
     </node>
     <node concept="QsSxf" id="5oliFlAneK5" role="Qtgdg">
       <property role="TrG5h" value="black" />
-      <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       <node concept="3clFb_" id="5oliFlAnfU6" role="2HKRsH">
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="prev" />
@@ -618,7 +618,7 @@
     </node>
     <node concept="QsSxf" id="5oliFlAneL4" role="Qtgdg">
       <property role="TrG5h" value="red" />
-      <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       <node concept="3clFb_" id="5oliFlAnfYg" role="2HKRsH">
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="prev" />
@@ -660,7 +660,7 @@
     </node>
     <node concept="QsSxf" id="5oliFlAneKx" role="Qtgdg">
       <property role="TrG5h" value="green" />
-      <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       <node concept="3clFb_" id="5oliFlAng2N" role="2HKRsH">
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="prev" />
@@ -912,7 +912,7 @@
                   <ref role="3cqZAo" node="5m4imHTuZI2" resolve="action" />
                 </node>
                 <node concept="liA8E" id="5m4imHTv6Gq" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~Runnable.run():void" resolve="run" />
+                  <ref role="37wK5l" to="wyt6:~Runnable.run():void" resolve="run" />
                 </node>
               </node>
             </node>
@@ -949,7 +949,7 @@
       <node concept="37vLTG" id="5m4imHTuZI2" role="3clF46">
         <property role="TrG5h" value="action" />
         <node concept="3uibUv" id="5m4imHTuZI1" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~Runnable" resolve="Runnable" />
+          <ref role="3uigEE" to="wyt6:~Runnable" resolve="Runnable" />
         </node>
       </node>
     </node>
@@ -997,7 +997,7 @@
       <node concept="37vLTG" id="5m4imHTuMVJ" role="3clF46">
         <property role="TrG5h" value="cause" />
         <node concept="3uibUv" id="5m4imHTuMVI" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
         </node>
       </node>
     </node>
@@ -1677,7 +1677,7 @@
     <node concept="2tJIrI" id="3cFv37cKWZC" role="jymVt" />
     <node concept="3Tm1VV" id="5GolVsYeCLh" role="1B3o_S" />
     <node concept="3uibUv" id="5GolVsYfv0l" role="EKbjA">
-      <ref role="3uigEE" to="e2lb:~Comparable" resolve="Comparable" />
+      <ref role="3uigEE" to="wyt6:~Comparable" resolve="Comparable" />
     </node>
     <node concept="3clFb_" id="5GolVsYfAQX" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -1838,7 +1838,7 @@
       <node concept="37vLTG" id="5GolVsYfv8c" role="3clF46">
         <property role="TrG5h" value="object" />
         <node concept="3uibUv" id="5GolVsYfv8e" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>
       <node concept="3clFbS" id="5GolVsYfv8f" role="3clF47">
