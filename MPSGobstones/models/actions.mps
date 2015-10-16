@@ -12,7 +12,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpcz" ref="r:00000000-0000-4000-0000-011c895902bf(jetbrains.mps.baseLanguage.actions)" />
     <import index="xwsw" ref="r:10437d2f-e086-4c97-a1e5-30a2d72e804a(MPSGobstones.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -152,12 +152,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="3FK_9_" id="4_PTB0_g5So">
-    <property role="3GE5qa" value="expressions.integer" />
-    <node concept="3FOIzC" id="4_PTB0_g5Sp" role="3FOPby">
-      <ref role="3FOWKa" to="xwsw:6649bi9D3RQ" resolve="IntegerLiteral" />
-    </node>
-  </node>
   <node concept="3FK_9_" id="4_PTB0_g6Vd">
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="constants" />
@@ -196,8 +190,8 @@
                       </node>
                       <node concept="tyxLq" id="h8uBHg3" role="2OqNvi">
                         <node concept="2YIFZM" id="h8uBHg4" role="tz02z">
-                          <ref role="37wK5l" to="e2lb:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-                          <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+                          <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                          <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                           <node concept="ub8z3" id="h8uBHg5" role="37wK5m" />
                         </node>
                       </node>
@@ -208,7 +202,7 @@
                   <node concept="3cpWsn" id="hHOpc3P" role="TDEfY">
                     <property role="TrG5h" value="e" />
                     <node concept="3uibUv" id="hHOpd0c" role="1tU5fm">
-                      <ref role="3uigEE" to="e2lb:~NumberFormatException" resolve="NumberFormatException" />
+                      <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="hHOpc3R" role="TDEfX">

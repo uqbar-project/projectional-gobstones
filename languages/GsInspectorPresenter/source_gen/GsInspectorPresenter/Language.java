@@ -50,8 +50,6 @@ public class Language extends LanguageRuntime {
     if (aspectClass == StructureAspectDescriptor.class) {
       return (T) new GsInspectorPresenter.structure.StructureAspectDescriptor();
     }
-
-
     return super.createAspect(aspectClass);
   }
 }

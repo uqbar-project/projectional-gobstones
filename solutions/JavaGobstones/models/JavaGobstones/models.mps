@@ -2,16 +2,13 @@
 <model ref="r:be8689c9-d9cc-49a8-a7cb-7c50e1c1e018(JavaGobstones.models)">
   <persistence version="9" />
   <languages>
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="73736c50-f124-433b-b789-2828a15a0adc" name="jetbrains.mps.baseLanguage.collections.trove" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="y4jj" ref="r:9e8bdb89-2777-4a48-887c-0edd1d0b1863(jetbrains.mps.baseLanguage.collections.trove.containers)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -222,9 +219,7 @@
       </concept>
       <concept id="1197686869805" name="jetbrains.mps.baseLanguage.collections.structure.HashMapCreator" flags="nn" index="3rGOSV">
         <child id="1197687026896" name="keyType" index="3rHrn6" />
-      </concept>
-      <concept id="1576845966386891367" name="jetbrains.mps.baseLanguage.collections.structure.CustomMapCreator" flags="nn" index="1u7pXE">
-        <reference id="1576845966386891370" name="containerDeclaration" index="1u7pXB" />
+        <child id="1197687035757" name="valueType" index="3rHtpV" />
       </concept>
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1240824834947" name="jetbrains.mps.baseLanguage.collections.structure.ValueAccessOperation" flags="nn" index="3AV6Ez" />
@@ -996,9 +991,7 @@
       <node concept="3cqZAl" id="5m4imHTuM7V" role="3clF45" />
       <node concept="37vLTG" id="5m4imHTuMVJ" role="3clF46">
         <property role="TrG5h" value="cause" />
-        <node concept="3uibUv" id="5m4imHTuMVI" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <node concept="17QB3L" id="4TVA8n3OZUl" role="1tU5fm" />
       </node>
     </node>
     <node concept="3clFb_" id="5GolVsYfpxc" role="jymVt">
@@ -1569,11 +1562,11 @@
         </node>
       </node>
       <node concept="2ShNRf" id="5GolVsYeFih" role="33vP2m">
-        <node concept="1u7pXE" id="5GolVsYeFib" role="2ShVmc">
-          <ref role="1u7pXB" to="y4jj:6A07P3f6_5J" resolve="ObjectIntHashMap" />
-          <node concept="3uibUv" id="5GolVsYeFic" role="3rHrn6">
+        <node concept="3rGOSV" id="19Z0sgDKOqk" role="2ShVmc">
+          <node concept="3uibUv" id="19Z0sgDKOqm" role="3rHrn6">
             <ref role="3uigEE" node="5oliFlAneJz" resolve="Color" />
           </node>
+          <node concept="10Oyi0" id="19Z0sgDKOUa" role="3rHtpV" />
         </node>
       </node>
     </node>

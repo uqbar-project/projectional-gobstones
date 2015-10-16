@@ -51,36 +51,54 @@
       <node concept="OlZw7" id="5fXpdOn6Tcr" role="19HMXq">
         <node concept="2vOp6P" id="5fXpdOn6Tcs" role="mAvQt" />
       </node>
-      <node concept="3ZUlJD" id="5fXpdOn6Thb" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
-      </node>
-      <node concept="3ZUlJD" id="5fXpdOn6Thg" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
-      </node>
-      <node concept="3ZUlJD" id="5fXpdOn6Thl" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
+      <node concept="OlZw7" id="EiqD_LoKZy" role="19HMXq">
+        <node concept="2vOp6P" id="EiqD_LoKZz" role="mAvQt" />
       </node>
       <node concept="3ZUlJD" id="5fXpdOn6Thr" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
+      </node>
+      <node concept="OlZw7" id="EiqD_LoL0Q" role="19HMXq">
+        <node concept="2vOp6P" id="EiqD_LoL0R" role="mAvQt" />
+      </node>
+      <node concept="OlZw7" id="5lvuF0eZNk9" role="19HMXq">
+        <node concept="2vOp6P" id="5lvuF0eZNka" role="mAvQt" />
+      </node>
+      <node concept="OlRHs" id="5lvuF0eZNof" role="19HMXq">
+        <node concept="2vOtiZ" id="5lvuF0eZNoE" role="mAvQt" />
+      </node>
+      <node concept="3ZUlJD" id="5fXpdOn6Thb" role="19HMXq">
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
+      </node>
+      <node concept="OlZw7" id="5lvuF0eZNku" role="19HMXq">
+        <node concept="2vOp6P" id="5lvuF0eZNkv" role="mAvQt" />
+      </node>
+      <node concept="OlZw7" id="EiqD_LoL1g" role="19HMXq">
+        <node concept="2vOp6P" id="EiqD_LoL1h" role="mAvQt" />
+      </node>
+      <node concept="3ZUlJD" id="5fXpdOn6Thg" role="19HMXq">
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
+      </node>
+      <node concept="3ZUlJD" id="5fXpdOn6Thl" role="19HMXq">
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
       </node>
       <node concept="3ZUlJD" id="5fXpdOn6Thy" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
       </node>
       <node concept="3ZUlJD" id="5fXpdOn6ThE" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
       </node>
       <node concept="3ZUlJD" id="5fXpdOn6ThN" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
       </node>
       <node concept="3ZUlJD" id="5fXpdOn6ThX" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
       </node>
       <node concept="3ZUlJD" id="5fXpdOn6Ti8" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMultiColorYMoverSur" />
+        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
       </node>
     </node>
     <node concept="3Z_e9K" id="4eZQ$GKRaRH" role="3Z_dnC">
-      <property role="TrG5h" value="PonerMulticolor" />
+      <property role="TrG5h" value="PonerMultibolitas" />
       <node concept="3Z_e8s" id="5fXpdOn6IsF" role="3Z_e8d">
         <property role="TrG5h" value="direccion" />
       </node>
@@ -100,13 +118,16 @@
       </node>
     </node>
     <node concept="3Z_e9K" id="5fXpdOn6Tg$" role="3Z_dnC">
-      <property role="TrG5h" value="PonerMultiColorYMoverSur" />
+      <property role="TrG5h" value="PonerMuchasCosas" />
       <node concept="19HMXr" id="5fXpdOn6Tg_" role="3Z_e8j">
-        <node concept="3ZUlJD" id="5fXpdOn6TgN" role="19HMXq">
-          <ref role="GYpcP" node="4eZQ$GKRaRH" resolve="PonerMulticolor" />
-        </node>
         <node concept="OlZw7" id="5fXpdOn6TgS" role="19HMXq">
           <node concept="2vOp6Q" id="5fXpdOn6TgZ" role="mAvQt" />
+        </node>
+        <node concept="OlRHs" id="EiqD_LoKZ4" role="19HMXq">
+          <node concept="2vOtiM" id="EiqD_LoKZe" role="mAvQt" />
+        </node>
+        <node concept="OlRHs" id="EiqD_LolkR" role="19HMXq">
+          <node concept="2vOtiL" id="EiqD_LolkZ" role="mAvQt" />
         </node>
       </node>
     </node>

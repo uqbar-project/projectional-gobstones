@@ -32,6 +32,7 @@
   </dependency>
   <dependency className="BoardWindowTool.plugin.OpenBoardInterpreter_Action" file="OpenBoardInterpreter_Action.java">
     <classNode dependClassName="com.intellij.openapi.actionSystem.AnActionEvent" />
+    <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />

@@ -17,10 +17,9 @@
   </dependency>
   <dependency className="JavaGobstones.models.Cell" file="Cell.java">
     <classNode dependClassName="JavaGobstones.models.Color" />
-    <classNode dependClassName="gnu.trove.TObjectIntHashMap" />
-    <classNode dependClassName="gnu.trove.decorator.TObjectIntHashMapDecorator" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />

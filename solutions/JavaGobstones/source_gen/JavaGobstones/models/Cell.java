@@ -5,8 +5,7 @@ package JavaGobstones.models;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import java.util.Map;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
-import gnu.trove.decorator.TObjectIntHashMapDecorator;
-import gnu.trove.TObjectIntHashMap;
+import java.util.HashMap;
 import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.IMapping;
@@ -15,7 +14,7 @@ public class Cell implements Comparable {
   private boolean selected = false;
   public final Tuples._2<Integer, Integer> pos;
 
-  public final Map<Color, Integer> stones = MapSequence.fromMap(new TObjectIntHashMapDecorator(new TObjectIntHashMap<Color>()));
+  public final Map<Color, Integer> stones = MapSequence.fromMap(new HashMap<Color, Integer>());
 
   public Cell(int x, int y) {
     this.pos = MultiTuple.<Integer,Integer>from(x, y);
