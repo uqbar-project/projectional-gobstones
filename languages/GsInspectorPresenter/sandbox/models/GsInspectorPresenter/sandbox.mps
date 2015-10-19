@@ -10,12 +10,12 @@
       <concept id="7435799069549182533" name="MPSGobstones.structure.NativeProcedure" flags="ng" index="mAvQu">
         <child id="7435799069549182534" name="expression" index="mAvQt" />
       </concept>
-      <concept id="3076203700975390530" name="MPSGobstones.structure.Este" flags="ng" index="2vOp6P" />
-      <concept id="3076203700975390529" name="MPSGobstones.structure.Sur" flags="ng" index="2vOp6Q" />
-      <concept id="3076203700975372871" name="MPSGobstones.structure.Verde" flags="ng" index="2vOtiK" />
-      <concept id="3076203700975372870" name="MPSGobstones.structure.Azul" flags="ng" index="2vOtiL" />
-      <concept id="3076203700975372869" name="MPSGobstones.structure.Rojo" flags="ng" index="2vOtiM" />
-      <concept id="3076203700975372872" name="MPSGobstones.structure.Negro" flags="ng" index="2vOtiZ" />
+      <concept id="3076203700975390530" name="MPSGobstones.structure.East" flags="ng" index="2vOp6P" />
+      <concept id="3076203700975390529" name="MPSGobstones.structure.South" flags="ng" index="2vOp6Q" />
+      <concept id="3076203700975372871" name="MPSGobstones.structure.Green" flags="ng" index="2vOtiK" />
+      <concept id="3076203700975372870" name="MPSGobstones.structure.Blue" flags="ng" index="2vOtiL" />
+      <concept id="3076203700975372869" name="MPSGobstones.structure.Red" flags="ng" index="2vOtiM" />
+      <concept id="3076203700975372872" name="MPSGobstones.structure.Black" flags="ng" index="2vOtiZ" />
       <concept id="6162130916098300500" name="MPSGobstones.structure.RoutineInvocation" flags="ng" index="GYpcZ">
         <reference id="6162130916098300510" name="declaration" index="GYpcP" />
       </concept>
@@ -48,9 +48,6 @@
   <node concept="1_8ot$" id="3cFv37cLJ$i">
     <property role="TrG5h" value="Sandbox" />
     <node concept="19HMXr" id="3cFv37cLJ$j" role="19HN4$">
-      <node concept="OlZw7" id="5fXpdOn6Tcr" role="19HMXq">
-        <node concept="2vOp6P" id="5fXpdOn6Tcs" role="mAvQt" />
-      </node>
       <node concept="OlZw7" id="EiqD_LoKZy" role="19HMXq">
         <node concept="2vOp6P" id="EiqD_LoKZz" role="mAvQt" />
       </node>
@@ -62,9 +59,6 @@
       </node>
       <node concept="OlZw7" id="5lvuF0eZNk9" role="19HMXq">
         <node concept="2vOp6P" id="5lvuF0eZNka" role="mAvQt" />
-      </node>
-      <node concept="OlRHs" id="5lvuF0eZNof" role="19HMXq">
-        <node concept="2vOtiZ" id="5lvuF0eZNoE" role="mAvQt" />
       </node>
       <node concept="3ZUlJD" id="5fXpdOn6Thb" role="19HMXq">
         <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
@@ -95,6 +89,9 @@
       </node>
       <node concept="3ZUlJD" id="5fXpdOn6Ti8" role="19HMXq">
         <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
+      </node>
+      <node concept="OlRHs" id="5lvuF0eZNof" role="19HMXq">
+        <node concept="2vOtiZ" id="5lvuF0eZNoE" role="mAvQt" />
       </node>
     </node>
     <node concept="3Z_e9K" id="4eZQ$GKRaRH" role="3Z_dnC">

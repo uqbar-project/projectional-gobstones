@@ -84,7 +84,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="CgvT_3DP33" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="statement" />
+      <property role="20kJfa" value="statements" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="CgvT_3DP31" resolve="Statement" />
     </node>
