@@ -23,7 +23,6 @@
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
-      <concept id="1083243159079" name="jetbrains.mps.lang.structure.structure.PrimitiveDataTypeDeclaration" flags="ng" index="QkHVr" />
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
@@ -142,10 +141,6 @@
     <property role="34LRSv" value="&amp;&amp;" />
     <property role="R4oN_" value="Operación lógica" />
     <ref role="1TJDcQ" node="6649bi9CVHL" resolve="LogicalOperation" />
-  </node>
-  <node concept="QkHVr" id="6649bi9CEsh">
-    <property role="3GE5qa" value="expressions.boolean" />
-    <property role="TrG5h" value="Boolean" />
   </node>
   <node concept="1TIwiD" id="6649bi9CEJk">
     <property role="3GE5qa" value="expressions.boolean" />
@@ -296,28 +291,28 @@
   </node>
   <node concept="1TIwiD" id="2EKRJuPogD5">
     <property role="3GE5qa" value="native.color" />
-    <property role="TrG5h" value="Rojo" />
+    <property role="TrG5h" value="Red" />
     <property role="34LRSv" value="Rojo" />
     <property role="R4oN_" value="Bolita de color rojo" />
     <ref role="1TJDcQ" node="2EKRJuPogD2" resolve="Color" />
   </node>
   <node concept="1TIwiD" id="2EKRJuPogD6">
     <property role="3GE5qa" value="native.color" />
-    <property role="TrG5h" value="Azul" />
+    <property role="TrG5h" value="Blue" />
     <property role="34LRSv" value="Azul" />
     <property role="R4oN_" value="Bolita de color azul" />
     <ref role="1TJDcQ" node="2EKRJuPogD2" resolve="Color" />
   </node>
   <node concept="1TIwiD" id="2EKRJuPogD7">
     <property role="3GE5qa" value="native.color" />
-    <property role="TrG5h" value="Verde" />
+    <property role="TrG5h" value="Green" />
     <property role="34LRSv" value="Verde" />
     <property role="R4oN_" value="Bolita de color verde" />
     <ref role="1TJDcQ" node="2EKRJuPogD2" resolve="Color" />
   </node>
   <node concept="1TIwiD" id="2EKRJuPogD8">
     <property role="3GE5qa" value="native.color" />
-    <property role="TrG5h" value="Negro" />
+    <property role="TrG5h" value="Black" />
     <property role="34LRSv" value="Negro" />
     <property role="R4oN_" value="Bolita de color negro" />
     <ref role="1TJDcQ" node="2EKRJuPogD2" resolve="Color" />
@@ -344,28 +339,28 @@
   </node>
   <node concept="1TIwiD" id="2EKRJuPokX0">
     <property role="3GE5qa" value="native.direction" />
-    <property role="TrG5h" value="Norte" />
+    <property role="TrG5h" value="North" />
     <property role="34LRSv" value="Norte" />
     <property role="R4oN_" value="Dirección" />
     <ref role="1TJDcQ" node="2EKRJuPokQD" resolve="Direction" />
   </node>
   <node concept="1TIwiD" id="2EKRJuPokX1">
     <property role="3GE5qa" value="native.direction" />
-    <property role="TrG5h" value="Sur" />
+    <property role="TrG5h" value="South" />
     <property role="34LRSv" value="Sur" />
     <property role="R4oN_" value="Dirección" />
     <ref role="1TJDcQ" node="2EKRJuPokQD" resolve="Direction" />
   </node>
   <node concept="1TIwiD" id="2EKRJuPokX2">
     <property role="3GE5qa" value="native.direction" />
-    <property role="TrG5h" value="Este" />
+    <property role="TrG5h" value="East" />
     <property role="34LRSv" value="Este" />
     <property role="R4oN_" value="Dirección" />
     <ref role="1TJDcQ" node="2EKRJuPokQD" resolve="Direction" />
   </node>
   <node concept="1TIwiD" id="2EKRJuPokX3">
     <property role="3GE5qa" value="native.direction" />
-    <property role="TrG5h" value="Oeste" />
+    <property role="TrG5h" value="West" />
     <property role="34LRSv" value="Oeste" />
     <property role="R4oN_" value="Dirección" />
     <ref role="1TJDcQ" node="2EKRJuPokQD" resolve="Direction" />
@@ -509,6 +504,8 @@
   <node concept="1TIwiD" id="4eZQ$GKP1lu">
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="Value" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="4eZQ$GKP1lA">
@@ -524,6 +521,43 @@
     <property role="TrG5h" value="RemoveColor" />
     <property role="34LRSv" value="Sacar" />
     <ref role="1TJDcQ" node="6sLgXHLEbT5" resolve="NativeProcedure" />
+  </node>
+  <node concept="1TIwiD" id="2AtX8Dq01gI">
+    <property role="3GE5qa" value="expressions.boolean" />
+    <property role="TrG5h" value="EqualsTo" />
+    <property role="34LRSv" value="=" />
+    <property role="R4oN_" value="Igualdad" />
+    <ref role="1TJDcQ" node="2AtX8Dq01gO" resolve="Comparision" />
+  </node>
+  <node concept="1TIwiD" id="2AtX8Dq01gJ">
+    <property role="3GE5qa" value="expressions.boolean" />
+    <property role="TrG5h" value="GreaterThan" />
+    <property role="34LRSv" value="&gt;" />
+    <ref role="1TJDcQ" node="2AtX8Dq01gO" resolve="Comparision" />
+  </node>
+  <node concept="1TIwiD" id="2AtX8Dq01gK">
+    <property role="3GE5qa" value="expressions.boolean" />
+    <property role="TrG5h" value="LessThan" />
+    <property role="34LRSv" value="&lt;" />
+    <ref role="1TJDcQ" node="2AtX8Dq01gO" resolve="Comparision" />
+  </node>
+  <node concept="1TIwiD" id="2AtX8Dq01gL">
+    <property role="3GE5qa" value="expressions.boolean" />
+    <property role="TrG5h" value="GreaterEqualsThan" />
+    <property role="34LRSv" value="&gt;=" />
+    <ref role="1TJDcQ" node="2AtX8Dq01gO" resolve="Comparision" />
+  </node>
+  <node concept="1TIwiD" id="2AtX8Dq01gM">
+    <property role="3GE5qa" value="expressions.boolean" />
+    <property role="TrG5h" value="LessEqualThan" />
+    <property role="34LRSv" value="&lt;=" />
+    <ref role="1TJDcQ" node="2AtX8Dq01gO" resolve="Comparision" />
+  </node>
+  <node concept="1TIwiD" id="2AtX8Dq01gO">
+    <property role="3GE5qa" value="expressions.boolean" />
+    <property role="TrG5h" value="Comparision" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="CgvT_3E20t" resolve="BinaryOperation" />
   </node>
 </model>
 

@@ -46,6 +46,7 @@
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="true">25789342-c07d-43d3-8d6f-1e46b281ded0(JavaGobstones)</dependency>
+    <dependency reexport="false">0cb8c78e-7916-43a8-8d8e-a292ead7a894(MPSGobstones)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
