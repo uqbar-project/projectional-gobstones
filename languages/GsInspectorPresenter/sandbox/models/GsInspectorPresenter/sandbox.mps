@@ -26,7 +26,13 @@
         <child id="3687177273263237593" name="routines" index="3Z_dnC" />
       </concept>
       <concept id="725219836248412354" name="MPSGobstones.structure.StatementList" flags="ng" index="19HMXr">
-        <child id="725219836248412355" name="statement" index="19HMXq" />
+        <child id="725219836248412355" name="statements" index="19HMXq" />
+      </concept>
+      <concept id="4881860537569514845" name="MPSGobstones.structure.VariableReference" flags="ng" index="1NqWWm">
+        <reference id="4881860537569880543" name="variable" index="1NpBek" />
+      </concept>
+      <concept id="4881860537569514854" name="MPSGobstones.structure.VariableDeclaration" flags="ng" index="1NqWWH">
+        <child id="2998821801951672790" name="expression" index="1NAOPs" />
       </concept>
       <concept id="3687177273263234593" name="MPSGobstones.structure.RoutineDeclaration" flags="ng" index="3Z_e8g">
         <child id="3687177273263234620" name="arguments" index="3Z_e8d" />
@@ -48,8 +54,14 @@
   <node concept="1_8ot$" id="3cFv37cLJ$i">
     <property role="TrG5h" value="Sandbox" />
     <node concept="19HMXr" id="3cFv37cLJ$j" role="19HN4$">
-      <node concept="OlZw7" id="EiqD_LoKZy" role="19HMXq">
-        <node concept="2vOp6P" id="EiqD_LoKZz" role="mAvQt" />
+      <node concept="1NqWWH" id="2AtX8Dq1Zi$" role="19HMXq">
+        <property role="TrG5h" value="dir" />
+        <node concept="2vOp6Q" id="2AtX8Dq1Zre" role="1NAOPs" />
+      </node>
+      <node concept="OlZw7" id="2AtX8Dq1ZjL" role="19HMXq">
+        <node concept="1NqWWm" id="2AtX8Dq1Zkc" role="mAvQt">
+          <ref role="1NpBek" node="2AtX8Dq1Zi$" resolve="dir" />
+        </node>
       </node>
       <node concept="3ZUlJD" id="5fXpdOn6Thr" role="19HMXq">
         <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
@@ -73,15 +85,6 @@
         <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
       </node>
       <node concept="3ZUlJD" id="5fXpdOn6Thl" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
-      </node>
-      <node concept="3ZUlJD" id="5fXpdOn6Thy" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
-      </node>
-      <node concept="3ZUlJD" id="5fXpdOn6ThE" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
-      </node>
-      <node concept="3ZUlJD" id="5fXpdOn6ThN" role="19HMXq">
         <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
       </node>
       <node concept="3ZUlJD" id="5fXpdOn6ThX" role="19HMXq">
