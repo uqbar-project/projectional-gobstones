@@ -511,9 +511,16 @@
   <node concept="1TIwiD" id="4eZQ$GKP1lA">
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="VariableDeclaration" />
+    <property role="34LRSv" value=":=" />
     <ref role="1TJDcQ" node="CgvT_3DP31" resolve="Statement" />
     <node concept="PrWs8" id="4eZQ$GKPKEr" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2AtX8Dq1FBm" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="4eZQ$GKQHtB">
@@ -558,6 +565,24 @@
     <property role="TrG5h" value="Comparision" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="CgvT_3E20t" resolve="BinaryOperation" />
+  </node>
+  <node concept="1TIwiD" id="2AtX8Dq1FBe">
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="VariableAssignment" />
+    <property role="34LRSv" value=":=" />
+    <ref role="1TJDcQ" node="CgvT_3DP31" resolve="Statement" />
+    <node concept="1TJgyj" id="2AtX8Dq1Htz" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="declaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4eZQ$GKP1lA" resolve="VariableDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="2AtX8Dq1Ht_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
+    </node>
   </node>
 </model>
 
