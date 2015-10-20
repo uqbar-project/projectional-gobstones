@@ -419,7 +419,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="arguments" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3cFv37cJTSH" resolve="Argument" />
+      <ref role="20lvS9" node="3bcPj6$uUvQ" resolve="VariableName" />
     </node>
     <node concept="1TJgyj" id="3cFv37cJTSy" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -432,19 +432,6 @@
     </node>
     <node concept="PrWs8" id="4eZQ$GKP1ly" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3cFv37cJTSG">
-    <property role="3GE5qa" value="routines" />
-    <property role="TrG5h" value="ArgumentList" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="3cFv37cJTSH">
-    <property role="3GE5qa" value="routines" />
-    <property role="TrG5h" value="Argument" />
-    <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
-    <node concept="PrWs8" id="3cFv37cJTSI" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="3cFv37cJTT1">
@@ -490,38 +477,12 @@
       <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4eZQ$GKP1lt">
-    <property role="3GE5qa" value="expressions" />
-    <property role="TrG5h" value="VariableReference" />
-    <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
-    <node concept="1TJgyj" id="4eZQ$GKQqBv" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="variable" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4eZQ$GKP1lA" resolve="VariableDeclaration" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4eZQ$GKP1lu">
     <property role="3GE5qa" value="expressions" />
     <property role="TrG5h" value="Value" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
-  </node>
-  <node concept="1TIwiD" id="4eZQ$GKP1lA">
-    <property role="3GE5qa" value="expressions" />
-    <property role="TrG5h" value="VariableDeclaration" />
-    <property role="34LRSv" value=":=" />
-    <ref role="1TJDcQ" node="CgvT_3DP31" resolve="Statement" />
-    <node concept="PrWs8" id="4eZQ$GKPKEr" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="2AtX8Dq1FBm" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expression" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
-    </node>
   </node>
   <node concept="1TIwiD" id="4eZQ$GKQHtB">
     <property role="3GE5qa" value="native" />
@@ -571,17 +532,26 @@
     <property role="TrG5h" value="VariableAssignment" />
     <property role="34LRSv" value=":=" />
     <ref role="1TJDcQ" node="CgvT_3DP31" resolve="Statement" />
-    <node concept="1TJgyj" id="2AtX8Dq1Htz" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="declaration" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4eZQ$GKP1lA" resolve="VariableDeclaration" />
-    </node>
     <node concept="1TJgyj" id="2AtX8Dq1Ht_" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expression" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="3bcPj6$v6pM" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="variable" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3bcPj6$uUvQ" resolve="VariableName" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3bcPj6$uUvQ">
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="VariableName" />
+    <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
+    <node concept="1TJgyi" id="3bcPj6$uUvT" role="1TKVEl">
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

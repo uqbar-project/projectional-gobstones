@@ -10,17 +10,24 @@
       <concept id="7435799069549182533" name="MPSGobstones.structure.NativeProcedure" flags="ng" index="mAvQu">
         <child id="7435799069549182534" name="expression" index="mAvQt" />
       </concept>
+      <concept id="3660535006335051766" name="MPSGobstones.structure.VariableName" flags="ng" index="2mHRb7">
+        <property id="3660535006335051769" name="name" index="2mHRb8" />
+      </concept>
+      <concept id="7725404610655926569" name="MPSGobstones.structure.IfElseStatement" flags="ng" index="2nupYA">
+        <child id="7725404610656009064" name="ifFalseBlock" index="2npHRB" />
+        <child id="7725404610656009061" name="ifTrueBlock" index="2npHRE" />
+        <child id="7725404610656009059" name="condition" index="2npHRG" />
+      </concept>
+      <concept id="3076203700975421485" name="MPSGobstones.structure.ModOperation" flags="ng" index="2vOhrq" />
       <concept id="3076203700975390530" name="MPSGobstones.structure.East" flags="ng" index="2vOp6P" />
       <concept id="3076203700975390529" name="MPSGobstones.structure.South" flags="ng" index="2vOp6Q" />
-      <concept id="3076203700975372871" name="MPSGobstones.structure.Green" flags="ng" index="2vOtiK" />
-      <concept id="3076203700975372870" name="MPSGobstones.structure.Blue" flags="ng" index="2vOtiL" />
       <concept id="3076203700975372869" name="MPSGobstones.structure.Red" flags="ng" index="2vOtiM" />
       <concept id="3076203700975372872" name="MPSGobstones.structure.Black" flags="ng" index="2vOtiZ" />
       <concept id="6162130916098300500" name="MPSGobstones.structure.RoutineInvocation" flags="ng" index="GYpcZ">
         <reference id="6162130916098300510" name="declaration" index="GYpcP" />
+        <child id="6162130916098300501" name="parameters" index="GYpcY" />
       </concept>
       <concept id="6044724656164066896" name="MPSGobstones.structure.PutColor" flags="ng" index="OlRHs" />
-      <concept id="6044724656164099339" name="MPSGobstones.structure.MoveClaw" flags="ng" index="OlZw7" />
       <concept id="725219836248296989" name="MPSGobstones.structure.Program" flags="ng" index="19Hv64">
         <child id="725219836248411837" name="body" index="19HN4$" />
         <child id="3687177273263237593" name="routines" index="3Z_dnC" />
@@ -28,17 +35,30 @@
       <concept id="725219836248412354" name="MPSGobstones.structure.StatementList" flags="ng" index="19HMXr">
         <child id="725219836248412355" name="statements" index="19HMXq" />
       </concept>
-      <concept id="4881860537569514845" name="MPSGobstones.structure.VariableReference" flags="ng" index="1NqWWm">
-        <reference id="4881860537569880543" name="variable" index="1NpBek" />
+      <concept id="725219836248465437" name="MPSGobstones.structure.BinaryOperation" flags="ng" index="19I5Y4">
+        <child id="725219836248465438" name="left" index="19I5Y7" />
+        <child id="725219836248465441" name="right" index="19I5YS" />
       </concept>
-      <concept id="4881860537569514854" name="MPSGobstones.structure.VariableDeclaration" flags="ng" index="1NqWWH">
-        <child id="2998821801951672790" name="expression" index="1NAOPs" />
+      <concept id="7026781676426771958" name="MPSGobstones.structure.IntegerLiteral" flags="ng" index="3C81_2">
+        <property id="7026781676426771959" name="value" index="3C81_3" />
+      </concept>
+      <concept id="5293390306379622975" name="MPSGobstones.structure.LoopStatement" flags="ng" index="1GdgLf">
+        <child id="4004919084779583333" name="body" index="1XV6fl" />
+      </concept>
+      <concept id="5293390306379541195" name="MPSGobstones.structure.PlusOperation" flags="ng" index="1Gi$MV" />
+      <concept id="4881860537569957735" name="MPSGobstones.structure.RemoveColor" flags="ng" index="1NpgOG" />
+      <concept id="2998821801951672782" name="MPSGobstones.structure.VariableAssignment" flags="ng" index="1NAOP4">
+        <child id="3660535006335100530" name="variable" index="2mGbd3" />
+        <child id="2998821801951680357" name="expression" index="1NAMfJ" />
+      </concept>
+      <concept id="2998821801951237166" name="MPSGobstones.structure.EqualsTo" flags="ng" index="1NBu2$" />
+      <concept id="4004919084779594948" name="MPSGobstones.structure.RepeatStatement" flags="ng" index="1XV31O">
+        <child id="3076203700975325608" name="times" index="2vO8Xv" />
       </concept>
       <concept id="3687177273263234593" name="MPSGobstones.structure.RoutineDeclaration" flags="ng" index="3Z_e8g">
         <child id="3687177273263234620" name="arguments" index="3Z_e8d" />
         <child id="3687177273263234594" name="body" index="3Z_e8j" />
       </concept>
-      <concept id="3687177273263234605" name="MPSGobstones.structure.Argument" flags="ng" index="3Z_e8s" />
       <concept id="3687177273263234625" name="MPSGobstones.structure.ProcedureDeclaration" flags="ng" index="3Z_e9K" />
       <concept id="3687177273263400920" name="MPSGobstones.structure.ProcedureInvocation" flags="ng" index="3ZUlJD" />
     </language>
@@ -51,83 +71,92 @@
       <concept id="6564092901427106003" name="GsInspectorPresenter.structure.MainProgram" flags="ng" index="1_8ot$" />
     </language>
   </registry>
-  <node concept="1_8ot$" id="3cFv37cLJ$i">
-    <property role="TrG5h" value="Sandbox" />
-    <node concept="19HMXr" id="3cFv37cLJ$j" role="19HN4$">
-      <node concept="1NqWWH" id="2AtX8Dq1Zi$" role="19HMXq">
-        <property role="TrG5h" value="dir" />
-        <node concept="2vOp6Q" id="2AtX8Dq1Zre" role="1NAOPs" />
+  <node concept="1_8ot$" id="3bcPj6$urhx">
+    <node concept="3Z_e9K" id="3bcPj6$vzY$" role="3Z_dnC">
+      <property role="TrG5h" value="PonerYMover" />
+      <node concept="2mHRb7" id="3bcPj6$vzYC" role="3Z_e8d">
+        <property role="2mHRb8" value="color" />
       </node>
-      <node concept="OlZw7" id="2AtX8Dq1ZjL" role="19HMXq">
-        <node concept="1NqWWm" id="2AtX8Dq1Zkc" role="mAvQt">
-          <ref role="1NpBek" node="2AtX8Dq1Zi$" resolve="dir" />
-        </node>
+      <node concept="2mHRb7" id="3bcPj6$vzYE" role="3Z_e8d">
+        <property role="2mHRb8" value="direccion" />
       </node>
-      <node concept="3ZUlJD" id="5fXpdOn6Thr" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
-      </node>
-      <node concept="OlZw7" id="EiqD_LoL0Q" role="19HMXq">
-        <node concept="2vOp6P" id="EiqD_LoL0R" role="mAvQt" />
-      </node>
-      <node concept="OlZw7" id="5lvuF0eZNk9" role="19HMXq">
-        <node concept="2vOp6P" id="5lvuF0eZNka" role="mAvQt" />
-      </node>
-      <node concept="3ZUlJD" id="5fXpdOn6Thb" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
-      </node>
-      <node concept="OlZw7" id="5lvuF0eZNku" role="19HMXq">
-        <node concept="2vOp6P" id="5lvuF0eZNkv" role="mAvQt" />
-      </node>
-      <node concept="OlZw7" id="EiqD_LoL1g" role="19HMXq">
-        <node concept="2vOp6P" id="EiqD_LoL1h" role="mAvQt" />
-      </node>
-      <node concept="3ZUlJD" id="5fXpdOn6Thg" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
-      </node>
-      <node concept="3ZUlJD" id="5fXpdOn6Thl" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
-      </node>
-      <node concept="3ZUlJD" id="5fXpdOn6ThX" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
-      </node>
-      <node concept="3ZUlJD" id="5fXpdOn6Ti8" role="19HMXq">
-        <ref role="GYpcP" node="5fXpdOn6Tg$" resolve="PonerMuchasCosas" />
-      </node>
-      <node concept="OlRHs" id="5lvuF0eZNof" role="19HMXq">
-        <node concept="2vOtiZ" id="5lvuF0eZNoE" role="mAvQt" />
-      </node>
-    </node>
-    <node concept="3Z_e9K" id="4eZQ$GKRaRH" role="3Z_dnC">
-      <property role="TrG5h" value="PonerMultibolitas" />
-      <node concept="3Z_e8s" id="5fXpdOn6IsF" role="3Z_e8d">
-        <property role="TrG5h" value="direccion" />
-      </node>
-      <node concept="19HMXr" id="4eZQ$GKRaRI" role="3Z_e8j">
-        <node concept="OlRHs" id="4eZQ$GKRaRL" role="19HMXq">
-          <node concept="2vOtiM" id="5fXpdOn6ImR" role="mAvQt" />
-        </node>
-        <node concept="OlRHs" id="5fXpdOn6QJZ" role="19HMXq">
-          <node concept="2vOtiL" id="5fXpdOn6QK9" role="mAvQt" />
-        </node>
-        <node concept="OlRHs" id="5fXpdOn6Tfl" role="19HMXq">
-          <node concept="2vOtiK" id="5fXpdOn6TfH" role="mAvQt" />
-        </node>
-        <node concept="OlRHs" id="5fXpdOn6Tfw" role="19HMXq">
-          <node concept="2vOtiZ" id="5fXpdOn6TfN" role="mAvQt" />
+      <node concept="19HMXr" id="3bcPj6$vzY_" role="3Z_e8j">
+        <node concept="OlRHs" id="3bcPj6$vzYJ" role="19HMXq">
+          <node concept="2mHRb7" id="2RQrhVyTEs8" role="mAvQt">
+            <property role="2mHRb8" value="color" />
+          </node>
         </node>
       </node>
     </node>
-    <node concept="3Z_e9K" id="5fXpdOn6Tg$" role="3Z_dnC">
-      <property role="TrG5h" value="PonerMuchasCosas" />
-      <node concept="19HMXr" id="5fXpdOn6Tg_" role="3Z_e8j">
-        <node concept="OlZw7" id="5fXpdOn6TgS" role="19HMXq">
-          <node concept="2vOp6Q" id="5fXpdOn6TgZ" role="mAvQt" />
+    <node concept="19HMXr" id="3bcPj6$urhy" role="19HN4$">
+      <node concept="OlRHs" id="3bcPj6$urhH" role="19HMXq">
+        <node concept="2vOtiZ" id="2RQrhVyTEtW" role="mAvQt" />
+      </node>
+      <node concept="1NAOP4" id="3bcPj6$vowC" role="19HMXq">
+        <node concept="2mHRb7" id="3bcPj6$vowE" role="2mGbd3">
+          <property role="2mHRb8" value="dir" />
         </node>
-        <node concept="OlRHs" id="EiqD_LoKZ4" role="19HMXq">
-          <node concept="2vOtiM" id="EiqD_LoKZe" role="mAvQt" />
+        <node concept="2vOp6P" id="3bcPj6$vowQ" role="1NAMfJ" />
+      </node>
+      <node concept="1NAOP4" id="3bcPj6$voxY" role="19HMXq">
+        <node concept="2mHRb7" id="3bcPj6$voy0" role="2mGbd3">
+          <property role="2mHRb8" value="dir" />
         </node>
-        <node concept="OlRHs" id="EiqD_LolkR" role="19HMXq">
-          <node concept="2vOtiL" id="EiqD_LolkZ" role="mAvQt" />
+        <node concept="2vOp6Q" id="3bcPj6$voyf" role="1NAMfJ" />
+      </node>
+      <node concept="1NAOP4" id="3bcPj6$vG_R" role="19HMXq">
+        <node concept="2mHRb7" id="3bcPj6$vG_T" role="2mGbd3">
+          <property role="2mHRb8" value="dir" />
+        </node>
+        <node concept="3C81_2" id="2RQrhVyTkkI" role="1NAMfJ">
+          <property role="3C81_3" value="5" />
+        </node>
+      </node>
+      <node concept="1XV31O" id="3bcPj6$vzUp" role="19HMXq">
+        <node concept="19HMXr" id="3bcPj6$vzUr" role="1XV6fl">
+          <node concept="1NAOP4" id="2RQrhVyTklD" role="19HMXq">
+            <node concept="2mHRb7" id="2RQrhVyTklF" role="2mGbd3">
+              <property role="2mHRb8" value="dir" />
+            </node>
+            <node concept="1Gi$MV" id="2RQrhVyTklV" role="1NAMfJ">
+              <node concept="2mHRb7" id="2RQrhVyTkmh" role="19I5Y7">
+                <property role="2mHRb8" value="dir" />
+              </node>
+              <node concept="3C81_2" id="2RQrhVyTkmI" role="19I5YS">
+                <property role="3C81_3" value="1" />
+              </node>
+            </node>
+          </node>
+          <node concept="2nupYA" id="2RQrhVyTkkw" role="19HMXq">
+            <node concept="19HMXr" id="2RQrhVyTkky" role="2npHRB">
+              <node concept="1NpgOG" id="2RQrhVyTEo$" role="19HMXq">
+                <node concept="2vOtiM" id="2RQrhVyTEoC" role="mAvQt" />
+              </node>
+            </node>
+            <node concept="19HMXr" id="2RQrhVyTkkA" role="2npHRE">
+              <node concept="3ZUlJD" id="2RQrhVyTEsd" role="19HMXq">
+                <ref role="GYpcP" node="3bcPj6$vzY$" resolve="PonerYMover" />
+                <node concept="2vOtiM" id="2RQrhVyTEsi" role="GYpcY" />
+                <node concept="2vOp6Q" id="2RQrhVyTEsz" role="GYpcY" />
+              </node>
+            </node>
+            <node concept="1NBu2$" id="2RQrhVyTkoC" role="2npHRG">
+              <node concept="3C81_2" id="2RQrhVyTkp1" role="19I5YS">
+                <property role="3C81_3" value="0" />
+              </node>
+              <node concept="2vOhrq" id="2RQrhVyTknb" role="19I5Y7">
+                <node concept="2mHRb7" id="2RQrhVyTknx" role="19I5Y7">
+                  <property role="2mHRb8" value="dir" />
+                </node>
+                <node concept="3C81_2" id="2RQrhVyTkob" role="19I5YS">
+                  <property role="3C81_3" value="2" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3C81_2" id="3bcPj6$vzUK" role="2vO8Xv">
+          <property role="3C81_3" value="123" />
         </node>
       </node>
     </node>
