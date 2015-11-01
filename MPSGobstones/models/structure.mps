@@ -471,7 +471,7 @@
   <node concept="1TIwiD" id="2AtX8Dq01gI">
     <property role="3GE5qa" value="expressions.boolean" />
     <property role="TrG5h" value="EqualsTo" />
-    <property role="34LRSv" value="=" />
+    <property role="34LRSv" value="==" />
     <property role="R4oN_" value="Igualdad" />
     <ref role="1TJDcQ" node="2AtX8Dq01gO" resolve="Comparision" />
   </node>
@@ -596,6 +596,59 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7WjOWF4Yy6V" resolve="RoutineDeclaration" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="7WjOWF56V4g">
+    <property role="3GE5qa" value="native" />
+    <property role="TrG5h" value="NativeFunction" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
+    <node concept="1TJgyj" id="7WjOWF56Xzh" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7WjOWF56V4h">
+    <property role="3GE5qa" value="expressions.boolean" />
+    <property role="TrG5h" value="NotEqualsTo" />
+    <property role="34LRSv" value="/=" />
+    <property role="R4oN_" value="Desigualdad" />
+    <ref role="1TJDcQ" node="2AtX8Dq01gO" resolve="Comparision" />
+  </node>
+  <node concept="1TIwiD" id="7WjOWF56VBV">
+    <property role="3GE5qa" value="expressions.integer" />
+    <property role="TrG5h" value="Pow" />
+    <property role="34LRSv" value="^" />
+    <ref role="1TJDcQ" node="4_PTB0_fUFe" resolve="IntegerOperation" />
+  </node>
+  <node concept="1TIwiD" id="7WjOWF56WSc">
+    <property role="3GE5qa" value="expressions.integer" />
+    <property role="TrG5h" value="DiffOperation" />
+    <property role="R4oN_" value="Substracción" />
+    <property role="34LRSv" value="-" />
+    <ref role="1TJDcQ" node="4_PTB0_fUFe" resolve="IntegerOperation" />
+  </node>
+  <node concept="1TIwiD" id="7WjOWF56Xzg">
+    <property role="3GE5qa" value="native" />
+    <property role="TrG5h" value="CanMoveClaw" />
+    <property role="34LRSv" value="puedeMover" />
+    <ref role="1TJDcQ" node="7WjOWF56V4g" resolve="NativeFunction" />
+  </node>
+  <node concept="1TIwiD" id="7WjOWF57m2Z">
+    <property role="3GE5qa" value="native" />
+    <property role="TrG5h" value="HasColor" />
+    <property role="34LRSv" value="hayBolitas" />
+    <property role="R4oN_" value="Pregunta si hay bolitas de determinado color" />
+    <ref role="1TJDcQ" node="7WjOWF56V4g" resolve="NativeFunction" />
+  </node>
+  <node concept="1TIwiD" id="7WjOWF57wqW">
+    <property role="3GE5qa" value="native" />
+    <property role="TrG5h" value="StonesQuantity" />
+    <property role="34LRSv" value="nroBolitas" />
+    <property role="R4oN_" value="Pregunta si hay bolitas de determinado color" />
+    <ref role="1TJDcQ" node="7WjOWF56V4g" resolve="NativeFunction" />
   </node>
 </model>
 

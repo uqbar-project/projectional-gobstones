@@ -70,6 +70,10 @@ public class Board {
     }
   }
 
+  public boolean canMoveClaw(Direction dir) {
+    return isValidPosition(dir.moveX(clawX), dir.moveY(clawY));
+  }
+
   public boolean isValidPosition(int x, int y) {
     return x >= 0 && y >= 0 && x < sizeX && y < sizeY;
   }
@@ -104,7 +108,7 @@ public class Board {
     return cell;
   }
 
-  private Cell currentCell() {
+  public Cell currentCell() {
     return SortedSetSequence.fromSet(cells).findFirst(new IWhereFilter<Cell>() {
       public boolean accept(Cell it) {
         return it.x == clawX && it.y == clawY;

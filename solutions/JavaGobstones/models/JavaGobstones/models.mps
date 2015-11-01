@@ -1242,6 +1242,51 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7WjOWF55ZQP" role="jymVt" />
+    <node concept="3clFb_" id="7WjOWF572JX" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="canMoveClaw" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="7WjOWF572K0" role="3clF47">
+        <node concept="3cpWs6" id="7WjOWF575Mr" role="3cqZAp">
+          <node concept="1rXfSq" id="7WjOWF576tG" role="3cqZAk">
+            <ref role="37wK5l" node="5GolVsYfpxc" resolve="isValidPosition" />
+            <node concept="2OqwBi" id="7WjOWF578uv" role="37wK5m">
+              <node concept="37vLTw" id="7WjOWF577GQ" role="2Oq$k0">
+                <ref role="3cqZAo" node="7WjOWF574h3" resolve="dir" />
+              </node>
+              <node concept="liA8E" id="7WjOWF57agU" role="2OqNvi">
+                <ref role="37wK5l" node="7WjOWF51RwY" resolve="moveX" />
+                <node concept="37vLTw" id="7WjOWF57bDH" role="37wK5m">
+                  <ref role="3cqZAo" node="7WjOWF51nNl" resolve="clawX" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7WjOWF57fl$" role="37wK5m">
+              <node concept="37vLTw" id="7WjOWF57dQZ" role="2Oq$k0">
+                <ref role="3cqZAo" node="7WjOWF574h3" resolve="dir" />
+              </node>
+              <node concept="liA8E" id="7WjOWF57gZB" role="2OqNvi">
+                <ref role="37wK5l" node="7WjOWF51SEr" resolve="moveY" />
+                <node concept="37vLTw" id="7WjOWF57hXK" role="37wK5m">
+                  <ref role="3cqZAo" node="7WjOWF51qYx" resolve="clawY" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7WjOWF571MD" role="1B3o_S" />
+      <node concept="10P_77" id="7WjOWF572JA" role="3clF45" />
+      <node concept="37vLTG" id="7WjOWF574h3" role="3clF46">
+        <property role="TrG5h" value="dir" />
+        <node concept="3uibUv" id="7WjOWF574h2" role="1tU5fm">
+          <ref role="3uigEE" node="5oliFlAneGW" resolve="Direction" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7WjOWF56ZB6" role="jymVt" />
     <node concept="3clFb_" id="5GolVsYfpxc" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="isValidPosition" />
@@ -1570,7 +1615,7 @@
     <node concept="2tJIrI" id="5GolVsYg9W9" role="jymVt" />
     <node concept="3clFb_" id="5GolVsYg9Ag" role="jymVt">
       <property role="TrG5h" value="currentCell" />
-      <node concept="3Tm6S6" id="5GolVsYg9Ah" role="1B3o_S" />
+      <node concept="3Tm1VV" id="7WjOWF57s7N" role="1B3o_S" />
       <node concept="3uibUv" id="5GolVsYg9Ai" role="3clF45">
         <ref role="3uigEE" node="5GolVsYeCLg" resolve="Cell" />
       </node>
