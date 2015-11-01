@@ -37,6 +37,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -67,7 +68,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="routines" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3cFv37cJTT1" resolve="ProcedureDeclaration" />
+      <ref role="20lvS9" node="7WjOWF4Yy6V" resolve="RoutineDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="CgvT_3Dpme">
@@ -430,17 +431,12 @@
     <property role="3GE5qa" value="routines" />
     <property role="TrG5h" value="ProcedureInvocation" />
     <ref role="1TJDcQ" node="CgvT_3DP31" resolve="Statement" />
-    <node concept="1TJgyj" id="5m4imHTvtDl" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="parameters" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
-    </node>
     <node concept="1TJgyj" id="5m4imHTvtDu" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="declaration" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3cFv37cJTT1" resolve="ProcedureDeclaration" />
+      <ref role="20ksaX" node="7WjOWF4Zsaw" />
     </node>
     <node concept="PrWs8" id="7WjOWF4Yyw6" role="PzmwI">
       <ref role="PrY4T" node="7WjOWF4Yyvt" resolve="RoutineInvocation" />
@@ -561,17 +557,12 @@
     <property role="3GE5qa" value="routines" />
     <property role="TrG5h" value="FunctionInvocation" />
     <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
-    <node concept="1TJgyj" id="7WjOWF4YhCG" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="parameters" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
-    </node>
     <node concept="1TJgyj" id="7WjOWF4YhCE" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="declaration" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7WjOWF4XDMP" resolve="FunctionDeclaration" />
+      <ref role="20ksaX" node="7WjOWF4Zsaw" />
     </node>
     <node concept="PrWs8" id="7WjOWF4Yyw8" role="PzmwI">
       <ref role="PrY4T" node="7WjOWF4Yyvt" resolve="RoutineInvocation" />
@@ -593,6 +584,18 @@
   <node concept="PlHQZ" id="7WjOWF4Yyvt">
     <property role="3GE5qa" value="routines" />
     <property role="TrG5h" value="RoutineInvocation" />
+    <node concept="1TJgyj" id="5m4imHTvtDl" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parameters" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="7WjOWF4Zsaw" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="declaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7WjOWF4Yy6V" resolve="RoutineDeclaration" />
+    </node>
   </node>
 </model>
 

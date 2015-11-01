@@ -5,8 +5,7 @@ package GsDesktopUI.view;
 import javax.swing.JComponent;
 import JavaGobstones.models.Cell;
 import java.awt.Graphics;
-import jetbrains.mps.internal.collections.runtime.MapSequence;
-import JavaGobstones.models.Color;
+import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.BorderFactory;
 
@@ -18,20 +17,20 @@ public class CellView extends JComponent {
   protected void paintComponent(Graphics graphics) {
     super.paintComponent(graphics);
     if (cell != null) {
-      if (MapSequence.fromMap(cell.stones).get(Color.red) > 0) {
-        graphics.setColor(java.awt.Color.red);
+      if (cell.getRed() > 0) {
+        graphics.setColor(Color.red);
         graphics.fillOval(4, 4, 18, 18);
       }
-      if (MapSequence.fromMap(cell.stones).get(Color.black) > 0) {
-        graphics.setColor(java.awt.Color.black);
+      if (cell.getBlack() > 0) {
+        graphics.setColor(Color.black);
         graphics.fillOval(24, 4, 18, 18);
       }
-      if (MapSequence.fromMap(cell.stones).get(Color.blue) > 0) {
-        graphics.setColor(java.awt.Color.blue);
+      if (cell.getBlue() > 0) {
+        graphics.setColor(Color.blue);
         graphics.fillOval(4, 24, 18, 18);
       }
-      if (MapSequence.fromMap(cell.stones).get(Color.green) > 0) {
-        graphics.setColor(java.awt.Color.green);
+      if (cell.getGreen() > 0) {
+        graphics.setColor(Color.green);
         graphics.fillOval(24, 24, 18, 18);
       }
     }
@@ -47,6 +46,6 @@ public class CellView extends JComponent {
 
   public CellView(Cell cell1) {
     cell = cell1;
-    this.setBorder(BorderFactory.createLineBorder(((cell != null && cell.isSelected()) ? java.awt.Color.BLACK : java.awt.Color.WHITE)));
+    this.setBorder(BorderFactory.createLineBorder(((cell != null && cell.isSelected()) ? Color.BLACK : Color.WHITE)));
   }
 }
