@@ -28,7 +28,20 @@
       <concept id="9156895335218131216" name="MPSGobstones.structure.NativeFunction" flags="ng" index="2U26bq">
         <child id="9156895335218141393" name="expression" index="2U20Gr" />
       </concept>
+      <concept id="9156895335218373287" name="MPSGobstones.structure.BoardDefinition" flags="ng" index="2U3b5H">
+        <property id="9156895335218373290" name="rowsSize" index="2U3b5w" />
+        <child id="9156895335219234240" name="rows" index="2UfPoa" />
+      </concept>
       <concept id="9156895335218241727" name="MPSGobstones.structure.HasColor" flags="ng" index="2U3FdP" />
+      <concept id="9156895335218413696" name="MPSGobstones.structure.CellDefinition" flags="ng" index="2UcXda">
+        <property id="9156895335218413706" name="green" index="2UcXd0" />
+        <property id="9156895335218413699" name="black" index="2UcXd9" />
+        <property id="9156895335218413697" name="blue" index="2UcXdb" />
+        <property id="9156895335218413702" name="red" index="2UcXdc" />
+      </concept>
+      <concept id="9156895335219231607" name="MPSGobstones.structure.BoardRowDefinition" flags="ng" index="2UfUyX">
+        <child id="9156895335219231619" name="cells" index="2UfUx9" />
+      </concept>
       <concept id="9156895335215701174" name="MPSGobstones.structure.FunctionInvocation" flags="ng" index="2VTkXW" />
       <concept id="9156895335215701173" name="MPSGobstones.structure.FunctionDeclaration" flags="ng" index="2VTkXZ">
         <child id="9156895335215722413" name="return" index="2VTjLB" />
@@ -68,10 +81,14 @@
       </concept>
     </language>
     <language id="329ed8d6-630b-448d-b0ad-d0e71fe3ca82" name="GsInspectorPresenter">
-      <concept id="6564092901427106003" name="GsInspectorPresenter.structure.MainProgram" flags="ng" index="1_8ot$" />
+      <concept id="9156895335219797498" name="GsInspectorPresenter.structure.BoardDeclaration" flags="ng" index="2U9GSK" />
+      <concept id="6564092901427106003" name="GsInspectorPresenter.structure.MainProgram" flags="ng" index="1_8ot$">
+        <reference id="9156895335219817772" name="tablero" index="2U9FVA" />
+      </concept>
     </language>
   </registry>
   <node concept="1_8ot$" id="3bcPj6$urhx">
+    <ref role="2U9FVA" node="7WjOWF5dnuq" resolve="vacio de 10x10" />
     <node concept="19HMXr" id="3bcPj6$urhy" role="19HN4$">
       <node concept="1NAOP4" id="7WjOWF552_r" role="19HMXq">
         <node concept="2mHRb7" id="7WjOWF552_s" role="2mGbd3">
@@ -168,6 +185,630 @@
             <property role="2mHRb8" value="y" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2U9GSK" id="7WjOWF5dnuq">
+    <property role="2U3b5w" value="10" />
+    <property role="TrG5h" value="vacio de 10x10" />
+    <node concept="2UfUyX" id="7WjOWF5dnut" role="2UfPoa">
+      <node concept="2UcXda" id="7WjOWF5dnuu" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnv5" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnv6" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnv7" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnv8" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnv9" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnva" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvb" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvc" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvd" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+    </node>
+    <node concept="2UfUyX" id="7WjOWF5dnuv" role="2UfPoa">
+      <node concept="2UcXda" id="7WjOWF5dnuw" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnve" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvf" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvg" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvh" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvi" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvj" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvk" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvl" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvm" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+    </node>
+    <node concept="2UfUyX" id="7WjOWF5dnux" role="2UfPoa">
+      <node concept="2UcXda" id="7WjOWF5dnuy" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvn" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvo" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvp" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvq" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvr" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvs" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvt" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvu" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvv" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+    </node>
+    <node concept="2UfUyX" id="7WjOWF5dnuz" role="2UfPoa">
+      <node concept="2UcXda" id="7WjOWF5dnu$" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvw" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvx" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvy" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvz" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnv$" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnv_" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvA" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvB" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvC" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+    </node>
+    <node concept="2UfUyX" id="7WjOWF5dnu_" role="2UfPoa">
+      <node concept="2UcXda" id="7WjOWF5dnuA" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvD" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvE" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvF" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvG" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvH" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvI" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvJ" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvK" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvL" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+    </node>
+    <node concept="2UfUyX" id="7WjOWF5dnuB" role="2UfPoa">
+      <node concept="2UcXda" id="7WjOWF5dnuC" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvM" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvN" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvO" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvP" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvQ" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvR" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvS" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvT" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvU" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+    </node>
+    <node concept="2UfUyX" id="7WjOWF5dnuD" role="2UfPoa">
+      <node concept="2UcXda" id="7WjOWF5dnuE" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvV" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvW" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvX" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvY" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnvZ" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnw0" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnw1" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnw2" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnw3" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+    </node>
+    <node concept="2UfUyX" id="7WjOWF5dnuF" role="2UfPoa">
+      <node concept="2UcXda" id="7WjOWF5dnuG" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnw4" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnw5" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnw6" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnw7" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnw8" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnw9" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwa" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwb" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwc" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+    </node>
+    <node concept="2UfUyX" id="7WjOWF5dnuH" role="2UfPoa">
+      <node concept="2UcXda" id="7WjOWF5dnuI" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwd" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwe" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwf" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwg" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwh" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwi" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwj" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwk" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwl" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+    </node>
+    <node concept="2UfUyX" id="7WjOWF5dnuJ" role="2UfPoa">
+      <node concept="2UcXda" id="7WjOWF5dnuK" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwm" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwn" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwo" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwp" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwq" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwr" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnws" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwt" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
+      </node>
+      <node concept="2UcXda" id="7WjOWF5dnwu" role="2UfUx9">
+        <property role="2UcXdb" value="0" />
+        <property role="2UcXd9" value="0" />
+        <property role="2UcXdc" value="0" />
+        <property role="2UcXd0" value="0" />
       </node>
     </node>
   </node>

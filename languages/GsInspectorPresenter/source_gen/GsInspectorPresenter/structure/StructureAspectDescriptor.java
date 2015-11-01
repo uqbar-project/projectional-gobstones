@@ -12,22 +12,25 @@ import org.jetbrains.annotations.Nullable;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
-  /*package*/ final ConceptDescriptor myConceptMainProgram = new ConceptDescriptorBuilder("GsInspectorPresenter.structure.MainProgram", MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x5b1857b73e39d0d3L)).super_("MPSGobstones.structure.Program").super_(MetaIdFactory.conceptId(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0xa107f9943a58e1dL)).parents("MPSGobstones.structure.Program").parentIds(MetaIdFactory.conceptId(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0xa107f9943a58e1dL)).alias("program", "").create();
+  /*package*/ final ConceptDescriptor myConceptBoardDeclaration = new ConceptDescriptorBuilder("GsInspectorPresenter.structure.BoardDeclaration", MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x7f13d3cac5351dfaL)).super_("MPSGobstones.structure.BoardDefinition").super_(MetaIdFactory.conceptId(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x7f13d3cac51f62a7L)).parents("MPSGobstones.structure.BoardDefinition").parentIds(MetaIdFactory.conceptId(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x7f13d3cac51f62a7L)).alias("Tablero", "").create();
+  /*package*/ final ConceptDescriptor myConceptMainProgram = new ConceptDescriptorBuilder("GsInspectorPresenter.structure.MainProgram", MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x5b1857b73e39d0d3L)).super_("MPSGobstones.structure.Program").super_(MetaIdFactory.conceptId(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0xa107f9943a58e1dL)).parents("MPSGobstones.structure.Program").parentIds(MetaIdFactory.conceptId(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0xa107f9943a58e1dL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(9156895335219817772L, "tablero", MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x7f13d3cac5351dfaL), true)).references("tablero").alias("program", "").create();
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptMainProgram);
+    return Arrays.asList(myConceptBoardDeclaration, myConceptMainProgram);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0f, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0g, conceptFqName)) {
       case 0:
+        return myConceptBoardDeclaration;
+      case 1:
         return myConceptMainProgram;
       default:
         return null;
     }
   }
-  private static String[] stringSwitchCases_1htk8d_a0a0f = new String[]{"GsInspectorPresenter.structure.MainProgram"};
+  private static String[] stringSwitchCases_1htk8d_a0a0g = new String[]{"GsInspectorPresenter.structure.BoardDeclaration", "GsInspectorPresenter.structure.MainProgram"};
 }
