@@ -19,6 +19,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -419,8 +422,8 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="CgvT_3DP32" resolve="StatementList" />
     </node>
-    <node concept="PrWs8" id="7WjOWF4YhQs" role="PzmwI">
-      <ref role="PrY4T" node="7WjOWF4YhQo" resolve="RoutineDeclaration" />
+    <node concept="PrWs8" id="7WjOWF4Yy6Y" role="PzmwI">
+      <ref role="PrY4T" node="7WjOWF4Yy6V" resolve="RoutineDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="3cFv37cKyvo">
@@ -438,6 +441,9 @@
       <property role="20kJfa" value="declaration" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3cFv37cJTT1" resolve="ProcedureDeclaration" />
+    </node>
+    <node concept="PrWs8" id="7WjOWF4Yyw6" role="PzmwI">
+      <ref role="PrY4T" node="7WjOWF4Yyvt" resolve="RoutineInvocation" />
     </node>
   </node>
   <node concept="1TIwiD" id="6sLgXHLEbT5">
@@ -547,8 +553,8 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="CgvT_3DP31" resolve="Statement" />
     </node>
-    <node concept="PrWs8" id="7WjOWF4YhQq" role="PzmwI">
-      <ref role="PrY4T" node="7WjOWF4YhQo" resolve="RoutineDeclaration" />
+    <node concept="PrWs8" id="7WjOWF4Yy74" role="PzmwI">
+      <ref role="PrY4T" node="7WjOWF4Yy6V" resolve="RoutineDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="7WjOWF4XDMQ">
@@ -567,6 +573,26 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7WjOWF4XDMP" resolve="FunctionDeclaration" />
     </node>
+    <node concept="PrWs8" id="7WjOWF4Yyw8" role="PzmwI">
+      <ref role="PrY4T" node="7WjOWF4Yyvt" resolve="RoutineInvocation" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7WjOWF4Yy6V">
+    <property role="3GE5qa" value="routines" />
+    <property role="TrG5h" value="RoutineDeclaration" />
+    <node concept="1TJgyj" id="7WjOWF4Yy6W" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arguments" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3bcPj6$uUvQ" resolve="VariableName" />
+    </node>
+    <node concept="PrWs8" id="7WjOWF4YDsF" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7WjOWF4Yyvt">
+    <property role="3GE5qa" value="routines" />
+    <property role="TrG5h" value="RoutineInvocation" />
   </node>
 </model>
 
