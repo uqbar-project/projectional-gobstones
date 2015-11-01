@@ -11,13 +11,11 @@
   </dependency>
   <dependency className="GsDesktopUI.view.CellView" file="CellView.java">
     <classNode dependClassName="JavaGobstones.models.Cell" />
-    <classNode dependClassName="JavaGobstones.models.Color" />
     <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.awt.Dimension" />
     <classNode dependClassName="java.awt.Graphics" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="javax.swing.BorderFactory" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.MapSequence" />
     <classNode extendsClassName="javax.swing.JComponent" />
   </dependency>
   <dependency className="GsDesktopUI.view.PreviewFactory" file="PreviewFactory.java">
