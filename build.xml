@@ -234,6 +234,7 @@
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jetbrains.mps.baseLanguage.unitTest.libs.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguageInternal.jar" />
       <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.bootstrap-languages.devkit" />
       <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.general-purpose.devkit" />
@@ -271,15 +272,22 @@
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.make.facet.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.make.reduced.jar" />
       <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.make.script.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.tool.gentest.jar" />
       <library file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+      <library file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
+      <library file="${artifacts.mpsStandalone}/lib/mps-test.jar" />
+      <library file="${artifacts.mpsStandalone}/lib/mps-tool.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+      <library file="${artifacts.mpsStandalone}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.jar" />
+      <library file="${artifacts.mpsStandalone}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
       <chunk>
         <module file="${basedir}/solutions/JavaGobstones/JavaGobstones.msd" />
         <module file="${basedir}/MPSGobstones/MPSGobstones.mpl" />
@@ -365,12 +373,22 @@
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.jar" />
+        <fileset file="${artifacts.mpsStandalone}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>

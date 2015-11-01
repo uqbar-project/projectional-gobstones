@@ -605,6 +605,18 @@
             <ref role="3bR37D" node="19Z0sgDO9wT" resolve="MPSGobstones" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7WjOWF59FOg" role="3bR37C">
+          <node concept="3bR9La" id="7WjOWF59FOh" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7lusBUs9EO5" resolve="jetbrains.mps.lang.editor.table" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7WjOWF59FOi" role="3bR37C">
+          <node concept="3bR9La" id="7WjOWF59FOj" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L5j" resolve="jetbrains.mps.lang.editor.table.runtime" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
