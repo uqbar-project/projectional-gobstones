@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="GsInspectorPresenter.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
+    <classNode dependClassName="GsInspectorPresenter.behavior.BoardDeclaration_BehaviorDescriptor" />
     <classNode dependClassName="GsInspectorPresenter.behavior.MainProgram_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
+  </dependency>
+  <dependency className="GsInspectorPresenter.behavior.BoardDeclaration_BehaviorDescriptor" file="BoardDeclaration_BehaviorDescriptor.java">
+    <classNode dependClassName="MPSGobstones.behavior.BoardDefinition_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="GsInspectorPresenter.behavior.MainProgram_Behavior" file="MainProgram_Behavior.java">
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />

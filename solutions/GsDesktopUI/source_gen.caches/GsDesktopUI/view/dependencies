@@ -13,6 +13,7 @@
     <classNode dependClassName="JavaGobstones.models.Cell" />
     <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.awt.Font" />
     <classNode dependClassName="java.awt.Graphics" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="javax.swing.BorderFactory" />
@@ -20,9 +21,12 @@
   </dependency>
   <dependency className="GsDesktopUI.view.PreviewFactory" file="PreviewFactory.java">
     <classNode dependClassName="GsDesktopUI.view.BoardRenderer" />
+    <classNode dependClassName="JavaGobstones.models.Board" />
     <classNode dependClassName="MPSGobstones.behavior.InterpreterState" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="javax.swing.JComponent" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>

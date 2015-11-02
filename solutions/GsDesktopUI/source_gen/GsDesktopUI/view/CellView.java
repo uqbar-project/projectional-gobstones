@@ -4,6 +4,7 @@ package GsDesktopUI.view;
 
 import javax.swing.JComponent;
 import JavaGobstones.models.Cell;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -12,10 +13,15 @@ import javax.swing.BorderFactory;
 public class CellView extends JComponent {
 
   private final Cell cell;
+  public static Font font = new Font("Serif", Font.CENTER_BASELINE, 9);
+
 
   @Override
   protected void paintComponent(Graphics graphics) {
     super.paintComponent(graphics);
+
+    graphics.setFont(CellView.font);
+
     if (cell != null) {
       if (cell.getRed() > 0) {
         graphics.setColor(Color.red);
@@ -33,6 +39,8 @@ public class CellView extends JComponent {
         graphics.setColor(Color.green);
         graphics.fillOval(24, 24, 18, 18);
       }
+      graphics.setColor(Color.white);
+      graphics.drawString(cell.x + ":" + cell.y, 18, 18);
     }
   }
   @Override

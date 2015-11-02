@@ -37,7 +37,7 @@
     <ref role="1TJDcQ" to="xwsw:CgvT_3DoSt" resolve="Program" />
     <node concept="1TJgyj" id="7WjOWF5dmOG" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="tablero" />
+      <property role="20kJfa" value="board" />
       <ref role="20lvS9" node="7WjOWF5dhRU" resolve="BoardDeclaration" />
     </node>
   </node>

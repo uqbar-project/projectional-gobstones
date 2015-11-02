@@ -12,7 +12,7 @@ import JavaGobstones.models.Cell;
 public class BoardRenderer {
   public static JComponent render(Board board, boolean editorInErrorState) {
     JPanel jPanel = new JPanel();
-    jPanel.setLayout(new GridLayout(board.columnCount(), board.rowCount()));
+    jPanel.setLayout(new GridLayout(board.rowCount(), board.columnCount()));
 
     if (editorInErrorState) {
       return jPanel;

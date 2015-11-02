@@ -81,14 +81,14 @@ public class MainProgram_Editor extends DefaultNodeEditor {
   }
   private EditorCell createRefCell_5qy9kg_b0a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("tablero");
-    provider.setNoTargetText("<no tablero>");
+    provider.setRole("board");
+    provider.setNoTargetText("<no board>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new MainProgram_Editor._Inline_5qy9kg_a1a0a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("tablero");
+      editorCell.setRole("board");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
