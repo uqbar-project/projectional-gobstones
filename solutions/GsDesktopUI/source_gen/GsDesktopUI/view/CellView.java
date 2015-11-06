@@ -14,7 +14,10 @@ public class CellView extends JComponent {
 
   private final Cell cell;
   public static Font font = new Font("Serif", Font.CENTER_BASELINE, 9);
-
+  private final int PADDING = 6;
+  private final int STONE_WIDTH = 22;
+  private final int CENTER_POSITION = PADDING + STONE_WIDTH + PADDING;
+  private final int CELL_SIDE = CENTER_POSITION + STONE_WIDTH + PADDING;
 
   @Override
   protected void paintComponent(Graphics graphics) {
@@ -25,27 +28,27 @@ public class CellView extends JComponent {
     if (cell != null) {
       if (cell.getRed() > 0) {
         graphics.setColor(Color.red);
-        graphics.fillOval(4, 4, 18, 18);
+        graphics.fillOval(PADDING, PADDING, STONE_WIDTH, STONE_WIDTH);
       }
       if (cell.getBlack() > 0) {
         graphics.setColor(Color.black);
-        graphics.fillOval(24, 4, 18, 18);
+        graphics.fillOval(CENTER_POSITION, PADDING, STONE_WIDTH, STONE_WIDTH);
       }
       if (cell.getBlue() > 0) {
         graphics.setColor(Color.blue);
-        graphics.fillOval(4, 24, 18, 18);
+        graphics.fillOval(PADDING, CENTER_POSITION, STONE_WIDTH, STONE_WIDTH);
       }
       if (cell.getGreen() > 0) {
         graphics.setColor(Color.green);
-        graphics.fillOval(24, 24, 18, 18);
+        graphics.fillOval(CENTER_POSITION, CENTER_POSITION, STONE_WIDTH, STONE_WIDTH);
       }
       graphics.setColor(Color.white);
-      graphics.drawString(cell.x + ":" + cell.y, 18, 18);
+      graphics.drawString(cell.x + ":" + cell.y, STONE_WIDTH, CENTER_POSITION);
     }
   }
   @Override
   public Dimension getPreferredSize() {
-    return new Dimension(48, 48);
+    return new Dimension(CELL_SIDE, CELL_SIDE);
   }
 
   public CellView() {

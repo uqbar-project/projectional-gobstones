@@ -19,7 +19,7 @@ public class BoardRenderer {
     }
 
     if (!(board.isExploded())) {
-      jPanel.setBackground(new Color(255, 245, 155));
+      jPanel.setBackground(new Color(235, 215, 125));
     } else {
       jPanel.setBackground(Color.RED);
     }
