@@ -4,12 +4,16 @@ package GsDesktopUI.view;
 
 import javax.swing.JComponent;
 import org.jetbrains.mps.openapi.model.SNode;
+import JavaGobstones.models.Board;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import MPSGobstones.behavior.InterpreterState;
 
 public final class PreviewFactory {
 
   public static JComponent createPanel(final SNode root, boolean editorInErrorState) {
-    return BoardRenderer.render(BehaviorReflection.invokeNonVirtual(InterpreterState.class, root, "MPSGobstones.structure.Program", "call_interpret_6044724656164062582", new Object[]{new InterpreterState()}).board, editorInErrorState);
+    Board initialBoard = ((SLinkOperations.getTarget(root, MetaAdapterFactory.getReferenceLink(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x5b1857b73e39d0d3L, 0x7f13d3cac5356d2cL, "board")) != null) ? BehaviorReflection.invokeNonVirtual(Board.class, SLinkOperations.getTarget(root, MetaAdapterFactory.getReferenceLink(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x5b1857b73e39d0d3L, 0x7f13d3cac5356d2cL, "board")), "MPSGobstones.structure.BoardDefinition", "call_generateBoard_6321380926643643272", new Object[]{}) : new Board(10, 10));
+    return BoardRenderer.render(BehaviorReflection.invokeNonVirtual(InterpreterState.class, root, "MPSGobstones.structure.Program", "call_interpret_6044724656164062582", new Object[]{new InterpreterState(initialBoard)}).board, editorInErrorState);
   }
 }

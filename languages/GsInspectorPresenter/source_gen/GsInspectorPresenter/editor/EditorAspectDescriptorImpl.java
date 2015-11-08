@@ -15,6 +15,8 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0a, descriptor.getConceptFqName())) {
       case 0:
         return collectEditors(descriptor, Collections.<ConceptEditor>singletonList(new MainProgram_Editor()));
+      case 1:
+        return collectEditors(descriptor, Collections.<ConceptEditor>singletonList(new ResultBoard_Editor()));
       default:
     }
     return Collections.<ConceptEditor>emptyList();
@@ -25,5 +27,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0a = new String[]{"GsInspectorPresenter.structure.MainProgram"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0a = new String[]{"GsInspectorPresenter.structure.MainProgram", "GsInspectorPresenter.structure.ResultBoard"};
 }

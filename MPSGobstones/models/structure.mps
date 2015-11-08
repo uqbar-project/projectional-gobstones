@@ -3,10 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
+    <use id="0272d3b4-4cc8-481e-9e2f-07793fbfcb41" name="jetbrains.mps.lang.editor.table" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="506h" ref="r:be8689c9-d9cc-49a8-a7cb-7c50e1c1e018(JavaGobstones.models)" />
+    <import index="squ6" ref="r:b60215f1-3d3e-41cc-8321-723ef8eb59dd(jetbrains.mps.lang.editor.table.runtime)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -649,6 +651,70 @@
     <property role="34LRSv" value="nroBolitas" />
     <property role="R4oN_" value="Pregunta si hay bolitas de determinado color" />
     <ref role="1TJDcQ" node="7WjOWF56V4g" resolve="NativeFunction" />
+  </node>
+  <node concept="1TIwiD" id="7WjOWF57QaB">
+    <property role="TrG5h" value="BoardDefinition" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="Tablero" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7WjOWF57QaE" role="1TKVEl">
+      <property role="TrG5h" value="rowsSize" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="7WjOWF589Y5" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="7WjOWF5b8n0" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rows" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7WjOWF5b7HR" resolve="BoardRowDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7WjOWF58020">
+    <property role="TrG5h" value="CellDefinition" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7WjOWF58021" role="1TKVEl">
+      <property role="TrG5h" value="blue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7WjOWF58023" role="1TKVEl">
+      <property role="TrG5h" value="black" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7WjOWF58026" role="1TKVEl">
+      <property role="TrG5h" value="red" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7WjOWF5802a" role="1TKVEl">
+      <property role="TrG5h" value="green" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7WjOWF5b7HR">
+    <property role="TrG5h" value="BoardRowDefinition" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7WjOWF5b7I3" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cells" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7WjOWF58020" resolve="CellDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5uU3BnI$zBh">
+    <property role="TrG5h" value="Library" />
+    <property role="34LRSv" value="Biblioteca" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5uU3BnI$zBk" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="routines" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7WjOWF4Yy6V" resolve="RoutineDeclaration" />
+    </node>
+    <node concept="PrWs8" id="5uU3BnI$zBi" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 

@@ -4,6 +4,7 @@ package GsDesktopUI.view;
 
 import javax.swing.JComponent;
 import JavaGobstones.models.Cell;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -12,32 +13,40 @@ import javax.swing.BorderFactory;
 public class CellView extends JComponent {
 
   private final Cell cell;
+  public static Font font = new Font("Serif", Font.CENTER_BASELINE, 9);
+  private final int PADDING = 6;
+  private final int STONE_WIDTH = 22;
+  private final int CENTER_POSITION = PADDING + STONE_WIDTH + PADDING;
+  private final int CELL_SIDE = CENTER_POSITION + STONE_WIDTH + PADDING;
 
   @Override
   protected void paintComponent(Graphics graphics) {
     super.paintComponent(graphics);
+
+    graphics.setFont(CellView.font);
+
     if (cell != null) {
-      if (cell.getRed() > 0) {
-        graphics.setColor(Color.red);
-        graphics.fillOval(4, 4, 18, 18);
-      }
-      if (cell.getBlack() > 0) {
-        graphics.setColor(Color.black);
-        graphics.fillOval(24, 4, 18, 18);
-      }
-      if (cell.getBlue() > 0) {
-        graphics.setColor(Color.blue);
-        graphics.fillOval(4, 24, 18, 18);
-      }
-      if (cell.getGreen() > 0) {
-        graphics.setColor(Color.green);
-        graphics.fillOval(24, 24, 18, 18);
-      }
+      renderCell(graphics, Color.red, cell.getRed(), PADDING, PADDING);
+      renderCell(graphics, Color.black, cell.getBlack(), CENTER_POSITION, PADDING);
+      renderCell(graphics, Color.blue, cell.getBlue(), PADDING, CENTER_POSITION);
+      renderCell(graphics, Color.green, cell.getGreen(), CENTER_POSITION, CENTER_POSITION);
+
+      graphics.setColor(Color.white);
+      graphics.drawString(cell.x + ":" + cell.y, STONE_WIDTH, CENTER_POSITION);
+    }
+  }
+
+  public void renderCell(Graphics graphics, Color color, int qt, int x, int y) {
+    if (qt > 0) {
+      graphics.setColor(color);
+      graphics.fillOval(x, y, STONE_WIDTH, STONE_WIDTH);
+      graphics.setColor(Color.black);
+      graphics.drawString(qt + "", x + STONE_WIDTH / 2, y + STONE_WIDTH / 2);
     }
   }
   @Override
   public Dimension getPreferredSize() {
-    return new Dimension(48, 48);
+    return new Dimension(CELL_SIDE, CELL_SIDE);
   }
 
   public CellView() {
