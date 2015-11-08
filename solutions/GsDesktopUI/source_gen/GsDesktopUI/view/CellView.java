@@ -26,24 +26,22 @@ public class CellView extends JComponent {
     graphics.setFont(CellView.font);
 
     if (cell != null) {
-      if (cell.getRed() > 0) {
-        graphics.setColor(Color.red);
-        graphics.fillOval(PADDING, PADDING, STONE_WIDTH, STONE_WIDTH);
-      }
-      if (cell.getBlack() > 0) {
-        graphics.setColor(Color.black);
-        graphics.fillOval(CENTER_POSITION, PADDING, STONE_WIDTH, STONE_WIDTH);
-      }
-      if (cell.getBlue() > 0) {
-        graphics.setColor(Color.blue);
-        graphics.fillOval(PADDING, CENTER_POSITION, STONE_WIDTH, STONE_WIDTH);
-      }
-      if (cell.getGreen() > 0) {
-        graphics.setColor(Color.green);
-        graphics.fillOval(CENTER_POSITION, CENTER_POSITION, STONE_WIDTH, STONE_WIDTH);
-      }
+      renderCell(graphics, Color.red, cell.getRed(), PADDING, PADDING);
+      renderCell(graphics, Color.black, cell.getBlack(), CENTER_POSITION, PADDING);
+      renderCell(graphics, Color.blue, cell.getBlue(), PADDING, CENTER_POSITION);
+      renderCell(graphics, Color.green, cell.getGreen(), CENTER_POSITION, CENTER_POSITION);
+
       graphics.setColor(Color.white);
       graphics.drawString(cell.x + ":" + cell.y, STONE_WIDTH, CENTER_POSITION);
+    }
+  }
+
+  public void renderCell(Graphics graphics, Color color, int qt, int x, int y) {
+    if (qt > 0) {
+      graphics.setColor(color);
+      graphics.fillOval(x, y, STONE_WIDTH, STONE_WIDTH);
+      graphics.setColor(Color.black);
+      graphics.drawString(qt + "", x + STONE_WIDTH / 2, y + STONE_WIDTH / 2);
     }
   }
   @Override
