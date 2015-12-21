@@ -22,12 +22,12 @@
   <dependency className="GsDesktopUI.view.PreviewFactory" file="PreviewFactory.java">
     <classNode dependClassName="GsDesktopUI.view.BoardRenderer" />
     <classNode dependClassName="JavaGobstones.models.Board" />
+    <classNode dependClassName="MPSGobstones.behavior.BoardDefinition__BehaviorDescriptor" />
     <classNode dependClassName="MPSGobstones.behavior.InterpreterState" />
-    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="MPSGobstones.behavior.Program__BehaviorDescriptor" />
     <classNode dependClassName="javax.swing.JComponent" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
 </dependenciesRoot>

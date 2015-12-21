@@ -40,7 +40,7 @@ public class CellView extends JComponent {
     if (qt > 0) {
       graphics.setColor(color);
       graphics.fillOval(x, y, STONE_WIDTH, STONE_WIDTH);
-      graphics.setColor(Color.black);
+      graphics.setColor((color == Color.black ? Color.white : Color.black));
       graphics.drawString(qt + "", x + STONE_WIDTH / 2, y + STONE_WIDTH / 2);
     }
   }
