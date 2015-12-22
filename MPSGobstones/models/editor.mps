@@ -538,6 +538,9 @@
           <node concept="3F0A7n" id="3cFv37cKywn" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="VechU" id="7diH3Vh8vgb" role="3F10Kt">
+              <property role="Vb096" value="DARK_MAGENTA" />
+            </node>
           </node>
         </node>
       </node>

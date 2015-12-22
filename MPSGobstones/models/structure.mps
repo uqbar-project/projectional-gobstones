@@ -287,6 +287,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="CgvT_3DP32" resolve="StatementList" />
     </node>
+    <node concept="PrWs8" id="KjWzrYD8FZ" role="PzmwI">
+      <ref role="PrY4T" node="KjWzrYD8FH" resolve="CanBeRestricted" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3uklb1au6j4">
     <property role="3GE5qa" value="statements" />
@@ -301,6 +304,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="KjWzrYD8G1" role="PzmwI">
+      <ref role="PrY4T" node="KjWzrYD8FH" resolve="CanBeRestricted" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3uklb1au862">
     <property role="3GE5qa" value="statements" />
@@ -314,6 +320,9 @@
       <property role="20kJfa" value="condition" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="KjWzrYD8G3" role="PzmwI">
+      <ref role="PrY4T" node="KjWzrYD8FH" resolve="CanBeRestricted" />
     </node>
   </node>
   <node concept="1TIwiD" id="2EKRJuPogD2">
@@ -443,6 +452,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="CgvT_3DP32" resolve="StatementList" />
     </node>
+    <node concept="PrWs8" id="KjWzrYD8FX" role="PzmwI">
+      <ref role="PrY4T" node="KjWzrYD8FH" resolve="CanBeRestricted" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5fzbgLBH5pg">
     <property role="3GE5qa" value="native" />
@@ -472,6 +484,9 @@
     </node>
     <node concept="PrWs8" id="7WjOWF4Yy6Y" role="PzmwI">
       <ref role="PrY4T" node="7WjOWF4Yy6V" resolve="RoutineDeclaration" />
+    </node>
+    <node concept="PrWs8" id="KjWzrYD8FT" role="PzmwI">
+      <ref role="PrY4T" node="KjWzrYD8FH" resolve="CanBeRestricted" />
     </node>
   </node>
   <node concept="1TIwiD" id="3cFv37cKyvo">
@@ -611,6 +626,9 @@
     </node>
     <node concept="PrWs8" id="7WjOWF4Yy74" role="PzmwI">
       <ref role="PrY4T" node="7WjOWF4Yy6V" resolve="RoutineDeclaration" />
+    </node>
+    <node concept="PrWs8" id="KjWzrYD8FM" role="PzmwI">
+      <ref role="PrY4T" node="KjWzrYD8FH" resolve="CanBeRestricted" />
     </node>
   </node>
   <node concept="1TIwiD" id="7WjOWF4XDMQ">
@@ -787,6 +805,10 @@
     <node concept="PrWs8" id="5uU3BnI$zBi" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="KjWzrYD8FH">
+    <property role="1pbfSe" value="179862819" />
+    <property role="TrG5h" value="CanBeRestricted" />
   </node>
 </model>
 

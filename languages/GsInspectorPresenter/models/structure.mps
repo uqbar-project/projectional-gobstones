@@ -12,6 +12,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -76,6 +77,9 @@
       <property role="20kJfa" value="program" />
       <ref role="20lvS9" node="5GolVsYet3j" resolve="MainProgram" />
     </node>
+    <node concept="PrWs8" id="KjWzrYBIiz" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5vxZ7pqF15S">
     <property role="TrG5h" value="ExerciseLanguageDefinition" />
@@ -87,12 +91,6 @@
       <property role="20kJfa" value="initialBoard" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7WjOWF5dhRU" resolve="BoardDeclaration" />
-    </node>
-    <node concept="1TJgyj" id="5vxZ7pqF15V" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="libraryDeclaration" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="5uU3BnI$zCh" resolve="LibraryDeclaration" />
     </node>
     <node concept="1TJgyj" id="5vxZ7pqF15Y" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -106,6 +104,42 @@
     </node>
     <node concept="PrWs8" id="5vxZ7pqF1KT" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="KjWzrYBJPQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="libraryDeclarations" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="KjWzrYBJPU" resolve="LibraryReference" />
+    </node>
+    <node concept="1TJgyj" id="KjWzrYBSrp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="restrictions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="KjWzrYBSre" resolve="FeatureRestriction" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="KjWzrYBJPU">
+    <property role="1pbfSe" value="179498928" />
+    <property role="TrG5h" value="LibraryReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="KjWzrYBJPV" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="libraryDeclaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5uU3BnI$zCh" resolve="LibraryDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="KjWzrYBSre">
+    <property role="1pbfSe" value="179534084" />
+    <property role="TrG5h" value="FeatureRestriction" />
+    <property role="34LRSv" value="Está prohibido usar" />
+    <property role="R4oN_" value="impide al alumno utilizar determinada herramienta" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="KjWzrYBUCo" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="gobstonesConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="xwsw:KjWzrYD8FH" resolve="CanBeRestricted" />
     </node>
   </node>
 </model>

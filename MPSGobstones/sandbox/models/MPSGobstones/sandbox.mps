@@ -9,21 +9,10 @@
   </imports>
   <registry>
     <language id="0cb8c78e-7916-43a8-8d8e-a292ead7a894" name="MPSGobstones">
-      <concept id="7725404610655926569" name="MPSGobstones.structure.IfElseStatement" flags="ng" index="2nupYA">
-        <child id="7725404610656009064" name="ifFalseBlock" index="2npHRB" />
-        <child id="7725404610656009061" name="ifTrueBlock" index="2npHRE" />
-        <child id="7725404610656009059" name="condition" index="2npHRG" />
-      </concept>
-      <concept id="3076203700975421485" name="MPSGobstones.structure.ModOperation" flags="ng" index="2vOhrq" />
-      <concept id="3076203700975372869" name="MPSGobstones.structure.Red" flags="ng" index="2vOtiM" />
-      <concept id="9156895335218131216" name="MPSGobstones.structure.NativeFunction" flags="ng" index="2U26bq">
-        <child id="9156895335218141393" name="expression" index="2U20Gr" />
-      </concept>
       <concept id="9156895335218373287" name="MPSGobstones.structure.BoardDefinition" flags="ng" index="2U3b5H">
         <property id="9156895335218373290" name="rowsSize" index="2U3b5w" />
         <child id="9156895335219234240" name="rows" index="2UfPoa" />
       </concept>
-      <concept id="9156895335218284220" name="MPSGobstones.structure.StonesQuantity" flags="ng" index="2U3tlQ" />
       <concept id="9156895335218413696" name="MPSGobstones.structure.CellDefinition" flags="ng" index="2UcXda">
         <property id="9156895335218413706" name="green" index="2UcXd0" />
         <property id="9156895335218413699" name="black" index="2UcXd9" />
@@ -33,28 +22,10 @@
       <concept id="9156895335219231607" name="MPSGobstones.structure.BoardRowDefinition" flags="ng" index="2UfUyX">
         <child id="9156895335219231619" name="cells" index="2UfUx9" />
       </concept>
-      <concept id="9156895335215701174" name="MPSGobstones.structure.FunctionInvocation" flags="ng" index="2VTkXW" />
-      <concept id="9156895335215701173" name="MPSGobstones.structure.FunctionDeclaration" flags="ng" index="2VTkXZ">
-        <child id="9156895335215722413" name="return" index="2VTjLB" />
-      </concept>
-      <concept id="9156895335215933405" name="MPSGobstones.structure.RoutineInvocation" flags="ng" index="2VUvgn">
-        <reference id="9156895335216169632" name="declaration" index="2VVx5E" />
-      </concept>
       <concept id="725219836248296989" name="MPSGobstones.structure.Program" flags="ng" index="19Hv64">
         <child id="725219836248411837" name="body" index="19HN4$" />
-        <child id="3687177273263237593" name="routines" index="3Z_dnC" />
       </concept>
-      <concept id="725219836248412354" name="MPSGobstones.structure.StatementList" flags="ng" index="19HMXr">
-        <child id="725219836248412355" name="statements" index="19HMXq" />
-      </concept>
-      <concept id="725219836248465437" name="MPSGobstones.structure.BinaryOperation" flags="ng" index="19I5Y4">
-        <child id="725219836248465438" name="left" index="19I5Y7" />
-        <child id="725219836248465441" name="right" index="19I5YS" />
-      </concept>
-      <concept id="7026781676426771958" name="MPSGobstones.structure.IntegerLiteral" flags="ng" index="3C81_2">
-        <property id="7026781676426771959" name="value" index="3C81_3" />
-      </concept>
-      <concept id="2998821801951237166" name="MPSGobstones.structure.EqualsTo" flags="ng" index="1NBu2$" />
+      <concept id="725219836248412354" name="MPSGobstones.structure.StatementList" flags="ng" index="19HMXr" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -64,31 +35,7 @@
   </registry>
   <node concept="19Hv64" id="CgvT_3DpaF">
     <property role="TrG5h" value="Pruebas" />
-    <node concept="19HMXr" id="CgvT_3DY$$" role="19HN4$">
-      <node concept="2nupYA" id="7diH3Vh8nel" role="19HMXq">
-        <node concept="19HMXr" id="7diH3Vh8nem" role="2npHRB" />
-        <node concept="2VTkXW" id="7diH3Vh8new" role="2npHRG">
-          <ref role="2VVx5E" node="6PkCkCjPdUo" resolve="esRojoPar" />
-        </node>
-        <node concept="19HMXr" id="7diH3Vh8neo" role="2npHRE" />
-      </node>
-    </node>
-    <node concept="2VTkXZ" id="6PkCkCjPdUo" role="3Z_dnC">
-      <property role="TrG5h" value="esRojoPar" />
-      <node concept="1NBu2$" id="7diH3Vh76Lb" role="2VTjLB">
-        <node concept="3C81_2" id="7diH3Vh76LC" role="19I5YS">
-          <property role="3C81_3" value="0" />
-        </node>
-        <node concept="2vOhrq" id="7diH3Vh76JX" role="19I5Y7">
-          <node concept="3C81_2" id="7diH3Vh76KI" role="19I5YS">
-            <property role="3C81_3" value="2" />
-          </node>
-          <node concept="2U3tlQ" id="7diH3Vh76JL" role="19I5Y7">
-            <node concept="2vOtiM" id="7diH3Vh76JR" role="2U20Gr" />
-          </node>
-        </node>
-      </node>
-    </node>
+    <node concept="19HMXr" id="CgvT_3DY$$" role="19HN4$" />
   </node>
   <node concept="2U3b5H" id="7WjOWF5bU8R">
     <property role="2U3b5w" value="10" />
