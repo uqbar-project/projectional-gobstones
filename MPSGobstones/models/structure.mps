@@ -56,7 +56,6 @@
   <node concept="1TIwiD" id="CgvT_3DoSt">
     <property role="TrG5h" value="Program" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="program" />
     <property role="1pbfSe" value="1303776694" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="CgvT_3DoYH" role="PzmwI">

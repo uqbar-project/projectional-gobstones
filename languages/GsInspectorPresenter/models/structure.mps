@@ -47,6 +47,7 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="program" />
     <property role="1pbfSe" value="1722668918" />
+    <property role="R4oN_" value="Programa Gobstones" />
     <ref role="1TJDcQ" to="xwsw:CgvT_3DoSt" resolve="Program" />
     <node concept="1TJgyj" id="7JzmVgWI13K" role="1TKVEi">
       <property role="20lmBu" value="reference" />
