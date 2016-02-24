@@ -16,6 +16,7 @@
     <classNode dependClassName="java.awt.Font" />
     <classNode dependClassName="java.awt.Graphics" />
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="javax.swing.BorderFactory" />
     <classNode extendsClassName="javax.swing.JComponent" />
   </dependency>

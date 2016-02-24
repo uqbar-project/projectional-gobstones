@@ -4,6 +4,7 @@
     <classNode dependClassName="MPSGobstones.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="MPSGobstones.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="MPSGobstones.editor.EditorAspectDescriptorImpl" />
+    <classNode dependClassName="MPSGobstones.intentions.IntentionsDescriptor" />
     <classNode dependClassName="MPSGobstones.structure.StructureAspectDescriptor" />
     <classNode dependClassName="MPSGobstones.typesystem.TypesystemDescriptor" />
     <classNode dependClassName="java.lang.Class" />
@@ -14,6 +15,7 @@
     <classNode dependClassName="jetbrains.mps.actions.descriptor.BaseActionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateModule" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />

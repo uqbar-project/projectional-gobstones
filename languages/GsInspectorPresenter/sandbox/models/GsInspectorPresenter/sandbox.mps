@@ -10,7 +10,10 @@
       <concept id="7435799069549182533" name="MPSGobstones.structure.NativeProcedure" flags="ng" index="mAvQu">
         <child id="7435799069549182534" name="expression" index="mAvQt" />
       </concept>
+      <concept id="3076203700975372871" name="MPSGobstones.structure.Green" flags="ng" index="2vOtiK" />
       <concept id="3076203700975372870" name="MPSGobstones.structure.Blue" flags="ng" index="2vOtiL" />
+      <concept id="3076203700975372869" name="MPSGobstones.structure.Red" flags="ng" index="2vOtiM" />
+      <concept id="3076203700975372872" name="MPSGobstones.structure.Black" flags="ng" index="2vOtiZ" />
       <concept id="6044724656164066896" name="MPSGobstones.structure.PutColor" flags="ng" index="OlRHs" />
       <concept id="6321380926644435409" name="MPSGobstones.structure.Library" flags="ng" index="2Ta3u$">
         <child id="6321380926644435412" name="routines" index="2Ta3ux" />
@@ -31,6 +34,9 @@
       <concept id="9156895335215701173" name="MPSGobstones.structure.FunctionDeclaration" flags="ng" index="2VTkXZ">
         <child id="9156895335215722413" name="return" index="2VTjLB" />
       </concept>
+      <concept id="9156895335215933405" name="MPSGobstones.structure.RoutineInvocation" flags="ng" index="2VUvgn">
+        <reference id="9156895335216169632" name="declaration" index="2VVx5E" />
+      </concept>
       <concept id="725219836248296989" name="MPSGobstones.structure.Program" flags="ng" index="19Hv64">
         <child id="725219836248411837" name="body" index="19HN4$" />
         <child id="3687177273263237593" name="routines" index="3Z_dnC" />
@@ -38,24 +44,13 @@
       <concept id="725219836248412354" name="MPSGobstones.structure.StatementList" flags="ng" index="19HMXr">
         <child id="725219836248412355" name="statements" index="19HMXq" />
       </concept>
-      <concept id="725219836248465437" name="MPSGobstones.structure.BinaryOperation" flags="ng" index="19I5Y4">
-        <child id="725219836248465438" name="left" index="19I5Y7" />
-        <child id="725219836248465441" name="right" index="19I5YS" />
-      </concept>
       <concept id="7026781676426771958" name="MPSGobstones.structure.IntegerLiteral" flags="ng" index="3C81_2">
         <property id="7026781676426771959" name="value" index="3C81_3" />
-      </concept>
-      <concept id="5293390306379622975" name="MPSGobstones.structure.LoopStatement" flags="ng" index="1GdgLf">
-        <child id="4004919084779583333" name="body" index="1XV6fl" />
-      </concept>
-      <concept id="5293390306379541195" name="MPSGobstones.structure.PlusOperation" flags="ng" index="1Gi$MV" />
-      <concept id="5293390306379541197" name="MPSGobstones.structure.MulOperation" flags="ng" index="1Gi$MX" />
-      <concept id="4004919084779594948" name="MPSGobstones.structure.RepeatStatement" flags="ng" index="1XV31O">
-        <child id="3076203700975325608" name="times" index="2vO8Xv" />
       </concept>
       <concept id="3687177273263234625" name="MPSGobstones.structure.ProcedureDeclaration" flags="ng" index="3Z_e9K">
         <child id="3687177273263234594" name="body" index="3Z_e8j" />
       </concept>
+      <concept id="3687177273263400920" name="MPSGobstones.structure.ProcedureInvocation" flags="ng" index="3ZUlJD" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -284,30 +279,64 @@
     <property role="TrG5h" value="Resolucion" />
     <ref role="17mOH4" node="KjWzrYBIir" resolve="Poner 100 rojas" />
     <node concept="19HMXr" id="7JzmVgWIULz" role="19HN4$">
-      <node concept="1XV31O" id="5f2KzShRw_N" role="19HMXq">
-        <node concept="19HMXr" id="5f2KzShRw_O" role="1XV6fl">
-          <node concept="OlRHs" id="5f2KzShRwAr" role="19HMXq">
-            <node concept="2vOtiL" id="5f2KzShRwAv" role="mAvQt" />
-          </node>
-        </node>
-        <node concept="1Gi$MV" id="5f2KzShS5Kz" role="2vO8Xv">
-          <node concept="1Gi$MX" id="5f2KzShS5KX" role="19I5YS">
-            <node concept="3C81_2" id="5f2KzShS5Lu" role="19I5YS">
-              <property role="3C81_3" value="3" />
-            </node>
-            <node concept="3C81_2" id="5f2KzShS5KE" role="19I5Y7">
-              <property role="3C81_3" value="2" />
-            </node>
-          </node>
-          <node concept="3C81_2" id="5f2KzShS5Kq" role="19I5Y7">
-            <property role="3C81_3" value="1" />
-          </node>
-        </node>
+      <node concept="3ZUlJD" id="2NFYgyijPwn" role="19HMXq">
+        <ref role="2VVx5E" node="2NFYgyijPwl" resolve="Poner5Azules" />
       </node>
     </node>
     <node concept="3Z_e9K" id="5f2KzShM75N" role="3Z_dnC">
       <property role="TrG5h" value="Algo" />
       <node concept="19HMXr" id="5f2KzShM75O" role="3Z_e8j" />
+    </node>
+    <node concept="3Z_e9K" id="2NFYgyijG31" role="3Z_dnC">
+      <property role="TrG5h" value="PonerUnaRoja" />
+      <node concept="19HMXr" id="2NFYgyijG32" role="3Z_e8j" />
+    </node>
+    <node concept="3Z_e9K" id="2NFYgyijPwl" role="3Z_dnC">
+      <property role="TrG5h" value="Poner5Azules" />
+      <node concept="19HMXr" id="2NFYgyijPwm" role="3Z_e8j">
+        <node concept="OlRHs" id="2NFYgyijPmn" role="19HMXq">
+          <node concept="2vOtiK" id="2NFYgyikdWN" role="mAvQt" />
+        </node>
+        <node concept="OlRHs" id="2NFYgyijPwA" role="19HMXq">
+          <node concept="2vOtiL" id="2NFYgyijPwB" role="mAvQt" />
+        </node>
+        <node concept="OlRHs" id="2NFYgyijPwJ" role="19HMXq">
+          <node concept="2vOtiM" id="2NFYgyikdWT" role="mAvQt" />
+        </node>
+        <node concept="OlRHs" id="2NFYgyijPwU" role="19HMXq">
+          <node concept="2vOtiZ" id="2NFYgyikdWZ" role="mAvQt" />
+        </node>
+        <node concept="OlRHs" id="2NFYgyikgh0" role="19HMXq">
+          <node concept="2vOtiL" id="2NFYgyikgh1" role="mAvQt" />
+        </node>
+        <node concept="OlRHs" id="2NFYgyikgk4" role="19HMXq">
+          <node concept="2vOtiL" id="2NFYgyikgk5" role="mAvQt" />
+        </node>
+        <node concept="OlRHs" id="2NFYgyikgna" role="19HMXq">
+          <node concept="2vOtiL" id="2NFYgyikgnb" role="mAvQt" />
+        </node>
+        <node concept="OlRHs" id="2NFYgyikgqi" role="19HMXq">
+          <node concept="2vOtiL" id="2NFYgyikgqj" role="mAvQt" />
+        </node>
+        <node concept="OlRHs" id="2NFYgyikgts" role="19HMXq">
+          <node concept="2vOtiL" id="2NFYgyikgtt" role="mAvQt" />
+        </node>
+        <node concept="OlRHs" id="2NFYgyikgwC" role="19HMXq">
+          <node concept="2vOtiL" id="2NFYgyikgwD" role="mAvQt" />
+        </node>
+        <node concept="OlRHs" id="2NFYgyikgzQ" role="19HMXq">
+          <node concept="2vOtiL" id="2NFYgyikgzR" role="mAvQt" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1_8ot$" id="2NFYgyiiyfT">
+    <property role="TrG5h" value="Algo" />
+    <ref role="17mOH4" node="KjWzrYBIir" resolve="Poner 100 rojas" />
+    <node concept="19HMXr" id="2NFYgyiiyfU" role="19HN4$">
+      <node concept="OlRHs" id="2NFYgyiiyg1" role="19HMXq">
+        <node concept="2vOtiM" id="2NFYgyiiyg5" role="mAvQt" />
+      </node>
     </node>
   </node>
 </model>

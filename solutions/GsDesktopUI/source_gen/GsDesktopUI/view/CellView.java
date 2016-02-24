@@ -25,10 +25,10 @@ public class CellView extends JComponent {
 
     graphics.setFont(CellView.font);
     if (cell != null) {
-      renderCell(graphics, Color.red, cell.getRed(), PADDING, PADDING);
+      renderCell(graphics, new Color(255, 91, 91), cell.getRed(), PADDING, PADDING);
       renderCell(graphics, Color.black, cell.getBlack(), CENTER_POSITION, PADDING);
-      renderCell(graphics, Color.blue, cell.getBlue(), PADDING, CENTER_POSITION);
-      renderCell(graphics, Color.green, cell.getGreen(), CENTER_POSITION, CENTER_POSITION);
+      renderCell(graphics, new Color(109, 91, 255), cell.getBlue(), PADDING, CENTER_POSITION);
+      renderCell(graphics, new Color(91, 255, 91), cell.getGreen(), CENTER_POSITION, CENTER_POSITION);
 
       graphics.setColor(Color.white);
       graphics.drawString(cell.x + ":" + cell.y, STONE_WIDTH, CENTER_POSITION);
@@ -40,7 +40,8 @@ public class CellView extends JComponent {
       graphics.setColor(color);
       graphics.fillOval(x, y, STONE_WIDTH, STONE_WIDTH);
       graphics.setColor((color == Color.black ? Color.white : Color.black));
-      graphics.drawString(qt + "", x + STONE_WIDTH / 2, y + STONE_WIDTH / 2);
+      String number = qt + "";
+      graphics.drawString(number, x + (STONE_WIDTH - (number.length() * 6)) / 2, y + (STONE_WIDTH + 6) / 2);
     }
   }
   @Override

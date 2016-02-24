@@ -24,8 +24,12 @@
       </concept>
       <concept id="725219836248296989" name="MPSGobstones.structure.Program" flags="ng" index="19Hv64">
         <child id="725219836248411837" name="body" index="19HN4$" />
+        <child id="3687177273263237593" name="routines" index="3Z_dnC" />
       </concept>
       <concept id="725219836248412354" name="MPSGobstones.structure.StatementList" flags="ng" index="19HMXr" />
+      <concept id="3687177273263234625" name="MPSGobstones.structure.ProcedureDeclaration" flags="ng" index="3Z_e9K">
+        <child id="3687177273263234594" name="body" index="3Z_e8j" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -33,10 +37,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="19Hv64" id="CgvT_3DpaF">
-    <property role="TrG5h" value="Pruebas" />
-    <node concept="19HMXr" id="CgvT_3DY$$" role="19HN4$" />
-  </node>
   <node concept="2U3b5H" id="7WjOWF5bU8R">
     <property role="2U3b5w" value="10" />
     <property role="TrG5h" value="test" />
@@ -535,6 +535,17 @@
         <property role="2UcXdc" value="0" />
         <property role="2UcXd0" value="0" />
       </node>
+    </node>
+  </node>
+  <node concept="19Hv64" id="2NFYgyijc05">
+    <node concept="3Z_e9K" id="2NFYgyijc09" role="3Z_dnC">
+      <property role="TrG5h" value="Asd" />
+      <node concept="19HMXr" id="2NFYgyijc0b" role="3Z_e8j" />
+    </node>
+    <node concept="19HMXr" id="2NFYgyijc06" role="19HN4$" />
+    <node concept="3Z_e9K" id="2NFYgyijc0J" role="3Z_dnC">
+      <property role="TrG5h" value="sarasa" />
+      <node concept="19HMXr" id="2NFYgyijc0K" role="3Z_e8j" />
     </node>
   </node>
 </model>
