@@ -172,5 +172,12 @@
     <property role="34LRSv" value="usar repetición condicional" />
     <ref role="1TJDcQ" node="5f2KzShMWt7" resolve="FeatureRestriction" />
   </node>
+  <node concept="1TIwiD" id="2NFYgyin6vd">
+    <property role="1pbfSe" value="1085775659" />
+    <property role="3GE5qa" value="restrictions" />
+    <property role="TrG5h" value="RepeatStatementRestriction" />
+    <property role="34LRSv" value="usar repetición simple" />
+    <ref role="1TJDcQ" node="5f2KzShMWt7" resolve="FeatureRestriction" />
+  </node>
 </model>
 

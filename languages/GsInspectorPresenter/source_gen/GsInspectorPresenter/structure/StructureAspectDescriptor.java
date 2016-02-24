@@ -20,18 +20,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptLibraryReference = new ConceptDescriptorBuilder("GsInspectorPresenter.structure.LibraryReference", MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0xc13f236fe9efd7aL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(870305471026625915L, "libraryDeclaration", MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x57ba0e75ee923a11L), false)).references("libraryDeclaration").create();
   /*package*/ final ConceptDescriptor myConceptMainProgram = new ConceptDescriptorBuilder("GsInspectorPresenter.structure.MainProgram", MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x5b1857b73e39d0d3L)).super_("MPSGobstones.structure.Program").super_(MetaIdFactory.conceptId(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0xa107f9943a58e1dL)).parents("MPSGobstones.structure.Program").parentIds(MetaIdFactory.conceptId(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0xa107f9943a58e1dL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(8927079716049391856L, "exercise", MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x57e1fc765aac1178L), false)).references("exercise").alias("program", "Programa Gobstones").create();
   /*package*/ final ConceptDescriptor myConceptMoveClawRestriction = new ConceptDescriptorBuilder("GsInspectorPresenter.structure.MoveClawRestriction", MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x53c2c23e11cbc746L)).super_("GsInspectorPresenter.structure.FeatureRestriction").super_(MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x53c2c23e11cbc747L)).parents("GsInspectorPresenter.structure.FeatureRestriction").parentIds(MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x53c2c23e11cbc747L)).alias("mover el cabezal", "").create();
+  /*package*/ final ConceptDescriptor myConceptRepeatStatementRestriction = new ConceptDescriptorBuilder("GsInspectorPresenter.structure.RepeatStatementRestriction", MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x2cebf908925c67cdL)).super_("GsInspectorPresenter.structure.FeatureRestriction").super_(MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x53c2c23e11cbc747L)).parents("GsInspectorPresenter.structure.FeatureRestriction").parentIds(MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x53c2c23e11cbc747L)).alias("usar repetici\u00f3n simple", "").create();
   /*package*/ final ConceptDescriptor myConceptResultBoard = new ConceptDescriptorBuilder("GsInspectorPresenter.structure.ResultBoard", MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x7456a035d18f4528L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(8383063909406295337L, "program", MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x5b1857b73e39d0d3L), true)).references("program").create();
   /*package*/ final ConceptDescriptor myConceptWhileStatementRestriction = new ConceptDescriptorBuilder("GsInspectorPresenter.structure.WhileStatementRestriction", MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x53c2c23e11cbc92bL)).super_("GsInspectorPresenter.structure.FeatureRestriction").super_(MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x53c2c23e11cbc747L)).parents("GsInspectorPresenter.structure.FeatureRestriction").parentIds(MetaIdFactory.conceptId(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x53c2c23e11cbc747L)).alias("usar repetici\u00f3n condicional", "").create();
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBoardDeclaration, myConceptExerciseLanguageDefinition, myConceptFeatureRestriction, myConceptFeatureRestrictionItem, myConceptLibraryDeclaration, myConceptLibraryReference, myConceptMainProgram, myConceptMoveClawRestriction, myConceptResultBoard, myConceptWhileStatementRestriction);
+    return Arrays.asList(myConceptBoardDeclaration, myConceptExerciseLanguageDefinition, myConceptFeatureRestriction, myConceptFeatureRestrictionItem, myConceptLibraryDeclaration, myConceptLibraryReference, myConceptMainProgram, myConceptMoveClawRestriction, myConceptRepeatStatementRestriction, myConceptResultBoard, myConceptWhileStatementRestriction);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0o, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0p, conceptFqName)) {
       case 0:
         return myConceptBoardDeclaration;
       case 1:
@@ -49,12 +50,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 7:
         return myConceptMoveClawRestriction;
       case 8:
-        return myConceptResultBoard;
+        return myConceptRepeatStatementRestriction;
       case 9:
+        return myConceptResultBoard;
+      case 10:
         return myConceptWhileStatementRestriction;
       default:
         return null;
     }
   }
-  private static String[] stringSwitchCases_1htk8d_a0a0o = new String[]{"GsInspectorPresenter.structure.BoardDeclaration", "GsInspectorPresenter.structure.ExerciseLanguageDefinition", "GsInspectorPresenter.structure.FeatureRestriction", "GsInspectorPresenter.structure.FeatureRestrictionItem", "GsInspectorPresenter.structure.LibraryDeclaration", "GsInspectorPresenter.structure.LibraryReference", "GsInspectorPresenter.structure.MainProgram", "GsInspectorPresenter.structure.MoveClawRestriction", "GsInspectorPresenter.structure.ResultBoard", "GsInspectorPresenter.structure.WhileStatementRestriction"};
+  private static String[] stringSwitchCases_1htk8d_a0a0p = new String[]{"GsInspectorPresenter.structure.BoardDeclaration", "GsInspectorPresenter.structure.ExerciseLanguageDefinition", "GsInspectorPresenter.structure.FeatureRestriction", "GsInspectorPresenter.structure.FeatureRestrictionItem", "GsInspectorPresenter.structure.LibraryDeclaration", "GsInspectorPresenter.structure.LibraryReference", "GsInspectorPresenter.structure.MainProgram", "GsInspectorPresenter.structure.MoveClawRestriction", "GsInspectorPresenter.structure.RepeatStatementRestriction", "GsInspectorPresenter.structure.ResultBoard", "GsInspectorPresenter.structure.WhileStatementRestriction"};
 }

@@ -166,5 +166,38 @@
       <node concept="10P_77" id="5f2KzShMWAd" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="2NFYgyin6ve">
+    <property role="3GE5qa" value="restrictions" />
+    <ref role="13h7C2" to="9huh:2NFYgyin6vd" resolve="RepeatStatementRestriction" />
+    <node concept="13hLZK" id="2NFYgyin6vf" role="13h7CW">
+      <node concept="3clFbS" id="2NFYgyin6vg" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2NFYgyin6vh" role="13h7CS">
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="TrG5h" value="isRestricted" />
+      <ref role="13i0hy" node="5f2KzShMWtb" resolve="isRestricted" />
+      <node concept="3Tm1VV" id="2NFYgyin6vi" role="1B3o_S" />
+      <node concept="3clFbS" id="2NFYgyin6vn" role="3clF47">
+        <node concept="3clFbF" id="2NFYgyin6xD" role="3cqZAp">
+          <node concept="2OqwBi" id="2NFYgyin6xF" role="3clFbG">
+            <node concept="37vLTw" id="2NFYgyin6xG" role="2Oq$k0">
+              <ref role="3cqZAo" node="2NFYgyin6vo" resolve="node" />
+            </node>
+            <node concept="1mIQ4w" id="2NFYgyin6xH" role="2OqNvi">
+              <node concept="chp4Y" id="2NFYgyin6A9" role="cj9EA">
+                <ref role="cht4Q" to="xwsw:3uklb1au6j4" resolve="RepeatStatement" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="2NFYgyin6vo" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="2NFYgyin6vp" role="1tU5fm" />
+      </node>
+      <node concept="10P_77" id="2NFYgyin6vq" role="3clF45" />
+    </node>
+  </node>
 </model>
 

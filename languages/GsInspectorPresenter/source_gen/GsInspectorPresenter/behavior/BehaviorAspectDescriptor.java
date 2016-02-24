@@ -12,6 +12,7 @@ import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import java.util.Arrays;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
+  private final BHDescriptor myRepeatStatementRestriction__BehaviorDescriptor = new RepeatStatementRestriction__BehaviorDescriptor();
   private final BHDescriptor myMoveClawRestriction__BehaviorDescriptor = new MoveClawRestriction__BehaviorDescriptor();
   private final BHDescriptor myFeatureRestriction__BehaviorDescriptor = new FeatureRestriction__BehaviorDescriptor();
   private final BHDescriptor myWhileStatementRestriction__BehaviorDescriptor = new WhileStatementRestriction__BehaviorDescriptor();
@@ -20,11 +21,12 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   private final long[] myConceptBehaviorIds;
 
   public BehaviorAspectDescriptor() {
-    myConceptBehaviorIds = new long[4];
-    myConceptBehaviorIds[0] = 0x53c2c23e11cbc746L;
-    myConceptBehaviorIds[1] = 0x53c2c23e11cbc747L;
-    myConceptBehaviorIds[2] = 0x53c2c23e11cbc92bL;
-    myConceptBehaviorIds[3] = 0x5b1857b73e39d0d3L;
+    myConceptBehaviorIds = new long[5];
+    myConceptBehaviorIds[0] = 0x2cebf908925c67cdL;
+    myConceptBehaviorIds[1] = 0x53c2c23e11cbc746L;
+    myConceptBehaviorIds[2] = 0x53c2c23e11cbc747L;
+    myConceptBehaviorIds[3] = 0x53c2c23e11cbc92bL;
+    myConceptBehaviorIds[4] = 0x5b1857b73e39d0d3L;
   }
 
   @Deprecated
@@ -39,12 +41,14 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     int behaviorIndex = Arrays.binarySearch(myConceptBehaviorIds, conceptId.getIdValue());
     switch (behaviorIndex) {
       case 0:
-        return myMoveClawRestriction__BehaviorDescriptor;
+        return myRepeatStatementRestriction__BehaviorDescriptor;
       case 1:
-        return myFeatureRestriction__BehaviorDescriptor;
+        return myMoveClawRestriction__BehaviorDescriptor;
       case 2:
-        return myWhileStatementRestriction__BehaviorDescriptor;
+        return myFeatureRestriction__BehaviorDescriptor;
       case 3:
+        return myWhileStatementRestriction__BehaviorDescriptor;
+      case 4:
         return myMainProgram__BehaviorDescriptor;
       default:
         return null;

@@ -66,6 +66,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -87,6 +88,7 @@
         <child id="1220357350423" name="dependency" index="yXQkb" />
       </concept>
       <concept id="7992060018732187438" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatementAnnotation" flags="ng" index="AMVWg" />
+      <concept id="6359146168314178663" name="jetbrains.mps.lang.typesystem.structure.Node_InferTypeOperation" flags="nn" index="HpLno" />
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -171,6 +173,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1015,6 +1024,155 @@
     <node concept="1YaCAy" id="5f2KzShN7Zk" role="1YuTPh">
       <property role="TrG5h" value="statement" />
       <ref role="1YaFvo" to="xwsw:CgvT_3DP31" resolve="Statement" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2NFYgyikvsO">
+    <property role="TrG5h" value="check_PutColor" />
+    <property role="3GE5qa" value="native" />
+    <node concept="3clFbS" id="2NFYgyikvsP" role="18ibNy">
+      <node concept="1X3_iC" id="2NFYgyilAJg" role="lGtFl">
+        <property role="3V$3am" value="statement" />
+        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+        <node concept="3clFbJ" id="2NFYgyikvHa" role="8Wnug">
+          <node concept="3clFbS" id="2NFYgyikvHb" role="3clFbx">
+            <node concept="2MkqsV" id="2NFYgyikw7k" role="3cqZAp">
+              <node concept="3cpWs3" id="2NFYgyikwhO" role="2MkJ7o">
+                <node concept="Xl_RD" id="2NFYgyikw7w" role="3uHU7B">
+                  <property role="Xl_RC" value="El procedimiento poner esperaba un Color pero recibió " />
+                </node>
+                <node concept="2OqwBi" id="2NFYgyil6L7" role="3uHU7w">
+                  <node concept="2OqwBi" id="2NFYgyil6L8" role="2Oq$k0">
+                    <node concept="1YBJjd" id="2NFYgyil6L9" role="2Oq$k0">
+                      <ref role="1YBMHb" node="2NFYgyikvsR" resolve="putColor" />
+                    </node>
+                    <node concept="3TrEf2" id="2NFYgyil6La" role="2OqNvi">
+                      <ref role="3Tt5mk" to="xwsw:6sLgXHLEbT6" />
+                    </node>
+                  </node>
+                  <node concept="HpLno" id="2NFYgyil6Lb" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2NFYgyikwGg" role="2OEOjV">
+                <node concept="1YBJjd" id="2NFYgyikwCZ" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2NFYgyikvsR" resolve="putColor" />
+                </node>
+                <node concept="3TrEf2" id="2NFYgyikwRJ" role="2OqNvi">
+                  <ref role="3Tt5mk" to="xwsw:6sLgXHLEbT6" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="2NFYgyikvYz" role="3clFbw">
+            <node concept="2ShNRf" id="2NFYgyikvZQ" role="3uHU7w">
+              <node concept="3zrR0B" id="2NFYgyikw6c" role="2ShVmc">
+                <node concept="3Tqbb2" id="2NFYgyikw6e" role="3zrR0E">
+                  <ref role="ehGHo" to="xwsw:2EKRJuPojny" resolve="ColorType" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2NFYgyikz8G" role="3uHU7B">
+              <node concept="HpLno" id="2NFYgyil6Jc" role="2OqNvi" />
+              <node concept="1YBJjd" id="2NFYgyilAp3" role="2Oq$k0">
+                <ref role="1YBMHb" node="2NFYgyikvsR" resolve="putColor" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2NFYgyikvsR" role="1YuTPh">
+      <property role="TrG5h" value="putColor" />
+      <ref role="1YaFvo" to="xwsw:5fzbgLBH5pg" resolve="PutColor" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2NFYgyil4vo">
+    <property role="TrG5h" value="typeof_PutColor" />
+    <property role="3GE5qa" value="native" />
+    <node concept="3clFbS" id="2NFYgyil4vp" role="18ibNy">
+      <node concept="1ZobV4" id="2NFYgyim6zO" role="3cqZAp">
+        <property role="2iVnQ_" value="Poner Color" />
+        <node concept="mw_s8" id="2NFYgyim6zP" role="1ZfhKB">
+          <node concept="2ShNRf" id="2NFYgyim6zQ" role="mwGJk">
+            <node concept="3zrR0B" id="2NFYgyim6zR" role="2ShVmc">
+              <node concept="3Tqbb2" id="2NFYgyim6zS" role="3zrR0E">
+                <ref role="ehGHo" to="xwsw:2EKRJuPojny" resolve="ColorType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2NFYgyim6zT" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2NFYgyim6zU" role="mwGJk">
+            <node concept="2OqwBi" id="2NFYgyim6De" role="1Z2MuG">
+              <node concept="1YBJjd" id="2NFYgyim6B0" role="2Oq$k0">
+                <ref role="1YBMHb" node="2NFYgyil4vr" resolve="putColor" />
+              </node>
+              <node concept="3TrEf2" id="2NFYgyim6Mn" role="2OqNvi">
+                <ref role="3Tt5mk" to="xwsw:6sLgXHLEbT6" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="2NFYgyim6QH" role="1ZmcU8">
+          <node concept="1YBJjd" id="2NFYgyim6Od" role="2Oq$k0">
+            <ref role="1YBMHb" node="2NFYgyil4vr" resolve="putColor" />
+          </node>
+          <node concept="3TrEf2" id="2NFYgyim6Wi" role="2OqNvi">
+            <ref role="3Tt5mk" to="xwsw:6sLgXHLEbT6" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="2NFYgyim6$1" role="3o8Qv2">
+          <property role="Xl_RC" value="El argumento de Poner() debe ser un color" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2NFYgyil4vr" role="1YuTPh">
+      <property role="TrG5h" value="putColor" />
+      <ref role="1YaFvo" to="xwsw:5fzbgLBH5pg" resolve="PutColor" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2NFYgyimAge">
+    <property role="TrG5h" value="typeof_FunctionInvocation" />
+    <property role="3GE5qa" value="routines" />
+    <node concept="3clFbS" id="2NFYgyimAgf" role="18ibNy">
+      <node concept="1Z5TYs" id="2NFYgyimAiS" role="3cqZAp">
+        <node concept="mw_s8" id="2NFYgyimAjc" role="1ZfhKB">
+          <node concept="1Z2H0r" id="2NFYgyimAj8" role="mwGJk">
+            <node concept="2OqwBi" id="2NFYgyimAzd" role="1Z2MuG">
+              <node concept="2OqwBi" id="2NFYgyimAlK" role="2Oq$k0">
+                <node concept="1YBJjd" id="2NFYgyimAjt" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2NFYgyimAgh" resolve="functionInvocation" />
+                </node>
+                <node concept="3TrEf2" id="2NFYgyimAqY" role="2OqNvi">
+                  <ref role="3Tt5mk" to="xwsw:7WjOWF4YhCE" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="2NFYgyimAEq" role="2OqNvi">
+                <ref role="3Tt5mk" to="xwsw:7WjOWF4XIYH" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2NFYgyimAiV" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2NFYgyimAgl" role="mwGJk">
+            <node concept="1YBJjd" id="2NFYgyimAgL" role="1Z2MuG">
+              <ref role="1YBMHb" node="2NFYgyimAgh" resolve="functionInvocation" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2NFYgyimAgh" role="1YuTPh">
+      <property role="TrG5h" value="functionInvocation" />
+      <ref role="1YaFvo" to="xwsw:7WjOWF4XDMQ" resolve="FunctionInvocation" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2NFYgyin64C">
+    <property role="TrG5h" value="typeof_VariableReference" />
+    <property role="3GE5qa" value="expressions" />
+    <node concept="3clFbS" id="2NFYgyin64D" role="18ibNy" />
+    <node concept="1YaCAy" id="2NFYgyin64F" role="1YuTPh">
+      <property role="TrG5h" value="variableReference" />
+      <ref role="1YaFvo" to="xwsw:5f2KzShPjk5" resolve="VariableReference" />
     </node>
   </node>
 </model>

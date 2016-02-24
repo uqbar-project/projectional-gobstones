@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="MPSGobstones.typesystem.TypesystemDescriptor" file="TypesystemDescriptor.java">
+    <classNode dependClassName="MPSGobstones.typesystem.check_PutColor_NonTypesystemRule" />
     <classNode dependClassName="MPSGobstones.typesystem.check_Statement_NonTypesystemRule" />
     <classNode dependClassName="MPSGobstones.typesystem.typeof_BinaryOperation_InferenceRule" />
     <classNode dependClassName="MPSGobstones.typesystem.typeof_BooleanLiteral_InferenceRule" />
     <classNode dependClassName="MPSGobstones.typesystem.typeof_Color_InferenceRule" />
     <classNode dependClassName="MPSGobstones.typesystem.typeof_Comparision_InferenceRule" />
     <classNode dependClassName="MPSGobstones.typesystem.typeof_Direction_InferenceRule" />
+    <classNode dependClassName="MPSGobstones.typesystem.typeof_FunctionInvocation_InferenceRule" />
     <classNode dependClassName="MPSGobstones.typesystem.typeof_IntegerLiteral_InferenceRule" />
     <classNode dependClassName="MPSGobstones.typesystem.typeof_IntegerOperation_InferenceRule" />
     <classNode dependClassName="MPSGobstones.typesystem.typeof_LogicalOperation_InferenceRule" />
     <classNode dependClassName="MPSGobstones.typesystem.typeof_ParenthesisExpression_InferenceRule" />
+    <classNode dependClassName="MPSGobstones.typesystem.typeof_PutColor_InferenceRule" />
     <classNode dependClassName="MPSGobstones.typesystem.typeof_RepeatStatement_InferenceRule" />
     <classNode dependClassName="MPSGobstones.typesystem.typeof_StonesQuantity_InferenceRule" />
     <classNode dependClassName="MPSGobstones.typesystem.typeof_UnaryNot_InferenceRule" />
+    <classNode dependClassName="MPSGobstones.typesystem.typeof_VariableReference_InferenceRule" />
     <classNode dependClassName="MPSGobstones.typesystem.typeof_WhileStatement_InferenceRule" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.BaseHelginsDescriptor" />
+  </dependency>
+  <dependency className="MPSGobstones.typesystem.check_PutColor_NonTypesystemRule" file="check_PutColor_NonTypesystemRule.java">
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
   <dependency className="MPSGobstones.typesystem.check_Statement_NonTypesystemRule" file="check_Statement_NonTypesystemRule.java">
     <classNode dependClassName="GsInspectorPresenter.behavior.FeatureRestriction__BehaviorDescriptor" />
@@ -106,6 +119,17 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
+  <dependency className="MPSGobstones.typesystem.typeof_FunctionInvocation_InferenceRule" file="typeof_FunctionInvocation_InferenceRule.java">
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
   <dependency className="MPSGobstones.typesystem.typeof_IntegerLiteral_InferenceRule" file="typeof_IntegerLiteral_InferenceRule.java">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
@@ -155,6 +179,19 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
+  <dependency className="MPSGobstones.typesystem.typeof_PutColor_InferenceRule" file="typeof_PutColor_InferenceRule.java">
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
   <dependency className="MPSGobstones.typesystem.typeof_RepeatStatement_InferenceRule" file="typeof_RepeatStatement_InferenceRule.java">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
@@ -187,6 +224,15 @@
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
+  <dependency className="MPSGobstones.typesystem.typeof_VariableReference_InferenceRule" file="typeof_VariableReference_InferenceRule.java">
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
