@@ -48,10 +48,11 @@
     <property role="34LRSv" value="program" />
     <property role="1pbfSe" value="1722668918" />
     <ref role="1TJDcQ" to="xwsw:CgvT_3DoSt" resolve="Program" />
-    <node concept="1TJgyj" id="7WjOWF5dmOG" role="1TKVEi">
+    <node concept="1TJgyj" id="7JzmVgWI13K" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="board" />
-      <ref role="20lvS9" node="7WjOWF5dhRU" resolve="BoardDeclaration" />
+      <property role="20kJfa" value="exercise" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5vxZ7pqF15S" resolve="ExerciseLanguageDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="7WjOWF5dhRU">
@@ -139,7 +140,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="gobstonesConcept" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="xwsw:KjWzrYD8FH" resolve="CanBeRestricted" />
+      <ref role="20lvS9" to="xwsw:CgvT_3DP31" resolve="Statement" />
     </node>
   </node>
 </model>

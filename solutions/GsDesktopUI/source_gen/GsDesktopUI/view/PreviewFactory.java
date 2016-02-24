@@ -14,7 +14,7 @@ import MPSGobstones.behavior.InterpreterState;
 public final class PreviewFactory {
 
   public static JComponent createPanel(final SNode root, boolean editorInErrorState) {
-    Board initialBoard = ((SLinkOperations.getTarget(root, MetaAdapterFactory.getReferenceLink(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x5b1857b73e39d0d3L, 0x7f13d3cac5356d2cL, "board")) != null) ? BoardDefinition__BehaviorDescriptor.generateBoard_id5uU3BnIxye8.invoke(SLinkOperations.getTarget(root, MetaAdapterFactory.getReferenceLink(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x5b1857b73e39d0d3L, 0x7f13d3cac5356d2cL, "board"))) : new Board(10, 10));
+    Board initialBoard = ((SLinkOperations.getTarget(SLinkOperations.getTarget(root, MetaAdapterFactory.getReferenceLink(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x5b1857b73e39d0d3L, 0x7be35bb43cb810f0L, "exercise")), MetaAdapterFactory.getReferenceLink(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x57e1fc765aac1178L, 0x57e1fc765aac1179L, "initialBoard")) != null) ? BoardDefinition__BehaviorDescriptor.generateBoard_id5uU3BnIxye8.invoke(SLinkOperations.getTarget(SLinkOperations.getTarget(root, MetaAdapterFactory.getReferenceLink(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x5b1857b73e39d0d3L, 0x7be35bb43cb810f0L, "exercise")), MetaAdapterFactory.getReferenceLink(0x329ed8d6630b448dL, 0xb0add0e71fe3ca82L, 0x57e1fc765aac1178L, 0x57e1fc765aac1179L, "initialBoard"))) : new Board(10, 10));
     return BoardRenderer.render(Program__BehaviorDescriptor.interpret_id5fzbgLBH4lQ.invoke(root, new InterpreterState(initialBoard)).board, editorInErrorState);
   }
 }

@@ -24,7 +24,6 @@ public class CellView extends JComponent {
     super.paintComponent(graphics);
 
     graphics.setFont(CellView.font);
-
     if (cell != null) {
       renderCell(graphics, Color.red, cell.getRed(), PADDING, PADDING);
       renderCell(graphics, Color.black, cell.getBlack(), CENTER_POSITION, PADDING);

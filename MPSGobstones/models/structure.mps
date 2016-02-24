@@ -239,7 +239,7 @@
   <node concept="1TIwiD" id="6649bi9D674">
     <property role="3GE5qa" value="expressions.integer" />
     <property role="TrG5h" value="IntegerType" />
-    <property role="34LRSv" value="integer" />
+    <property role="34LRSv" value="número" />
     <property role="R4oN_" value="Número entero" />
     <property role="1pbfSe" value="349665672" />
     <ref role="1TJDcQ" node="6649bi9CEJl" resolve="Type" />
@@ -702,7 +702,7 @@
   </node>
   <node concept="1TIwiD" id="7WjOWF56VBV">
     <property role="3GE5qa" value="expressions.integer" />
-    <property role="TrG5h" value="Pow" />
+    <property role="TrG5h" value="PowOperation" />
     <property role="34LRSv" value="^" />
     <property role="1pbfSe" value="1143967173" />
     <ref role="1TJDcQ" node="4_PTB0_fUFe" resolve="IntegerOperation" />

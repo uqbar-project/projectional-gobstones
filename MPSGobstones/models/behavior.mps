@@ -544,7 +544,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="44iuVbMhfaw" role="3cqZAp" />
         <node concept="3clFbF" id="44iuVbMhfJl" role="3cqZAp">
           <node concept="2ShNRf" id="44iuVbMhqya" role="3clFbG">
             <node concept="1pGfFk" id="44iuVbMhqQ0" role="2ShVmc">
@@ -3803,7 +3802,7 @@
   </node>
   <node concept="13h7C7" id="7WjOWF56VC3">
     <property role="3GE5qa" value="expressions.integer" />
-    <ref role="13h7C2" to="xwsw:7WjOWF56VBV" resolve="Pow" />
+    <ref role="13h7C2" to="xwsw:7WjOWF56VBV" resolve="PowOperation" />
     <node concept="13hLZK" id="7WjOWF56VC4" role="13h7CW">
       <node concept="3clFbS" id="7WjOWF56VC5" role="2VODD2" />
     </node>

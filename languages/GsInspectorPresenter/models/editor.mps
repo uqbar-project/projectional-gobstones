@@ -43,6 +43,7 @@
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
@@ -133,30 +134,42 @@
             <property role="3$6WeP" value="5" />
           </node>
           <node concept="3F0ifn" id="7WjOWF5dmEY" role="3EZMnx">
-            <property role="3F0ifm" value="Ejercicio:" />
+            <property role="3F0ifm" value="Nombre:" />
+            <node concept="VechU" id="7JzmVgWI58K" role="3F10Kt">
+              <property role="Vb096" value="WHITE" />
+            </node>
+          </node>
+          <node concept="3F0A7n" id="7JzmVgWITDN" role="3EZMnx">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="VechU" id="7JzmVgWIUNE" role="3F10Kt">
+              <property role="Vb096" value="WHITE" />
+            </node>
           </node>
           <node concept="2iRfu4" id="7WjOWF5dmEZ" role="2iSdaV" />
-          <node concept="3F0A7n" id="7hmC3nh$ted" role="3EZMnx">
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
         </node>
-        <node concept="3EZMnI" id="7hmC3nh$tdH" role="3EZMnx">
-          <node concept="VPM3Z" id="7hmC3nh$tdI" role="3F10Kt">
+        <node concept="3EZMnI" id="7JzmVgWI4EW" role="3EZMnx">
+          <node concept="VPM3Z" id="7JzmVgWI4EX" role="3F10Kt">
             <property role="VOm3f" value="false" />
           </node>
-          <node concept="27z8qx" id="7hmC3nh$tdJ" role="3F10Kt">
+          <node concept="27z8qx" id="7JzmVgWI4EY" role="3F10Kt">
             <property role="3$6WeP" value="5" />
           </node>
-          <node concept="3F0ifn" id="7hmC3nh$tdK" role="3EZMnx">
-            <property role="3F0ifm" value="tablero inicial: " />
+          <node concept="3F0ifn" id="7JzmVgWI4EZ" role="3EZMnx">
+            <property role="3F0ifm" value="Ejercicio" />
+            <node concept="VechU" id="7JzmVgWI5cb" role="3F10Kt">
+              <property role="Vb096" value="WHITE" />
+            </node>
           </node>
-          <node concept="2iRfu4" id="7hmC3nh$tdL" role="2iSdaV" />
-          <node concept="1iCGBv" id="7hmC3nh$tdM" role="3EZMnx">
-            <ref role="1NtTu8" to="9huh:7WjOWF5dmOG" />
-            <node concept="1sVBvm" id="7hmC3nh$tdN" role="1sWHZn">
-              <node concept="3F0A7n" id="7hmC3nh$tdO" role="2wV5jI">
+          <node concept="2iRfu4" id="7JzmVgWI4F0" role="2iSdaV" />
+          <node concept="1iCGBv" id="7JzmVgWI4Fx" role="3EZMnx">
+            <ref role="1NtTu8" to="9huh:7JzmVgWI13K" />
+            <node concept="1sVBvm" id="7JzmVgWI4Fz" role="1sWHZn">
+              <node concept="3F0A7n" id="7JzmVgWI4FJ" role="2wV5jI">
                 <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                <ref role="1NtTu8" to="9huh:5vxZ7pqF164" resolve="description" />
+                <node concept="VechU" id="7JzmVgWI5dS" role="3F10Kt">
+                  <property role="Vb096" value="WHITE" />
+                </node>
               </node>
             </node>
           </node>
@@ -165,7 +178,7 @@
           <property role="3$6WeP" value="2" />
         </node>
         <node concept="Veino" id="7WjOWF5dpqv" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="darkGray" />
         </node>
       </node>
       <node concept="2iRkQZ" id="7WjOWF5dmnj" role="2iSdaV" />

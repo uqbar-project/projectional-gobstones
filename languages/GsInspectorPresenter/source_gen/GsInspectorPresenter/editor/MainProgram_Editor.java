@@ -52,7 +52,7 @@ public class MainProgram_Editor extends DefaultNodeEditor {
     Style style = new StyleImpl();
     style.set(StyleAttributes.PADDING_TOP, 0, new Padding(1, Measure.SPACES));
     style.set(StyleAttributes.PADDING_BOTTOM, 0, new Padding(2, Measure.SPACES));
-    style.set(StyleAttributes.BACKGROUND_COLOR, 0, StyleRegistry.getInstance().getSimpleColor(MPSColors.lightGray));
+    style.set(StyleAttributes.BACKGROUND_COLOR, 0, StyleRegistry.getInstance().getSimpleColor(MPSColors.darkGray));
     editorCell.getStyle().putAll(style);
     editorCell.setFoldable(true);
     editorCell.addEditorCell(this.createCollection_5qy9kg_a0a(editorContext, node));
@@ -71,8 +71,11 @@ public class MainProgram_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_5qy9kg_a0a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Ejercicio:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Nombre:");
     editorCell.setCellId("Constant_5qy9kg_a0a0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.TEXT_COLOR, 0, StyleRegistry.getInstance().getSimpleColor(MPSColors.WHITE));
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -83,6 +86,9 @@ public class MainProgram_Editor extends DefaultNodeEditor {
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setCellId("property_name");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.TEXT_COLOR, 0, StyleRegistry.getInstance().getSimpleColor(MPSColors.WHITE));
+    editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
@@ -104,21 +110,24 @@ public class MainProgram_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_5qy9kg_a1a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "tablero inicial: ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Ejercicio");
     editorCell.setCellId("Constant_5qy9kg_a1a0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.TEXT_COLOR, 0, StyleRegistry.getInstance().getSimpleColor(MPSColors.WHITE));
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefCell_5qy9kg_b1a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("board");
-    provider.setNoTargetText("<no board>");
+    provider.setRole("exercise");
+    provider.setNoTargetText("<no exercise>");
     EditorCell editorCell;
     provider.setAuxiliaryCellProvider(new MainProgram_Editor._Inline_5qy9kg_a1b0a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("board");
+      editorCell.setRole("exercise");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -141,12 +150,15 @@ public class MainProgram_Editor extends DefaultNodeEditor {
     }
     private EditorCell createProperty_5qy9kg_a0b1a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-      provider.setRole("name");
-      provider.setNoTargetText("<no name>");
+      provider.setRole("description");
+      provider.setNoTargetText("<no description>");
       provider.setReadOnly(true);
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
-      editorCell.setCellId("property_name_1");
+      editorCell.setCellId("property_description");
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.TEXT_COLOR, 0, StyleRegistry.getInstance().getSimpleColor(MPSColors.WHITE));
+      editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       Class attributeKind = provider.getRoleAttributeClass();
