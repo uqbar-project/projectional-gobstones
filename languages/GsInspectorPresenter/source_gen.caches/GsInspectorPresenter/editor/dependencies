@@ -2,6 +2,7 @@
 <dependenciesRoot>
   <dependency className="GsInspectorPresenter.editor.EditorAspectDescriptorImpl" file="EditorAspectDescriptorImpl.java">
     <classNode dependClassName="GsInspectorPresenter.editor.ExerciseLanguageDefinition_Editor" />
+    <classNode dependClassName="GsInspectorPresenter.editor.FeatureRestrictionItem_Editor" />
     <classNode dependClassName="GsInspectorPresenter.editor.FeatureRestriction_Editor" />
     <classNode dependClassName="GsInspectorPresenter.editor.LibraryReference_Editor" />
     <classNode dependClassName="GsInspectorPresenter.editor.MainProgram_Editor" />
@@ -48,7 +49,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="GsInspectorPresenter.editor.FeatureRestriction_Editor" file="FeatureRestriction_Editor.java">
+  <dependency className="GsInspectorPresenter.editor.FeatureRestrictionItem_Editor" file="FeatureRestrictionItem_Editor.java">
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.impl.cellActions.CellAction_Comment" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider" />
@@ -56,6 +57,15 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.InlineCellProvider" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="GsInspectorPresenter.editor.FeatureRestriction_Editor" file="FeatureRestriction_Editor.java">
+    <classNode dependClassName="jetbrains.mps.editor.runtime.cells.BigCellUtil" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.impl.cellActions.CellAction_Comment" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />

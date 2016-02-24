@@ -116,6 +116,11 @@
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="5GolVsYevoD">
     <ref role="1XX52x" to="9huh:5GolVsYet3j" resolve="MainProgram" />
@@ -369,20 +374,28 @@
     </node>
   </node>
   <node concept="24kQdi" id="KjWzrYBStU">
-    <ref role="1XX52x" to="9huh:KjWzrYBSre" resolve="FeatureRestriction" />
+    <property role="3GE5qa" value="restrictions" />
+    <ref role="1XX52x" to="9huh:KjWzrYBSre" resolve="FeatureRestrictionItem" />
     <node concept="3EZMnI" id="KjWzrYBUC$" role="2wV5jI">
       <node concept="PMmxH" id="KjWzrYBUCF" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
       <node concept="2iRfu4" id="KjWzrYBUCB" role="2iSdaV" />
-      <node concept="1iCGBv" id="KjWzrYDq$N" role="3EZMnx">
+      <node concept="1iCGBv" id="5f2KzShMWLK" role="3EZMnx">
         <ref role="1NtTu8" to="9huh:KjWzrYBUCo" />
-        <node concept="1sVBvm" id="KjWzrYDq$P" role="1sWHZn">
-          <node concept="PMmxH" id="KjWzrYDrEa" role="2wV5jI">
+        <node concept="1sVBvm" id="5f2KzShMWLM" role="1sWHZn">
+          <node concept="PMmxH" id="5f2KzShMWLX" role="2wV5jI">
             <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5f2KzShMW$Q">
+    <property role="3GE5qa" value="restrictions" />
+    <ref role="1XX52x" to="9huh:5f2KzShMWt7" resolve="FeatureRestriction" />
+    <node concept="PMmxH" id="5f2KzShMW$S" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>
