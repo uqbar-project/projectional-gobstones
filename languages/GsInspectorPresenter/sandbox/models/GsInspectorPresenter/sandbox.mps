@@ -7,6 +7,9 @@
   <imports />
   <registry>
     <language id="0cb8c78e-7916-43a8-8d8e-a292ead7a894" name="MPSGobstones">
+      <concept id="3660535006335051766" name="MPSGobstones.structure.VariableName" flags="ng" index="2mHRb7">
+        <property id="3660535006335051769" name="name" index="2mHRb8" />
+      </concept>
       <concept id="6321380926644435409" name="MPSGobstones.structure.Library" flags="ng" index="2Ta3u$">
         <child id="6321380926644435412" name="routines" index="2Ta3ux" />
       </concept>
@@ -30,9 +33,15 @@
         <child id="725219836248411837" name="body" index="19HN4$" />
         <child id="3687177273263237593" name="routines" index="3Z_dnC" />
       </concept>
-      <concept id="725219836248412354" name="MPSGobstones.structure.StatementList" flags="ng" index="19HMXr" />
+      <concept id="725219836248412354" name="MPSGobstones.structure.StatementList" flags="ng" index="19HMXr">
+        <child id="725219836248412355" name="statements" index="19HMXq" />
+      </concept>
       <concept id="7026781676426771958" name="MPSGobstones.structure.IntegerLiteral" flags="ng" index="3C81_2">
         <property id="7026781676426771959" name="value" index="3C81_3" />
+      </concept>
+      <concept id="2998821801951672782" name="MPSGobstones.structure.VariableAssignment" flags="ng" index="1NAOP4">
+        <child id="3660535006335100530" name="variable" index="2mGbd3" />
+        <child id="2998821801951680357" name="expression" index="1NAMfJ" />
       </concept>
       <concept id="3687177273263234625" name="MPSGobstones.structure.ProcedureDeclaration" flags="ng" index="3Z_e9K">
         <child id="3687177273263234594" name="body" index="3Z_e8j" />
@@ -264,7 +273,16 @@
   <node concept="1_8ot$" id="7JzmVgWIULy">
     <property role="TrG5h" value="Resolucion" />
     <ref role="17mOH4" node="KjWzrYBIir" resolve="Poner 100 rojas" />
-    <node concept="19HMXr" id="7JzmVgWIULz" role="19HN4$" />
+    <node concept="19HMXr" id="7JzmVgWIULz" role="19HN4$">
+      <node concept="1NAOP4" id="5f2KzShPjjy" role="19HMXq">
+        <node concept="2mHRb7" id="5f2KzShPjjz" role="2mGbd3">
+          <property role="2mHRb8" value="asd" />
+        </node>
+        <node concept="3C81_2" id="5f2KzShPjjC" role="1NAMfJ">
+          <property role="3C81_3" value="1" />
+        </node>
+      </node>
+    </node>
     <node concept="3Z_e9K" id="5f2KzShM75N" role="3Z_dnC">
       <property role="TrG5h" value="Algo" />
       <node concept="19HMXr" id="5f2KzShM75O" role="3Z_e8j" />

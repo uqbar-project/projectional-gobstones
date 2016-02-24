@@ -150,6 +150,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="5f2KzShONxU" role="PzmwI">
+      <ref role="PrY4T" node="5f2KzShONxT" resolve="BinaryLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="CgvT_3Edr_">
     <property role="3GE5qa" value="expressions.boolean" />
@@ -207,6 +210,9 @@
       <property role="20kJfa" value="expression" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="CgvT_3Dpme" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="5f2KzShONAY" role="PzmwI">
+      <ref role="PrY4T" node="5f2KzShONxT" resolve="BinaryLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="6649bi9D0Ix">
@@ -811,6 +817,23 @@
   <node concept="PlHQZ" id="KjWzrYD8FH">
     <property role="1pbfSe" value="179862819" />
     <property role="TrG5h" value="CanBeRestricted" />
+  </node>
+  <node concept="PlHQZ" id="5f2KzShONxT">
+    <property role="1pbfSe" value="1704327863" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="BinaryLike" />
+  </node>
+  <node concept="1TIwiD" id="5f2KzShPjk5">
+    <property role="1pbfSe" value="1704458051" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="VariableReference" />
+    <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
+    <node concept="1TJgyj" id="5f2KzShPjk6" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="variable" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3bcPj6$uUvQ" resolve="VariableName" />
+    </node>
   </node>
 </model>
 
