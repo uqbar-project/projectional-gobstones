@@ -283,5 +283,9 @@
   <node concept="1M2fIO" id="5f2KzShMYGV">
     <ref role="1M2myG" to="xwsw:CgvT_3DP31" resolve="Statement" />
   </node>
+  <node concept="1M2fIO" id="5f2KzShO7Ha">
+    <property role="3GE5qa" value="native" />
+    <ref role="1M2myG" to="xwsw:6sLgXHLEbT5" resolve="NativeProcedure" />
+  </node>
 </model>
 

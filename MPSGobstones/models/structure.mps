@@ -430,8 +430,8 @@
     <property role="3GE5qa" value="statements" />
     <property role="TrG5h" value="IfElseStatement" />
     <property role="34LRSv" value="if" />
-    <property role="R4oN_" value="Condicional" />
     <property role="1pbfSe" value="1736826808" />
+    <property role="R4oN_" value="Alternativa condicional" />
     <ref role="1TJDcQ" node="CgvT_3DP31" resolve="Statement" />
     <node concept="1TJgyj" id="6GQ9CZWkfHz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -460,6 +460,7 @@
     <property role="TrG5h" value="PutColor" />
     <property role="34LRSv" value="Poner" />
     <property role="1pbfSe" value="1147698340" />
+    <property role="R4oN_" value="Comando primitivo para poner bolitas" />
     <ref role="1TJDcQ" node="6sLgXHLEbT5" resolve="NativeProcedure" />
   </node>
   <node concept="1TIwiD" id="5fzbgLBHdkb">
@@ -467,6 +468,7 @@
     <property role="TrG5h" value="MoveClaw" />
     <property role="34LRSv" value="Mover" />
     <property role="1pbfSe" value="1147665897" />
+    <property role="R4oN_" value="Comando primitivo para mover el cabezal" />
     <ref role="1TJDcQ" node="6sLgXHLEbT5" resolve="NativeProcedure" />
   </node>
   <node concept="1TIwiD" id="3cFv37cJTT1">
@@ -531,6 +533,7 @@
     <property role="TrG5h" value="RemoveColor" />
     <property role="34LRSv" value="Sacar" />
     <property role="1pbfSe" value="1956295090" />
+    <property role="R4oN_" value="Comando primitivo para sacar bolitas" />
     <ref role="1TJDcQ" node="6sLgXHLEbT5" resolve="NativeProcedure" />
   </node>
   <node concept="1TIwiD" id="2AtX8Dq01gI">

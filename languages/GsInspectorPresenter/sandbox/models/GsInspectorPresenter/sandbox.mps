@@ -7,13 +7,6 @@
   <imports />
   <registry>
     <language id="0cb8c78e-7916-43a8-8d8e-a292ead7a894" name="MPSGobstones">
-      <concept id="7435799069549182533" name="MPSGobstones.structure.NativeProcedure" flags="ng" index="mAvQu">
-        <child id="7435799069549182534" name="expression" index="mAvQt" />
-      </concept>
-      <concept id="3076203700975390529" name="MPSGobstones.structure.South" flags="ng" index="2vOp6Q" />
-      <concept id="3076203700975372869" name="MPSGobstones.structure.Red" flags="ng" index="2vOtiM" />
-      <concept id="6044724656164066896" name="MPSGobstones.structure.PutColor" flags="ng" index="OlRHs" />
-      <concept id="6044724656164099339" name="MPSGobstones.structure.MoveClaw" flags="ng" index="OlZw7" />
       <concept id="6321380926644435409" name="MPSGobstones.structure.Library" flags="ng" index="2Ta3u$">
         <child id="6321380926644435412" name="routines" index="2Ta3ux" />
       </concept>
@@ -37,9 +30,7 @@
         <child id="725219836248411837" name="body" index="19HN4$" />
         <child id="3687177273263237593" name="routines" index="3Z_dnC" />
       </concept>
-      <concept id="725219836248412354" name="MPSGobstones.structure.StatementList" flags="ng" index="19HMXr">
-        <child id="725219836248412355" name="statements" index="19HMXq" />
-      </concept>
+      <concept id="725219836248412354" name="MPSGobstones.structure.StatementList" flags="ng" index="19HMXr" />
       <concept id="7026781676426771958" name="MPSGobstones.structure.IntegerLiteral" flags="ng" index="3C81_2">
         <property id="7026781676426771959" name="value" index="3C81_3" />
       </concept>
@@ -65,6 +56,7 @@
       <concept id="6321380926644435473" name="GsInspectorPresenter.structure.LibraryDeclaration" flags="ng" index="2Ta3h$" />
       <concept id="9156895335219797498" name="GsInspectorPresenter.structure.BoardDeclaration" flags="ng" index="2U9GSK" />
       <concept id="6035600022472214342" name="GsInspectorPresenter.structure.MoveClawRestriction" flags="ng" index="122glS" />
+      <concept id="6035600022472214827" name="GsInspectorPresenter.structure.WhileStatementRestriction" flags="ng" index="122gGl" />
       <concept id="6564092901427106003" name="GsInspectorPresenter.structure.MainProgram" flags="ng" index="1_8ot$">
         <reference id="8927079716049391856" name="exercise" index="17mOH4" />
       </concept>
@@ -80,6 +72,9 @@
     <ref role="djuO8" node="KjWzrYBIiv" resolve="Resultado de una celda" />
     <node concept="3Mz7jS" id="5f2KzShMYuz" role="3Mz7jJ">
       <node concept="122glS" id="5f2KzShMYuB" role="3Mz5wI" />
+    </node>
+    <node concept="3Mz7jS" id="5f2KzShO4Vx" role="3Mz7jJ">
+      <node concept="122gGl" id="5f2KzShO4VB" role="3Mz5wI" />
     </node>
   </node>
   <node concept="2U9GSK" id="KjWzrYBIis">
@@ -269,14 +264,7 @@
   <node concept="1_8ot$" id="7JzmVgWIULy">
     <property role="TrG5h" value="Resolucion" />
     <ref role="17mOH4" node="KjWzrYBIir" resolve="Poner 100 rojas" />
-    <node concept="19HMXr" id="7JzmVgWIULz" role="19HN4$">
-      <node concept="OlZw7" id="5f2KzShNjNb" role="19HMXq">
-        <node concept="2vOp6Q" id="5f2KzShNjNf" role="mAvQt" />
-      </node>
-      <node concept="OlRHs" id="5f2KzShO4aV" role="19HMXq">
-        <node concept="2vOtiM" id="5f2KzShO4b3" role="mAvQt" />
-      </node>
-    </node>
+    <node concept="19HMXr" id="7JzmVgWIULz" role="19HN4$" />
     <node concept="3Z_e9K" id="5f2KzShM75N" role="3Z_dnC">
       <property role="TrG5h" value="Algo" />
       <node concept="19HMXr" id="5f2KzShM75O" role="3Z_e8j" />
