@@ -36,7 +36,7 @@ public final class VariableAssignment__BehaviorDescriptor extends BaseBHDescript
 
   /*package*/ static InterpreterState interpret_idW6XMzE_hbz(@NotNull SNode __thisNode__, InterpreterState state) {
     InterpreterValue value = Expression__BehaviorDescriptor.reduce_id2AtX8Dq04bG.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x299df48a5a06b9ceL, 0x299df48a5a06d765L, "expression")), state);
-    MapSequence.fromMap(state.context).put(SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x299df48a5a06b9ceL, 0x32ccd531a47c6672L, "variable")), MetaAdapterFactory.getProperty(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x32ccd531a47ba7f6L, 0x32ccd531a47ba7f9L, "name")), value);
+    MapSequence.fromMap(state.context).put(SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x299df48a5a06b9ceL, 0x32ccd531a47c6672L, "variable")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), value);
     return state;
   }
 

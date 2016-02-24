@@ -7,9 +7,11 @@
   <imports />
   <registry>
     <language id="0cb8c78e-7916-43a8-8d8e-a292ead7a894" name="MPSGobstones">
-      <concept id="3660535006335051766" name="MPSGobstones.structure.VariableName" flags="ng" index="2mHRb7">
-        <property id="3660535006335051769" name="name" index="2mHRb8" />
+      <concept id="7435799069549182533" name="MPSGobstones.structure.NativeProcedure" flags="ng" index="mAvQu">
+        <child id="7435799069549182534" name="expression" index="mAvQt" />
       </concept>
+      <concept id="3076203700975372870" name="MPSGobstones.structure.Blue" flags="ng" index="2vOtiL" />
+      <concept id="6044724656164066896" name="MPSGobstones.structure.PutColor" flags="ng" index="OlRHs" />
       <concept id="6321380926644435409" name="MPSGobstones.structure.Library" flags="ng" index="2Ta3u$">
         <child id="6321380926644435412" name="routines" index="2Ta3ux" />
       </concept>
@@ -36,12 +38,20 @@
       <concept id="725219836248412354" name="MPSGobstones.structure.StatementList" flags="ng" index="19HMXr">
         <child id="725219836248412355" name="statements" index="19HMXq" />
       </concept>
+      <concept id="725219836248465437" name="MPSGobstones.structure.BinaryOperation" flags="ng" index="19I5Y4">
+        <child id="725219836248465438" name="left" index="19I5Y7" />
+        <child id="725219836248465441" name="right" index="19I5YS" />
+      </concept>
       <concept id="7026781676426771958" name="MPSGobstones.structure.IntegerLiteral" flags="ng" index="3C81_2">
         <property id="7026781676426771959" name="value" index="3C81_3" />
       </concept>
-      <concept id="2998821801951672782" name="MPSGobstones.structure.VariableAssignment" flags="ng" index="1NAOP4">
-        <child id="3660535006335100530" name="variable" index="2mGbd3" />
-        <child id="2998821801951680357" name="expression" index="1NAMfJ" />
+      <concept id="5293390306379622975" name="MPSGobstones.structure.LoopStatement" flags="ng" index="1GdgLf">
+        <child id="4004919084779583333" name="body" index="1XV6fl" />
+      </concept>
+      <concept id="5293390306379541195" name="MPSGobstones.structure.PlusOperation" flags="ng" index="1Gi$MV" />
+      <concept id="5293390306379541197" name="MPSGobstones.structure.MulOperation" flags="ng" index="1Gi$MX" />
+      <concept id="4004919084779594948" name="MPSGobstones.structure.RepeatStatement" flags="ng" index="1XV31O">
+        <child id="3076203700975325608" name="times" index="2vO8Xv" />
       </concept>
       <concept id="3687177273263234625" name="MPSGobstones.structure.ProcedureDeclaration" flags="ng" index="3Z_e9K">
         <child id="3687177273263234594" name="body" index="3Z_e8j" />
@@ -274,12 +284,24 @@
     <property role="TrG5h" value="Resolucion" />
     <ref role="17mOH4" node="KjWzrYBIir" resolve="Poner 100 rojas" />
     <node concept="19HMXr" id="7JzmVgWIULz" role="19HN4$">
-      <node concept="1NAOP4" id="5f2KzShPjjy" role="19HMXq">
-        <node concept="2mHRb7" id="5f2KzShPjjz" role="2mGbd3">
-          <property role="2mHRb8" value="asd" />
+      <node concept="1XV31O" id="5f2KzShRw_N" role="19HMXq">
+        <node concept="19HMXr" id="5f2KzShRw_O" role="1XV6fl">
+          <node concept="OlRHs" id="5f2KzShRwAr" role="19HMXq">
+            <node concept="2vOtiL" id="5f2KzShRwAv" role="mAvQt" />
+          </node>
         </node>
-        <node concept="3C81_2" id="5f2KzShPjjC" role="1NAMfJ">
-          <property role="3C81_3" value="1" />
+        <node concept="1Gi$MV" id="5f2KzShS5Kz" role="2vO8Xv">
+          <node concept="1Gi$MX" id="5f2KzShS5KX" role="19I5YS">
+            <node concept="3C81_2" id="5f2KzShS5Lu" role="19I5YS">
+              <property role="3C81_3" value="3" />
+            </node>
+            <node concept="3C81_2" id="5f2KzShS5KE" role="19I5Y7">
+              <property role="3C81_3" value="2" />
+            </node>
+          </node>
+          <node concept="3C81_2" id="5f2KzShS5Kq" role="19I5Y7">
+            <property role="3C81_3" value="1" />
+          </node>
         </node>
       </node>
     </node>

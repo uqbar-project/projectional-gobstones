@@ -25,14 +25,18 @@ public final class MulOperation__BehaviorDescriptor extends BaseBHDescriptor {
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<Integer> operate_id2AtX8Dq0q7Y = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("operate").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("2AtX8Dq0q7Y").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(Integer.TYPE, ""), SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
+  public static final SMethod<Integer> getPriority_id1653mnvAgo2 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getPriority").modifiers(SModifiersImpl.create(9, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1653mnvAgo2").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(operate_id2AtX8Dq0q7Y);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(operate_id2AtX8Dq0q7Y, getPriority_id1653mnvAgo2);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static int operate_id2AtX8Dq0q7Y(@NotNull SNode __thisNode__, int leftValue, int rightValue) {
     return leftValue * rightValue;
+  }
+  /*package*/ static int getPriority_id1653mnvAgo2(@NotNull SAbstractConcept __thisConcept__) {
+    return 11;
   }
 
   /*package*/ MulOperation__BehaviorDescriptor() {
@@ -65,6 +69,8 @@ public final class MulOperation__BehaviorDescriptor extends BaseBHDescriptor {
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
+      case 1:
+        return (T) ((Integer) getPriority_id1653mnvAgo2(concept));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

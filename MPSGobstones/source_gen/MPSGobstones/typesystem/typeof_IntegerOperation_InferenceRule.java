@@ -18,7 +18,7 @@ public class typeof_IntegerOperation_InferenceRule extends AbstractInferenceRule
   public typeof_IntegerOperation_InferenceRule() {
   }
   public boolean overrides(final SNode integerOperation, IsApplicableStatus status) {
-    return false;
+    return true;
   }
   public void applyRule(final SNode integerOperation, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     SNode integer = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x618424b489a461c4L, "MPSGobstones.structure.IntegerType")));

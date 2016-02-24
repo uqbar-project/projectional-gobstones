@@ -6,6 +6,7 @@
     <classNode dependClassName="MPSGobstones.constraints.RoutineInvocation_Constraints" />
     <classNode dependClassName="MPSGobstones.constraints.StatementList_Constraints" />
     <classNode dependClassName="MPSGobstones.constraints.Statement_Constraints" />
+    <classNode dependClassName="MPSGobstones.constraints.VariableReference_Constraints" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SConceptId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
@@ -53,6 +54,10 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
   <dependency className="MPSGobstones.constraints.Statement_Constraints" file="Statement_Constraints.java">
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
+  <dependency className="MPSGobstones.constraints.VariableReference_Constraints" file="VariableReference_Constraints.java">
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>

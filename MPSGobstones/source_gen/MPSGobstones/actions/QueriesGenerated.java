@@ -8,22 +8,65 @@ import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.action.NodeSubstituteActionsFactoryContext;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.action.DefaultSimpleSubstituteAction;
+import org.jetbrains.mps.openapi.model.SModel;
+import jetbrains.mps.smodel.action.SNodeFactoryOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.action.SideTransformActionsBuilderContext;
 import jetbrains.mps.smodel.action.ModelActions;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.smodel.action.AbstractChildNodeSetter;
-import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.smodel.action.NodeSubstituteActionWrapper;
 import jetbrains.mps.smodel.action.SideTransformPreconditionContext;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.util.Computable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import java.util.regex.Pattern;
 
 public class QueriesGenerated {
   public static List<SubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_BinaryOperation_870305471026575526(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
     List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
+    return result;
+  }
+  public static List<SubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_Expression_6035600022473388894(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
+    List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
+    {
+      SNode outputConcept = MetaAdapterFactory.getConcept(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x618424b489a43df6L, "MPSGobstones.structure.IntegerLiteral").getDeclarationNode();
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (outputConcept == null || SConceptOperations.isSuperConceptOf(SNodeOperations.asSConcept(childConcept), SNodeOperations.asSConcept(outputConcept))) {
+        ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter()) {
+          public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
+            SNode intConst = SNodeFactoryOperations.createNewNode(model, SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x618424b489a43df6L, "MPSGobstones.structure.IntegerLiteral")), null);
+            try {
+              SPropertyOperations.set(intConst, MetaAdapterFactory.getProperty(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x618424b489a43df6L, 0x618424b489a43df7L, "value"), "" + (Integer.parseInt(pattern)));
+            } catch (NumberFormatException e) {
+              SPropertyOperations.set(intConst, MetaAdapterFactory.getProperty(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x618424b489a43df6L, 0x618424b489a43df7L, "value"), "" + (0));
+            }
+            return intConst;
+          }
+          public boolean hasSubstitute() {
+            return true;
+          }
+          public boolean canSubstitute_internal(String pattern, boolean strictly) {
+            if (strictly) {
+              return REGEXP_x583g4_a0a0a0a2a0a0a0a2a0a1a1.matcher(pattern).matches();
+            } else {
+              return REGEXP_x583g4_a0a0a0a0c0a0a0a0c0a0b0b.matcher(pattern).matches();
+            }
+          }
+          public String getMatchingText(String pattern) {
+            return pattern;
+          }
+          public String getVisibleMatchingText(String pattern) {
+            return getMatchingText(pattern);
+          }
+        });
+      }
+    }
     return result;
   }
   public static List<SubstituteAction> sideTransform_ActionsFactory_Expression_6035600022472908778(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
@@ -138,4 +181,6 @@ public class QueriesGenerated {
     }
     return result;
   }
+  private static Pattern REGEXP_x583g4_a0a0a0a2a0a0a0a2a0a1a1 = Pattern.compile("-?\\d+", 0);
+  private static Pattern REGEXP_x583g4_a0a0a0a0c0a0a0a0c0a0b0b = Pattern.compile("-?\\d*", 0);
 }

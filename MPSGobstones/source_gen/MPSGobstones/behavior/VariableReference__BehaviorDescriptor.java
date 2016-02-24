@@ -34,7 +34,7 @@ public final class VariableReference__BehaviorDescriptor extends BaseBHDescripto
   }
 
   /*package*/ static InterpreterValue reduce_id2AtX8Dq04bG(@NotNull SNode __thisNode__, InterpreterState state) {
-    return state.getValueOf(SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x53c2c23e11d53505L, 0x53c2c23e11d53506L, "variable")), MetaAdapterFactory.getProperty(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x32ccd531a47ba7f6L, 0x32ccd531a47ba7f9L, "name")));
+    return state.getValueOf(SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x53c2c23e11d53505L, 0x53c2c23e11d53506L, "variable")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
   }
 
   /*package*/ VariableReference__BehaviorDescriptor() {

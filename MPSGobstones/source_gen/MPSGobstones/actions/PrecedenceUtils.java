@@ -65,6 +65,7 @@ public class PrecedenceUtils {
   public static boolean needsParensAroundNotExpression(SNode notExpression) {
     return !(((SLinkOperations.getTarget(notExpression, MetaAdapterFactory.getContainmentLink(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x618424b489a3cd9fL, 0x618424b489a3cda0L, "expression")) == null) || (!(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(notExpression, MetaAdapterFactory.getContainmentLink(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x618424b489a3cd9fL, 0x618424b489a3cda0L, "expression")), MetaAdapterFactory.getConcept(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0xa107f9943a8201dL, "MPSGobstones.structure.BinaryOperation")))) || PrecedenceUtils.isHigherPriority(SLinkOperations.getTarget(notExpression, MetaAdapterFactory.getContainmentLink(0xcb8c78e791643a8L, 0x8d8ea292ead7a894L, 0x618424b489a3cd9fL, 0x618424b489a3cda0L, "expression")), notExpression)));
 
+
   }
 
 

@@ -609,9 +609,8 @@
     <property role="TrG5h" value="VariableName" />
     <property role="1pbfSe" value="683115225" />
     <ref role="1TJDcQ" node="CgvT_3Dpme" resolve="Expression" />
-    <node concept="1TJgyi" id="3bcPj6$uUvT" role="1TKVEl">
-      <property role="TrG5h" value="name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="PrWs8" id="5f2KzShR8o7" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="7WjOWF4XDMP">
